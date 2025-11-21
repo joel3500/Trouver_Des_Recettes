@@ -1,0 +1,29 @@
+[
+    {
+        "titre": "titre 4",
+        "url": "url 4",
+        "url_image": "url image 4",
+        "recette": {
+            "Titre de la recette": "Tarte aux fraises",
+            "Temps de cuisson": "30 minutes",
+            "Nombre de personnes": 6,
+            "Durée de préparation": "20 minutes",
+            "Durée de cuisson": "30 minutes",
+            "Liste des ingrédients": [
+                "250g de farine",
+                "125g de beurre",
+                "50g de sucre",
+                "1 œuf",
+                "500g de fraises",
+                "Crème pâtissière"
+            ],
+            "Les étapes de préparation": [
+                "Préparer la pâte brisée en mélangeant la farine, le beurre, le sucre et l'œuf.",
+                "Laisser reposer 30 minutes au frais.",
+                "Étaler la pâte et la cuire à blanc pendant 15 minutes à 180°C.",
+                "Garnir de crème pâtissière et disposer les fraises.",
+                "Servir frais."
+            ]
+        }
+    }
+]

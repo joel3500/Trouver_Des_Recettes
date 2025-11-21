@@ -1,0 +1,48 @@
+{
+  "recettes": [
+    {
+      "Titre de la recette": "Poulet rôti aux poivrons et oignons",
+      "Temps de cuisson": "1h30",
+      "Nombre de personnes": 4,
+      "Durée de préparation": "20 minutes",
+      "Durée de cuisson": "1h10",
+      "Liste des ingrédients": ["4 morceaux de poulet", "2 oignons", "2 poivrons", "Sel", "Poivre"],
+      "Les étapes de préparation": ["Préchauffez le four à 180°C", "Coupez les oignons et les poivrons en fines tranches", "Disposez les morceaux de poulet dans un plat allant au four", "Parsemez d'oignons et de poivrons", "Assaisonnez de sel et de poivre", "Enfournez et laissez cuire pendant 1h10"],
+      "Description de la recette": "Un délicieux poulet rôti accompagné de légumes savoureux.",
+      "Image": ""
+    },
+    {
+      "Titre de la recette": "Côtelettes de viande aux légumes",
+      "Temps de cuisson": "40 minutes",
+      "Nombre de personnes": 4,
+      "Durée de préparation": "15 minutes",
+      "Durée de cuisson": "25 minutes",
+      "Liste des ingrédients": ["4 côtelettes de viande", "1 oignon", "1 poivron", "2 carottes", "Sel", "Poivre"],
+      "Les étapes de préparation": ["Poêlez les côtelettes de chaque côté jusqu'à ce qu'elles soient bien dorées", "Coupez l'oignon, le poivron et les carottes en fines tranches", "Ajoutez les légumes à la viande dans la poêle", "Couvrir et laisser cuire à feux doux pendant 25 minutes", "Assaisonnez de sel et de poivre"],
+      "Description de la recette": "Côtelettes juteuses servies avec des légumes frais.",
+      "Image": ""
+    },
+    {
+      "Titre de la recette": "Salade de choux et carottes",
+      "Temps de cuisson": "Pas de cuisson",
+      "Nombre de personnes": 4,
+      "Durée de préparation": "15 minutes",
+      "Durée de cuisson": "Pas de cuisson",
+      "Liste des ingrédients": ["1/2 chou", "2 carottes", "1 oignon", "Vinaigrette"],
+      "Les étapes de préparation": ["Coupez le chou, les carottes et l'oignon en tranches fines", "Mélangez dans un saladier", "Ajoutez la vinaigrette et mélangez bien"],
+      "Description de la recette": "Salade croquante de chou, carotte et oignon.",
+      "Image": ""
+    },
+    {
+      "Titre de la recette": "Soupe de légumes au poulet",
+      "Temps de cuisson": "1h",
+      "Nombre de personnes": 4,
+      "Durée de préparation": "15 minutes",
+      "Durée de cuisson": "45 minutes",
+      "Liste des ingrédients": ["1 poulet", "2 carottes", "1 poivron", "1 oignon", "1/4 de chou", "Sel", "Poivre"],
+      "Les étapes de préparation": ["Faites bouillir le poulet dans une grande casserole d'eau", "Coupez les légumes en dés et ajoutez-les à l'eau", "Faites cuire à feu moyen pendant 45 minutes", "Assaisonnez de sel et de poivre", "Servez chaud"],
+      "Description de la recette": "Une soupe réchauffante de légumes et de poulet.",
+      "Image": ""
+    }
+  ]
+}

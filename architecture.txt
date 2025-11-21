@@ -1,0 +1,15 @@
+Trouvez_Des_Recettes/
+├─ main_chemins_relatifs.py
+├─ requirements.txt
+├─ render.yaml
+├─ .gitignore
+├─ dossier_des_JSON_internes/
+│  ├─ les_types_de_regimes.json
+│  ├─ meilleurs_et_pires_aliments.json
+│  └─ ... (tes autres JSON)
+├─ static/
+│  ├─ css/ ...  js/ ...  img/ ...
+└─ templates/
+   ├─ index.html
+   ├─ index_admin.html
+   └─ ... (cuisine_*.html, etc.)

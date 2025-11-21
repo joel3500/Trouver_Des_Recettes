@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../static/css/design_find_recettes.css"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+        <script src="/static/js/data_chat.js"></script>
+        <title>Intégration IA LLM</title>
+    </head>
+
+    <body>
+
+        <div class="reponse_assistant">
+            <h1>Lancez vos ingrédients à l'IA</h1><br>
+            <form action="{{ url_for('index_IA') }}" method="POST">
+                
+                <div id="input-container">
+                    <input type="text" name="ingredient" placeholder="Entrez un ingrédient">
+                </div>
+
+                <div class="container">
+                    <div class="add-button" onclick="addInput()">Ajouter un ingrédient</div>
+					<div class="suppress-button" onclick="deleteFn()">Supprimer dernière case</div>
+                    <button class="soumettre" type="submit" title="soumettre pour voir les recettes disponibles">Soumettre</button>
+                </div>
+                
+            </form>
+        
+            <!--===================  FIN DES bouttons Ajout / Suppression / Soumission  ==========================--->
+                
+            <!--===================  Les bouttons administrateurs  ===============================================--->
+            
+            <div class="les_buttons">
+                <button type="button" title="Ce boutton permettra de voir la liste des Ingrédiens généralement soumis à l'App, avec les dates et heures concernées."><a href="{{ url_for('index_admin') }}" target="_blank">Index Administrateur</a></button><br>
+                <button type="button" title="Ce boutton permettra de voir la liste des Ingrédiens généralement soumis à l'App, avec les dates et heures concernées."><a href="{{ url_for('faire_le_suivis') }}" target="_blank">Liste des requêtes</a></button><br>
+                <button type="button" title="SimilarWeb pour observer à temps réel le traffic sur le site."><a href="{{ url_for('similarweb_pdf') }}" target="_blank">SimilarWeb</a></button><br>
+                <button type="button" title="Ce boutton permettra de rouler l'IA uniquement."><a href="{{ url_for('index_IA') }}" target="_blank">Rouler l'IA uniquement</a></button><br>
+                <button type="button" title="Ce boutton permet de tout rescrapper au complet les sites [ Openrecipes - AllRecipes.com - Marmiton.org - Tasty.co - Epicurious.com ] pour produire les fichiers JSON internes." class="tout_rescrapper"><a href="{{ url_for('tout_rescrapper') }}" target="_blank">Tout Rescrapper</a></button><br>
+                <button type="button" title="Ce boutton permet de récupérer toutes les données JSON en ligne provenants des sites [ Spoonacular - Edamam TheMealDB - RecipePuppy ] pour produire les fichiers JSON internes." class="tout_rescrapper"><a href="{{ url_for('tout_json_online_recuperer') }}" target="_blank">Tout JSON online recupérer</a></button><br>
+            </div>
+            
+            <!--===================  FIN des bouttons administrateurs  ========================================--->    
+
+            <!--===================  Reponse de l'assistant            ==========================--->
+        </div><br>	
+
+        <div type="text" class="reponse_assistant" name="reponse_assistant">
+            <h2>l'Audit des ingrédients</h2>
+            {% if liste_des_ingrediens %}<br>		
+                <div>
+                    {{ current_date }} : {{ liste_des_ingrediens }}    
+                </div><br>
+            {% else %}
+                <div>
+                    <br>Aucun ingrédiens disponibles pour le moment.<br>
+                </div><br>	
+            {% endif %}
+        </div><br>
+                
+        <!--================  Résultat généré par l'IA           ==================================--->	
+
+        <div class="reponse_assistant">
+            <h2>Résultats générés par l'IA</h2>
+
+                {% if results_IA %} <br>
+                    {% for recette in results_IA %}
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                {% if recette["Image"] %}
+                                    <img src="{{ recette['Image'] }}" class="dfcard-img-top" alt="Image de {{ recette['Titre de la recette'] }}" style="max-width:400px; height:auto; border-radius:10px; display:block; margin-bottom:10px">
+                                {% else %}
+                                    <img src="static/img/default.jpg" class="dfcard-img-top" alt="Image par défaut" style="max-width:400px; height:auto; border-radius:10px; display:block; margin-left: auto; margin-right: auto; margin-bottom:10px">
+                                {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ recette["Titre de la recette"] }}</h5>
+                                    <p class="card-text"><strong>Temps de cuisson :</strong> {{ recette["Temps de cuisson"] }} = (Durée de Préparation + Durée de Cuisson)</p>
+                                    <p class="card-text"><strong>Nombre de personnes : </strong> {{ recette["Nombre de personnes"] }}</p>
+                                    <p class="card-text"><strong>Durée de préparation : </strong> {{ recette["Durée de préparation"] }}</p>
+                                    <p class="card-text"><strong>Durée de cuisson : </strong> {{ recette["Durée de cuisson"] }}</p>
+                                    <p class="card-text"><strong>Ingrédients : </strong></p>
+                                    <ul>
+                                        {% for ingrédient in recette["Liste des ingrédients"] %}
+                                            <li>{{ ingrédient }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    <p class="card-text"><strong>Étapes de préparation :</strong></p>
+                                    <ol>
+                                        {% for étape in recette["Les étapes de préparation"] %}
+                                            <li>{{ étape }}</li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                {% else %}
+                    <div>
+                        <br>Aucune recette à afficher.<br>
+                    </div>
+                {% endif %}
+        </div><br><br><br><br><br>
+        
+        <!--================  FIN DU Résultat généré par l'IA           ==================================--->
+
+        <!-- Le pied de page -->
+        <footer>
+			Venez visiter le site et surtout, n'oubliez pas de nous laisser vos commentaires pour pouvoir l'améliorer | Tout Droits Réservés |
+		</footer>
+
+		<script src="../static/js/data_chat.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	   	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>		
+	
+    </body>
+</html>

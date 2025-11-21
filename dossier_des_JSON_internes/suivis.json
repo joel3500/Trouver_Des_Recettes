@@ -1,0 +1,994 @@
+[
+    {
+        "date": "2025-01-03 / 15:06:40",
+        "ingrediens": [
+            "datte",
+            "amande"
+        ]
+    },
+    {
+        "date": "2025-01-04 / 21:09:30",
+        "ingrediens": [
+            "Oignon",
+            "tomate",
+            "poivron",
+            "oeuf"
+        ]
+    },
+    {
+        "date": "2025-01-09 / 12:15:20",
+        "ingrediens": [
+            "arachide",
+            "oignon",
+            "tomate",
+            "viande"
+        ]
+    },
+    {
+        "date": "2025-01-09 / 18:08:11",
+        "ingrediens": [
+            "carotte",
+            "tomate",
+            "poulet"
+        ]
+    },
+    {
+        "date": "2025-02-02 / 21:23:44",
+        "ingrediens": [
+            "Oignon",
+            "Piment",
+            "Concombre",
+            "Viande"
+        ]
+    },
+    {
+        "date": "2025-02-02 / 21:29:14",
+        "ingrediens": [
+            "Aubergine",
+            "Chocolat",
+            "Lait",
+            "Crème",
+            "Oeuf",
+            "Sucre",
+            "Confiture"
+        ]
+    },
+    {
+        "date": "2025-02-02 / 21:48:49",
+        "ingrediens": [
+            "Aubergine",
+            "Chocolat",
+            "Lait",
+            "Crème",
+            "Oeuf",
+            "Sucre",
+            "Confiture"
+        ]
+    },
+    {
+        "date": "2025-02-02 / 22:21:51",
+        "ingrediens": [
+            "Crevette",
+            "Poivron",
+            "Oignon",
+            "Piment",
+            "Tomate",
+            "Crème",
+            "Spaghetti",
+            "Poulet",
+            "Viande"
+        ]
+    },
+    {
+        "date": "2025-02-02 / 22:27:29",
+        "ingrediens": [
+            "Pomme de terre",
+            "Huile rouge",
+            "Haricot noir"
+        ]
+    },
+    {
+        "date": "2025-02-12 / 16:17:05",
+        "ingrediens": [
+            "Tomate",
+            "Riz",
+            "Huile",
+            "Sel",
+            "Oignon"
+        ]
+    },
+    {
+        "date": "2025-02-12 / 20:02:31",
+        "ingrediens": [
+            "Oignon",
+            "Pomme de terre",
+            "Poulet",
+            "Ail",
+            "Tomate"
+        ]
+    },
+    {
+        "date": "2025-02-12 / 20:41:28",
+        "ingrediens": [
+            "Avocat",
+            "Tomate",
+            "Oignon",
+            "Riz",
+            "Poulet",
+            "Oeuf",
+            "Huile",
+            "Sel"
+        ]
+    },
+    {
+        "date": "2025-02-12 / 20:49:51",
+        "ingrediens": [
+            "Riz",
+            "Farine",
+            "Sel",
+            "Spaghetti",
+            "Huile",
+            "Concentre de tomate"
+        ]
+    },
+    {
+        "date": "2025-02-13 / 08:47:35",
+        "ingrediens": [
+            "Saucisse",
+            "Oeuf",
+            "Poivron",
+            "Tomate",
+            "Oignon",
+            "Huile",
+            "Poivre Noir",
+            "Sel"
+        ]
+    },
+    {
+        "date": "2025-02-13 / 09:00:32",
+        "ingrediens": [
+            "Purée de graine",
+            "Poulet",
+            "Piment",
+            "Ail",
+            "Oignon",
+            "Tomate",
+            "Gingembre"
+        ]
+    },
+    {
+        "date": "2025-02-13 / 09:09:24",
+        "ingrediens": [
+            "Noix de palme",
+            "Oignon",
+            "Poulet",
+            "Piment",
+            "Tomate",
+            "Ail",
+            "Gingembre"
+        ]
+    },
+    {
+        "date": "2025-02-13 / 13:10:14",
+        "ingrediens": [
+            "Toffu",
+            "Oignon",
+            "Sel",
+            "Poivre",
+            "Fromage",
+            "Oeuf",
+            "Farine",
+            "Curcuma"
+        ]
+    },
+    {
+        "date": "2025-02-14 / 22:04:00",
+        "ingrediens": [
+            "Oignon",
+            "Concombre",
+            "ail",
+            "tomate",
+            "viande",
+            "Huile",
+            "crème",
+            "spagheti"
+        ]
+    },
+    {
+        "date": "2025-02-14 / 22:19:53",
+        "ingrediens": [
+            "Oignon",
+            "Ail",
+            "Viande",
+            "Spaghetti",
+            "Tomate",
+            "Crème",
+            "Huile",
+            "Sel",
+            "Poivre",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-02-14 / 22:57:46",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Viande",
+            "Poisson",
+            "Spaghetti",
+            "Ail",
+            "Huile",
+            "Sel",
+            "Poivre",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-02-14 / 23:11:57",
+        "ingrediens": [
+            "Oignon",
+            "Ail",
+            "Tomate",
+            "Spaghetti",
+            "Poivron",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-02-18 / 14:18:32",
+        "ingrediens": [
+            "Oignon",
+            "Viande",
+            "Sel",
+            "Piment",
+            "Ail",
+            "Huile",
+            "Riz"
+        ]
+    },
+    {
+        "date": "2025-02-18 / 14:38:18",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Crème Fraiche",
+            "Celerie",
+            "Concombre",
+            "Betterave",
+            "Piment",
+            "Courgette",
+            "Pomme",
+            "Farine",
+            "Poisson saumon",
+            "Viande maigre"
+        ]
+    },
+    {
+        "date": "2025-02-19 / 19:51:09",
+        "ingrediens": [
+            "Poulet",
+            "Poisson",
+            "Attieke",
+            "Oeuf",
+            "Concentre de tomate",
+            "Huile",
+            "Sel",
+            "Poivre"
+        ]
+    },
+    {
+        "date": "2025-02-25 / 00:08:21",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Carotte",
+            "Salade",
+            "Viande",
+            "Piment",
+            "Concombre",
+            "Poivre",
+            "Poivron",
+            "Crème",
+            "Farine",
+            "Beurre"
+        ]
+    },
+    {
+        "date": "2025-03-01 / 19:32:24",
+        "ingrediens": [
+            "Haricot",
+            "Avoine",
+            "Pomme",
+            "Orange",
+            "Banane",
+            "Fraise",
+            "Dinde",
+            "Poulet",
+            "Salade",
+            "Fromage",
+            "Attieke",
+            "Vin",
+            "Tomate",
+            "Oignon",
+            "Piment",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-03-01 / 19:45:52",
+        "ingrediens": [
+            "Haricot",
+            "Avoine",
+            "Pomme",
+            "Orange",
+            "Banane",
+            "Fraise",
+            "Dinde",
+            "Poulet",
+            "Salade",
+            "Fromage",
+            "Attieke",
+            "Vin",
+            "Tomate",
+            "Oignon",
+            "Piment",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-03-01 / 19:49:02",
+        "ingrediens": [
+            "Haricot",
+            "Avoine",
+            "Pomme",
+            "Orange",
+            "Banane",
+            "Fraise",
+            "Dinde",
+            "Poulet",
+            "Salade",
+            "Fromage",
+            "Attieke",
+            "Vin",
+            "Tomate",
+            "Oignon",
+            "Piment",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-03-01 / 19:58:18",
+        "ingrediens": [
+            "Haricot",
+            "Avoine",
+            "Pomme",
+            "Orange",
+            "Banane",
+            "Fraise",
+            "Dinde",
+            "Poulet",
+            "Salade",
+            "Fromage",
+            "Attieke",
+            "Vin",
+            "Tomate",
+            "Oignon",
+            "Piment",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-03-01 / 20:05:18",
+        "ingrediens": [
+            "Haricot",
+            "Avoine",
+            "Pomme",
+            "Orange",
+            "Banane",
+            "Fraise",
+            "Dinde",
+            "Poulet",
+            "Salade",
+            "Fromage",
+            "Attieke",
+            "Vin",
+            "Tomate",
+            "Oignon",
+            "Piment",
+            "Poivre",
+            "Sel",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:08:13",
+        "ingrediens": [
+            "tomate"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:10:24",
+        "ingrediens": [
+            "tomate",
+            "viande",
+            "riz",
+            ""
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:22:16",
+        "ingrediens": [
+            "tomate"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:23:18",
+        "ingrediens": [
+            "tomate",
+            "oignon",
+            "riz",
+            "viande"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:25:43",
+        "ingrediens": [
+            "oignon",
+            "ail",
+            "huile",
+            "riz",
+            "viande",
+            "tomate",
+            "sel"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:31:31",
+        "ingrediens": [
+            "oignon",
+            "ail",
+            "huile",
+            "riz",
+            "viande",
+            "tomate",
+            "sel"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:32:06",
+        "ingrediens": [
+            "tomates"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:33:10",
+        "ingrediens": [
+            "tomate"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:33:53",
+        "ingrediens": [
+            "tomates",
+            "viande",
+            "riz"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:37:07",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Ail",
+            "Poivre",
+            "Huile",
+            "Sel",
+            "Viande",
+            "Farine",
+            "Riz",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:42:40",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Ail",
+            "Poivre",
+            "Huile",
+            "Sel",
+            "Viande",
+            "Farine",
+            "Riz",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-05-14 / 14:48:35",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Ail",
+            "Poivre",
+            "Huile",
+            "Sel",
+            "Viande",
+            "Farine",
+            "Riz",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 17:32:47",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Poisson",
+            "Viande",
+            "Ail",
+            "Huile",
+            "Poivron",
+            "Celeri",
+            "Attieke",
+            "Riz",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 17:54:28",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Poivron",
+            "Celeri",
+            "Ail",
+            "Poisson",
+            "Viande",
+            "Arachide",
+            "Riz",
+            "Attieke",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 18:09:40",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Concombre",
+            "Poivron",
+            "Celeri",
+            "Poisson",
+            "Viande",
+            "Huile",
+            "Riz",
+            "Attieke"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 21:11:10",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Piment",
+            "Celeri",
+            "Poivron",
+            "Concombre",
+            "Carotte",
+            "Arachide",
+            "Attieke",
+            "Riz"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 22:04:50",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Carotte",
+            "Ail",
+            "Poivron",
+            "Piment",
+            "Attieke",
+            "Riz",
+            "Huile",
+            "Avocat"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 22:20:22",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Celeri",
+            "Viande",
+            "Ail",
+            "Riz",
+            "Concombre"
+        ]
+    },
+    {
+        "date": "2025-08-26 / 22:44:33",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Celeri",
+            "Viande",
+            "Ail",
+            "Riz",
+            "Concombre"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 09:07:18",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Ail",
+            "Oeuf",
+            "Farine",
+            "Sucre",
+            "Riz"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 14:06:43",
+        "ingrediens": [
+            "Banane plantain",
+            "Oignon",
+            "Tomate",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 14:28:32",
+        "ingrediens": [
+            "Feuilles d'okok",
+            "Pate d'arachide",
+            "Poisson fumé",
+            "Huile de palme"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 20:05:25",
+        "ingrediens": [
+            "Feuilles d'okok",
+            "Pate d'arachide",
+            "Poisson fumé",
+            "Huile de palme"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 20:38:48",
+        "ingrediens": [
+            "poulet",
+            "oignon",
+            "spaghetti",
+            "patate",
+            "huile",
+            "tomate",
+            "concombre",
+            "salade"
+        ]
+    },
+    {
+        "date": "2025-08-27 / 20:40:40",
+        "ingrediens": [
+            "Poulet",
+            "Spaghetti",
+            "Patate",
+            "Tomate",
+            "Concombre",
+            "Salade",
+            "Huile"
+        ]
+    },
+    {
+        "date": "2025-09-11 / 14:11:30",
+        "ingrediens": [
+            "Gourgane",
+            "Oignon",
+            "Poivron",
+            "Celeri",
+            "Carotte",
+            "Olive"
+        ]
+    },
+    {
+        "date": "2025-09-11 / 14:17:06",
+        "ingrediens": [
+            "Gourgane"
+        ]
+    },
+    {
+        "date": "2025-09-12 / 19:52:44",
+        "ingrediens": [
+            "Gari",
+            "Gombo",
+            "Huile rouge",
+            "Viande",
+            "Cube maggi",
+            "Oignon",
+            "Tomate concentrée"
+        ]
+    },
+    {
+        "date": "2025-10-06 / 16:15:34",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Celeri",
+            "Poisson",
+            "Viande",
+            "Salsify",
+            "Mais",
+            "Huile",
+            "Couscous",
+            "Carotte"
+        ]
+    },
+    {
+        "date": "2025-10-06 / 18:31:13",
+        "ingrediens": [
+            "tomate",
+            "oignon"
+        ]
+    },
+    {
+        "date": "2025-10-13 / 18:57:41",
+        "ingrediens": [
+            "Tomate",
+            "Oignon",
+            "Poivron",
+            "Poulet",
+            "Celeri",
+            "Graine",
+            "Banane plantain",
+            "Huile",
+            "Poivre"
+        ]
+    },
+    {
+        "date": "2025-11-03 / 15:50:53",
+        "ingrediens": [
+            "Tomate",
+            "Oignon",
+            "Feuilles d'oignon",
+            "Ail",
+            "Viande",
+            "Tomate concentrée",
+            "Poivron"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 00:40:12",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 00:56:33",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 01:00:50",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 01:05:38",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 01:22:42",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 01:27:20",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 01:31:52",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 09:20:54",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-18 / 09:21:32",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane Plantain",
+            "Viande",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-19 / 18:22:48",
+        "ingrediens": [
+            "Banane plantain",
+            "Manioc",
+            "tomate",
+            "graine de palme",
+            "Oignon",
+            "Ail",
+            "Arachide"
+        ]
+    },
+    {
+        "date": "2025-11-19 / 18:36:58",
+        "ingrediens": [
+            "Arachide",
+            "Viande",
+            "Poulet",
+            "Banane Plantain",
+            "Manioc",
+            "Tomate",
+            "Oignon"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 02:53:30",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "arachide",
+            "viande de porc",
+            "poisson",
+            "viande de beuf",
+            "laitue",
+            "pomme",
+            "farine"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 03:36:22",
+        "ingrediens": [
+            "Oignon",
+            "carotte",
+            "couscous",
+            "laitue",
+            "viande",
+            "poisson",
+            "escargot",
+            "manioc",
+            "riz"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 03:49:58",
+        "ingrediens": [
+            "Oignon",
+            "carotte",
+            "couscous",
+            "laitue",
+            "viande",
+            "poisson",
+            "escargot",
+            "manioc",
+            "riz"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 08:08:38",
+        "ingrediens": [
+            "Oignon",
+            "carotte",
+            "couscous",
+            "laitue",
+            "viande",
+            "poisson",
+            "escargot",
+            "manioc",
+            "riz"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 10:11:52",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Viande",
+            "Riz",
+            "Carotte",
+            "Ail"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 14:26:04",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Viande",
+            "Celeri",
+            "Carotte",
+            "Couscous"
+        ]
+    },
+    {
+        "date": "2025-11-20 / 16:32:47",
+        "ingrediens": [
+            "viande",
+            "tomate",
+            "oignon",
+            "ail",
+            "riz",
+            "feuille d'oignon",
+            "poivron"
+        ]
+    },
+    {
+        "date": "2025-11-21 / 09:18:53",
+        "ingrediens": [
+            "fromage"
+        ]
+    }
+]

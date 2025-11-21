@@ -1,0 +1,105 @@
+[
+    {
+        "Titre de la recette": "Gâteau chocolat-aubergine",
+        "Temps de cuisson": "1 heure",
+        "Nombre de personnes": "6",
+        "Durée de préparation": "20 minutes",
+        "Durée de cuisson": "40 minutes",
+        "Liste des ingrédients": [
+            "200g de chocolat",
+            "100g de sucre",
+            "50g de farine",
+            "3 oeufs",
+            "50g de beurre"
+        ],
+        "Les étapes de préparation": [
+            "Préchauffer le four à 180°C.",
+            "Éplucher l'aubergine, la couper en dés, et la cuire à la vapeur jusqu'à ce qu'elle soit tendre.",
+            "Faire fondre le chocolat avec le beurre.",
+            "Mixer l'aubergine cuite pour obtenir une purée lisse.",
+            "Dans un saladier, battre les oeufs avec le sucre jusqu'à ce qu'ils blanchissent.",
+            "Ajouter la purée d'aubergine, puis le mélange chocolat-beurre, et enfin la farine. Bien mélanger.",
+            "Verser la préparation dans un moule préalablement beurré.",
+            "Enfourner pendant 40 minutes.",
+            "Laisser refroidir avant de déguster."
+        ],
+        "Image": "None"
+    },
+    {
+        "Titre de la recette": "Crêpes au chocolat",
+        "Temps de cuisson": "30 minutes",
+        "Nombre de personnes": "4",
+        "Durée de préparation": "15 minutes",
+        "Durée de cuisson": "15 minutes",
+        "Liste des ingrédients": [
+            "100g de farine",
+            "2 oeufs",
+            "250ml de lait",
+            "50g de beurre",
+            "50g de sucre",
+            "100g de chocolat"
+        ],
+        "Les étapes de préparation": [
+            "Dans un saladier, mélanger la farine et le sucre.",
+            "Ajouter les oeufs et fouetter énergiquement.",
+            "Incorporer progressivement le lait pour éviter les grumeaux.",
+            "Faire fondre le beurre et l'ajouter à la pâte.",
+            "Laisser reposer la pâte pendant 10 minutes.",
+            "Faire fondre le chocolat et le réserver.",
+            "Chauffer une poêle antiadhésive et verser une louche de pâte pour chaque crêpe.",
+            "Cuire chaque côté jusqu'à ce qu'il soit doré.",
+            "Servir les crêpes nappées de chocolat fondu."
+        ],
+        "Image": "None"
+    },
+    {
+        "Titre de la recette": "Muffins aubergine et chocolat",
+        "Temps de cuisson": "40 minutes",
+        "Nombre de personnes": "6",
+        "Durée de préparation": "15 minutes",
+        "Durée de cuisson": "25 minutes",
+        "Liste des ingrédients": [
+            "1 petite aubergine",
+            "150g de chocolat",
+            "100g de sucre",
+            "100g de farine",
+            "2 oeufs"
+        ],
+        "Les étapes de préparation": [
+            "Préchauffer le four à 180°C.",
+            "Éplucher et râper finement l'aubergine.",
+            "Faire fondre le chocolat au bain-marie.",
+            "Dans un saladier, battre les oeufs avec le sucre.",
+            "Incorporer la farine, puis ajouter l'aubergine râpée.",
+            "Mélanger le chocolat fondu avec la préparation.",
+            "Répartir la pâte dans des moules à muffins.",
+            "Cuire au four pendant 20-25 minutes.",
+            "Laisser refroidir avant de déguster."
+        ],
+        "Image": "None"
+    },
+    {
+        "Titre de la recette": "Flan au chocolat",
+        "Temps de cuisson": "1 heure",
+        "Nombre de personnes": "4",
+        "Durée de préparation": "10 minutes",
+        "Durée de cuisson": "50 minutes",
+        "Liste des ingrédients": [
+            "200ml de lait",
+            "100g de chocolat",
+            "50g de sucre",
+            "3 oeufs",
+            "20g de beurre"
+        ],
+        "Les étapes de préparation": [
+            "Préchauffer le four à 160°C.",
+            "Faire chauffer le lait puis y faire fondre le chocolat hors du feu.",
+            "Dans un saladier, battre les oeufs avec le sucre.",
+            "Ajouter le mélange chocolat-lait aux oeufs battus.",
+            "Verser la préparation dans un moule beurré.",
+            "Enfourner pour 50 minutes au bain-marie.",
+            "Laisser refroidir avant de démouler et servir."
+        ],
+        "Image": "None"
+    }
+]

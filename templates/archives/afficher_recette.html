@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes filtrées</title>
+</head>
+<body>
+    <h1>Recettes contenant uniquement dattes et amandes</h1>
+    {% if recipes %}
+        <ul>
+        {% for recipe in recipes %}
+            <li>
+                <h2>{{ recipe['Titre de la recette'] }}</h2>
+
+                {% if recipe["Image"] %}
+                    <img src="{{ recipe['Image'] }}" class="card-img-top" alt="Image de {{ recipe['Titre de la recette'] }}">
+                {% else %}
+                    <img src="static/img/default.jpg" class="card-img-top" alt="Image par défaut">
+                {% endif %}
+
+                <p><strong>Nombre de personnes :</strong> {{ recipe['Nombre de personnes'] }}</p>
+                <p><strong>Durée de préparation :</strong> {{ recipe['Durée de préparation'] }}</p>
+                <p><strong>Durée de cuisson :</strong> {{ recipe['Durée de cuisson'] or 'N/A' }}</p>
+                <p><strong>Ingrédients :</strong> {{ recipe['Liste des ingrédients'] | join(', ') }}</p>
+                <h3>Étapes :</h3>
+                <ol>
+                {% for step in recipe['Les étapes de préparation'] %}
+                    <li>{{ step }}</li>
+                {% endfor %}
+                </ol>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucune recette trouvée avec uniquement les ingrédiens rentrés.</p>
+    {% endif %}
+</body>
+</html>

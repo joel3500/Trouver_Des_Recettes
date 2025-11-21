@@ -1,0 +1,506 @@
+
+	*   /* selecteur universel */               /* ce truc sert à éviter les decallages de padding ou margin par defaut existant sur certaines balises */
+	{
+		box-sizing : border-box;
+	}
+
+	#messageErreur                           
+	{
+		color : red;
+		margin-top : -5px;
+		font-size : 15px;
+		visibility : visible;
+	}
+
+	a:hover
+	{
+		color : green;
+		font-weight : bold;
+	}
+
+	body
+	{
+		font-family : Arial, sans-serif;
+		font-size : 20px; 
+		background-color: gray;
+        text-align: center;
+		padding-bottom: 30px;
+	}
+	
+	header
+	{
+		width : 100%;
+		display : inline-block;
+		margin : auto;
+		margin-bottom : 10px;
+		margin-top : 10px;
+		border : 3px solid blue;
+		border-radius : 10px;
+		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
+	}
+
+	.oublie
+	{
+		text-align : center;
+		width : 75%;
+		margin : auto;
+		font-size : 20px;
+		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
+	}
+
+    iframe
+	{
+		width : 100%;
+		height : 100%;
+		margin-top: 10px;
+		margin-bottom : 10px;
+		border-radius : 10px;
+	}
+
+	img
+	{
+		width : 100%;
+		height : 100%;
+		border-radius: 10px;
+	}
+
+    .text-service-aide
+	{
+		display : inline-block;
+		margin : auto;
+		margin-top : 20px;
+		margin-bottom : 20px;
+		width : 90%;
+		padding : 2%;
+		border : 2px solid rgb(216, 214, 214);
+		border-radius: 10px;
+		white-space : initial;
+		text-align : justify;
+		color : blue;
+		text-justify : auto; /*inter-word*/
+		border : 3px solid blue;
+		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
+	}
+
+	.vos_impressions, .reponse_assistant, .suivis-requetes
+    {
+        display : inline-block;
+		background-color:white;
+		margin : auto;
+		margin-top : 20px;
+		margin-bottom : 20px;
+		width : 90%;
+		padding : 2%;
+		border : 2px solid rgb(216, 214, 214);
+		border-radius: 10px;
+		white-space : initial;
+		text-align: justify;
+		text-justify : auto; /*inter-word*/
+		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
+    }
+
+	h1, h2, h3
+	{
+		font-family : Audiowide;
+		text-align : center;
+		width : 80%;
+		margin : auto;
+		border-bottom : 1px black solid; 
+		text-shadow : 4px 4px 4px white;
+		color : blue;
+	}
+
+	#formulaire2
+	{
+		display: inline-block;
+		position : relative; 
+		width : 100px;
+		height : 75px;
+		border-radius: 50px;
+	}
+
+    footer
+	{
+		width : 95%;
+		left : 2.5%;    
+		right : 2.5%;
+		/*margin-top : 20px;*/
+		margin : auto;
+		background-color : black;
+		text-align : center;
+		min-height : 70px;
+		color : rgba(142, 144, 251, 0.977);
+		vertical-align : middle;
+		/*font-family : Poppins; */
+	}
+
+	/*
+	https://stackoverflow.com/questions/58514788/adding-another-input-field-when-clicking-on-a-button
+	*/
+	
+	#input-container   /* Les ingrediens input */
+	{
+		border : 1px solid black;
+		padding : 15px;
+		margin-top : 15px;
+		margin-bottom : 15px;
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		/*flex-flow : wrap;  
+		justify-content : space-around;*/
+	}
+
+	input {
+		display : inline-block;
+		width : 50%;
+		height : 50px;
+		border: 1px solid blue;
+		border-radius : 10px;
+		text-align : center;
+		font-size : 20px;
+		margin : 10px; 
+		margin-left : 25%;
+	}
+
+	/*---==================== Structure pour l'ajout/suppression dun ingredien ================================---*/
+	
+	.container 
+	{
+		display: flex;
+		width : 100%;
+		text-align: center;
+		margin-top: 20px;
+		padding : 5px;
+		border : 1px solid black;
+	}
+
+	.add-button, .suppress-button, .soumettre
+	{
+		width : 25%;
+		min-height : 70px;
+		color: #fff;
+		font-size : 20px;
+		border: none;
+		border-radius: 10px;
+		padding: 8px 20px;
+		margin: 10px auto;
+		cursor: pointer;
+	}
+
+	.add-button
+	{
+		background-color: blue;
+	}
+
+	.suppress-button
+	{
+		background-color: red;
+	}
+	
+	.soumettre   /*=========== Boutton Soumettre   ================ */
+	{
+		background-color: green;
+	}
+
+	/*---====================  FIN de Structure pour l'ajout/suppression dun ingredien  ================================---*/
+
+	/* ======================  Les bouttons administrateurs  ======================================================---*/
+	.les_buttons
+	{
+		margin-top : 30px;
+		width : 100%;
+		border : 1px solid black;
+		display : flex;
+		flex-flow : wrap;  
+		justify-content : space-around;
+		padding-bottom : 20px;
+	}
+
+	.les_buttons > button
+	{
+		width : 80%;
+		margin-left : auto;
+		margin-right : auto;
+		margin-top: 20px;
+		font-size : 20px;
+		background-color : orange;
+		cursor : pointer;
+		border : none;
+		border-radius : 10px;
+		color : #fff;
+		padding : 7px;
+	}
+
+	.les_buttons > .tout_rescrapper
+	{
+		background-color: orange;  /* orange plus FONCÉ pour dire de REFFLÉCHIR À 2 FOIS avant de clicker ce boutton. */
+	}
+
+	.les_sites, .les_utilitaires
+	{	
+		margin-top : 30px;
+		width : 100%;
+		padding : 50px;
+	}
+
+	.les_sites a, .les_utilitaires a
+	{
+		cursor : pointer;
+		text-decoration : none;
+	}
+
+	.audit_ingrediens
+	{
+		text-align : center;
+	}
+
+	.une_recette
+	{
+		background-color: rgb(227, 227, 250);
+		border-radius: 10px;
+		padding : 20px;
+	}
+
+	table 
+	{
+		border-collapse: collapse;
+		width: 100%;
+	}
+	
+	th, td 
+	{
+		padding: 8px;
+		text-align: left;
+		border-bottom: 1px solid #DDD;
+	}
+
+	tr:hover 
+	{
+		background-color: #D6EEEE;
+	}
+
+	/* ----===================  FIN des bouttons administrateurs ==========================----  */
+
+	/*
+	https://www.geeksforgeeks.org/how-to-add-an-input-field-on-button-click-in-javascript/
+	*/
+
+	/*--------------------------------------------------------------------*/
+	/*                          STYLE POUR ORDINATEUR PC                  */
+	/*--------------------------------------------------------------------*/
+
+	@media only screen and (min-width : 850px) 
+	{
+		.text-service-aide, .suivis-requetes, .vos_impressions, .reponse_assistant
+		{
+			width : 50%;
+			margin-left : 20px;
+		}
+	}
+
+
+	/*======================================================================*/
+	/*        NOUVEAU CSS MODERNE qui ecrasera tout ce qui précède          */
+	/*======================================================================*/
+
+	/* ====== Palette moderne (ne change que couleurs/bordures) ====== */
+:root{
+  --bg:#f6f7fb;
+  --surface:#ffffff;
+  --surface-2:#f0f3f8;
+  --text:#1f2937;
+  --muted:#64748b;
+
+  --border:#e2e8f0;
+  --border-strong:#cbd5e1;
+
+  --accent:#6e59f5;   /* indigo-violet moderne */
+  --success:#16a34a;  /* vert (succès)      */
+  --danger:#dc2626;   /* rouge (danger)     */
+  --warning:#f59e0b;  /* ambre (attention)  */
+}
+
+/* Base */
+body{
+  background-color:var(--bg);
+  color:var(--text);
+}
+
+a:hover{
+  color:var(--accent);
+}
+
+/* Entête */
+header{
+  border:1px solid var(--border-strong) !important; /* remplace le 3px bleu */
+  background:linear-gradient(180deg,#fff, #f8fafc);
+}
+
+/* Titres */
+h1, h2, h3 {
+  color:var(--accent);
+  border-bottom:1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+/* Blocs de contenu */
+.text-service-aide,
+.vos_impressions,
+.reponse_assistant,
+.suivis-requetes{
+  background-color:var(--surface);
+  border:1px solid var(--border) !important; /* remplace le double border + bleu */
+  color:var(--text);
+}
+
+/* Zones encadrées */
+#input-container,
+.container,
+.les_buttons,
+.les_sites,
+.les_utilitaires{
+  border:1px solid var(--border);
+}
+
+/* Cartes/encarts recette */
+.une_recette{
+  background-color:var(--surface);
+  border:1px solid var(--border);
+}
+
+/* Table */
+th, td{
+  border-bottom:1px solid var(--border);
+}
+tr:hover{
+  background-color:var(--surface-2);
+}
+
+/* Inputs */
+input{
+  border:1px solid var(--border-strong);
+  color:var(--text);
+}
+input:focus{
+  border-color:var(--accent);
+  outline:none;
+}
+
+/* Boutons (seulement couleurs/bordures) */
+.add-button{
+  background-color:var(--accent);
+  border:1px solid transparent;
+}
+.add-button:hover{ background-color:#5b48e8; }
+
+.suppress-button{
+  background-color:var(--danger);
+  border:1px solid transparent;
+}
+.suppress-button:hover{ background-color:#b91c1c; }
+
+.soumettre{
+  background-color:var(--success);
+  border:1px solid transparent;
+}
+.soumettre:hover{ background-color:#15803d; }
+
+/* Boutons admin + liens internes blancs */
+.les_buttons > button{
+  background-color:var(--warning);
+  border:1px solid transparent;
+  color:#fff;
+}
+.les_buttons > button:hover{ background-color:#d97706; }
+.les_buttons > button a{ color:#fff; }
+
+/* Footer */
+footer{
+  background-color:#0f172a;   /* slate très sombre */
+  color:#cbd5e1;
+  border-top:1px solid var(--border-strong);
+}
+
+/* ====== Carrousel Régions – utilise la palette déjà en place ====== */
+
+.carousel-wrap{
+  position:relative;
+  background:var(--surface, #fff);
+  border:1px solid var(--border, #e2e8f0);
+  border-radius:14px;
+  padding:18px;
+}
+
+.carousel-title{
+  margin:0 0 10px 0;
+  font-size:18px;
+  color:var(--muted, #64748b);
+}
+
+.carousel{
+  position:relative;
+  overflow:hidden;
+}
+
+.carousel-track{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  scroll-snap-type:x mandatory;
+  padding-bottom:8px;
+}
+
+.carousel-track::-webkit-scrollbar{ height:8px; }
+.carousel-track::-webkit-scrollbar-thumb{
+  background:var(--border-strong, #cbd5e1);
+  border-radius:20px;
+}
+
+.carousel-item {
+  position:relative;
+  min-width:380px;
+  height:380px;
+  border:1px solid var(--border, #e2e8f0);
+  border-radius:12px;
+  overflow:hidden;
+  scroll-snap-align:center;
+  flex:0 0 auto;
+  background:#f8fafc;
+}
+
+.carousel-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition: transform .25s ease;
+}
+
+.carousel-item:hover img{ transform: scale(1.03); }
+
+.carousel-overlay{
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(0deg, rgba(15,23,42,.45), rgba(15,23,42,.15));
+  color:#fff; font-weight:600; text-transform:capitalize;
+  padding:8px 10px; text-align:center;
+  text-shadow:0 2px 8px rgba(0,0,0,.35);
+}
+
+.carousel-btn{
+  position:absolute; top:50%; transform:translateY(-50%);
+  z-index:3;
+  background:#111827; color:#fff;
+  border:none; width:38px; height:38px; border-radius:50%;
+  cursor:pointer; opacity:.9;
+}
+
+.carousel-btn:hover{ opacity:1; }
+.carousel-prev{ left:8px; }
+.carousel-next{ right:8px; }
+
+@media (max-width:600px){
+  .carousel-item{ min-width:220px; height:140px; }
+}

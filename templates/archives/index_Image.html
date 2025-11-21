@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recettes de Cuisine</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="bg-danger text-white text-center py-4">
+        <h1>Recettes de Cuisine</h1>
+    </header>
+
+
+        <main class="container my-4">
+            <div class="row">
+                {% if recettes %}
+                    {% for recette in recettes %}
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                {% if recette["Image"] %}
+                                    <img src="{{ recette['Image'] }}" class="dfcard-img-top" alt="Image de {{ recette['Titre de la recette'] }}" style="width:256px; height:256px; border-radius:10px; display:block; margin-bottom:10px">
+                                {% else %}
+                                    <img src="../static/img/default.jpg" class="dfcard-img-top" alt="Image par défaut" style="width:256px; height:256px; border-radius:10px; display:block; margin-left: auto; margin-right: auto; margin-bottom:10px">
+                                {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ recette["Titre de la recette"] }}</h5>
+                                    <p class="card-text"><strong>Temps de cuisson :</strong> {{ recette["Temps de cuisson"] }} = (Durée de Préparation + Durée de Cuisson)</p>
+                                    <p class="card-text"><strong>Nombre de personnes : </strong> {{ recette["Nombre de personnes"] }}</p>
+                                    <p class="card-text"><strong>Durée de préparation : </strong> {{ recette["Durée de préparation"] }}</p>
+                                    <p class="card-text"><strong>Durée de cuisson : </strong> {{ recette["Durée de cuisson"] }}</p>
+                                    <p class="card-text"><strong>Ingrédients : </strong></p>
+                                    <ul>
+                                        {% for ingrédient in recette["Liste des ingrédients"] %}
+                                            <li>{{ ingrédient }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    <p class="dfcard-text"><strong>Étapes de préparation :</strong></p>
+                                    <ol>
+                                        {% for étape in recette["Les étapes de préparation"] %}
+                                            <li>{{ étape }}</li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>Aucune recette à afficher.</p>
+                {% endif %}
+            </div>
+        </main><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            Venez visiter le site et surtout, n'oubliez pas de nous laisser vos commentaires pour pouvoir l'améliorer | Tout Droits Réservés |
+        </footer>
+        <script src="/static/js/data_chat.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>		
+    </body>
+</html>

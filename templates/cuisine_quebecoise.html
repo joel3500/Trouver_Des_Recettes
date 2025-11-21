@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Entete de la page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Idée de Menu ce soir : Un outil proposant des Menu avec ce que vous avez en ce moment à la maison | Joel Sandé</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/design_find_recettes.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Sofia|Trirong|Audiowide">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&effect=fire|neon|outline|emboss|shadow-multiple"> 
+		
+	</head>
+
+	<!-- Corps de la page -->
+	<body>
+		<header>
+			<h2> TROUVER DES RECETTES </h2>
+			<p class="oublie"> Idée de Menu pour ce soir  <br>
+							   Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br>
+							   Un outil proposant des RECETTES avec ce que vous avez en ce moment à la maison. <br>
+							   Rentrez les ingrédients que vous avez, et l’application vous proposera une liste de menus possibles. 
+							   Des menus qui contiennent ces ingrédients ou partie de ces ingrédients. <br> 
+			</p>
+			
+			<a href="{{ url_for('vos_impressions') }}" title="Formulaire de satisfaction : Laissez-nous savoir votre expérience de visite du site"><img id="formulaire2" src="../static/img/feedback_1.png"/></a>
+        
+		</header><br><br>
+			
+		<div class="text-service-aide">
+			<div class="carousel-wrap">
+				<h3 class="carousel-title">Recettes selon les régions</h3>
+				<button class="carousel-btn carousel-prev" type="button" aria-label="Précédent">&#10094;</button>
+				<div id="regions-carousel" class="carousel">
+					<div class="carousel-track">
+						{% for item in carousel_images %}
+						<a class="carousel-item" href="{{ url_for('region_' ~ item.slug) }}" title="Voir {{ item.display }}">
+							<img src="{{ item.url }}" alt="{{ item.display }}" loading="lazy">
+							<div class="carousel-overlay">{{ item.display }}</div>
+						</a>
+						{% endfor %}
+					</div>
+				</div>
+				<button class="carousel-btn carousel-next" type="button" aria-label="Suivant">&#10095;</button>
+			</div>
+		</div>
+
+		<div class="text-service-aide">
+			<h2>Cuisine Québécoise</h2>
+		</div>
+
+		<div class="text-service-aide">
+
+			<form action="{{ url_for('index') }}" method="POST">
+				<div id="input-container">
+					<input type="text" name="ingredient" placeholder="Ex : Oignon">
+				</div>
+				
+				<div class="container">	
+					<div class="add-button" onclick="addInput()">Ajouter un ingrédient</div>
+					<div class="suppress-button" onclick="deleteFn()">Supprimer dernière case</div>
+					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
+				</div>
+			</form>
+		</div>	
+
+		<!--================  Audit des Ingrédiens           ==========================--->
+		
+		<div type="text" class="reponse_assistant" name="reponse_assistant">
+			<h2>l'Audit des ingrédients</h2>
+			{% if liste_des_ingrediens %}<br>		
+				<div class="audit_ingrediens">
+					{{ current_date }} : {{ liste_des_ingrediens }}    
+				</div><br>
+			{% else %}
+				<div>
+					<br>Aucun ingrédiens disponibles pour le moment.<br>
+				</div><br>	
+			{% endif %}
+		</div><br>
+
+		<!--================  FIN DE L'Audit des Ingrédiens  ==========================--->
+
+
+		<!--================  Résultat généré par SPONACULAR  =====================--->	
+		{% if result_sponacular %} <br>
+		<div class="reponse_assistant">
+			<h2>Recettes prevenants de sponacular</h2>
+			<div>	
+				{{ result_sponacular }}
+			</div><br>
+		</div><br>
+		{% endif %}	
+		<!--================  FIN DU Résultat généré par SPONACULAR  ===========--->	
+
+
+		<!--================  Résultat généré par EDAMAM  =====================--->	
+		{% if result_edamam %} <br>
+		<div class="reponse_assistant">
+			<h2>Recettes prevenants de edamam</h2>
+			<div>	
+				{{ result_edamam }}
+			</div><br>
+		</div><br>
+		{% endif %}		
+		<!--================  FIN DU Résultat généré par EDAMAM  ===========--->
+		
+
+		<!--================  Résultat généré par THE MEAL DB  =====================--->	
+		{% if result_TheMealDB %} <br>
+		<div class="reponse_assistant">
+			<h2>Recettes prevenants de TheMealDB</h2>
+			<div>	
+				{{ result_TheMealDB }}
+			</div><br>		
+		</div><br>
+		{% endif %}	
+		<!--================  FIN DU Résultat généré par THE MEAL DB  ===========--->	
+
+
+		<!--================  Résultat généré par RECIPE PUPPY  ============--->	
+		{% if result_RecipePuppy %} <br>
+		<div class="reponse_assistant">
+			<h2>Résultats générés par Recipe puppy</h2>
+			<div>	
+				{{ result_PecipePuppy }}
+			</div><br>
+		</div><br>
+		{% endif %}
+		<!--================  FIN DU Résultat généré par RECIPE PUPPY  =======--->
+
+
+		<!--================  Résultat généré par OPEN RECIPES  ============--->	
+		{% if result_OpenRecipe %} <br>
+		<div class="reponse_assistant">
+			<h2>Résultats générés par OpenRecipe</h2>
+			<div>	
+				{{ result_OpenRecipe }}
+			</div><br>
+		</div><br>
+		{% endif %}
+		<!--================  FIN DU Résultat généré par OPEN RECIPES  =======--->
+
+		<!--================  Résultat généré par EPICURIOUS  ============--->	
+		{% if result_Epicurious %} <br>
+		<div class="reponse_assistant">
+			<h2>Résultats générés par Epicurious</h2>
+			<div>	
+				{{ result_Epicurious }}
+			</div><br>
+		</div><br>
+		{% endif %}
+		<!--================  FIN DU Résultat généré par EPICURIOUS  =======--->
+
+		<!--================  Résultat généré par cuisine libre  =================--->	
+		{% if recipes_cuisinelibre %}
+		<div type="text" class="reponse_assistant" name="reponse_assistant">
+			<h2>Recettes provenant de Cuisine Libre.org</h2>
+				<ol>
+				{% for recipe_cl in recipes_cuisinelibre %}
+					<li>
+						<div class="une_recette">
+							<a href="{{ recipe_cl['url'] }}"><img src="{{ recipe_cl['url_image'] }}" alt="Image de la recette" style="width:400px; height:200px; display:block; margin-left: auto; margin-right: auto; margin-bottom:10px"></a>
+							<strong>{{ recipe_cl['recette']['Titre'] }}</strong>
+							<p><strong>Nombre de personnes :</strong> {{ recipe_cl['recette']['Nombre_de_personnes'] }}</p>
+							<p><strong>Durée de préparation :</strong> {{ recipe_cl['recette']['Duree_preparation'] }}</p>
+							<p><strong>Durée de cuisson :</strong> {{ recipe_cl['recette']['Duree_cuisson'] or 'N/A' }}</p>
+							
+							<p><strong>Ingrédients :</strong> {{ recipe_cl['recette']['Ingrediens'] | join(', ') }}</p>
+							
+							<h3>Étapes :</h3>
+							<ol>
+								{% for step in recipe_cl['recette']['Etapes'] %}
+									<li>{{ step }}</li>
+								{% endfor %}    
+							</ol>
+						</div>
+					</li>                 <br><br> <!-- Pour séparer les recettes entre elles pour un m meilleur visuel -->
+				{% endfor %}
+				</ol>
+		</div><br><br>
+		{% endif %}
+		<!--================  FIN DE Recette provenant de CUISINE-LIBRE  ==================================--->
+
+		
+		<!--================  Résultat généré par l'IA           ==================================--->	
+
+        <div class="reponse_assistant">
+            <h2>Résultats générés par l'IA</h2>
+
+                {% if results_IA %} <br>
+                    {% for recette in results_IA %}
+						<div class="une_recette">
+							<div class="col-md-4">
+								<div class="card mb-4 shadow-sm">
+									{% if recette["Image"] %}
+										<img src="{{ recette['Image'] }}" class="dfcard-img-top" alt="Image de {{ recette['Titre de la recette'] }}" style="max-width:400px; height:auto; border-radius:10px; display:block; margin-bottom:10px">
+									{% else %}
+										<img src="static/img/default.jpg" class="card-img-top" alt="Image par défaut" style="max-width:400px; height:auto; border-radius:10px; display:block; margin-left: auto; margin-right: auto; margin-bottom:10px">
+									{% endif %}
+									<div class="card-body">
+										<h5 class="card-title">{{ recette["Titre de la recette"] }}</h5>
+										<p class="card-text"><strong>Temps de cuisson :</strong> {{ recette["Temps de cuisson"] }} = (Durée de Préparation + Durée de Cuisson)</p>
+										<p class="card-text"><strong>Nombre de personnes : </strong> {{ recette["Nombre de personnes"] }}</p>
+										<p class="card-text"><strong>Durée de préparation : </strong> {{ recette["Durée de préparation"] }}</p>
+										<p class="card-text"><strong>Durée de cuisson : </strong> {{ recette["Durée de cuisson"] }}</p>
+										<p class="card-text"><strong>Ingrédients : </strong></p>
+										<ul>
+											{% for ingrédient in recette["Liste des ingrédients"] %}
+												<li>{{ ingrédient }}</li>
+											{% endfor %}
+										</ul>
+										<p class="card-text"><strong>Étapes de préparation :</strong></p>
+										<ol>
+											{% for étape in recette["Les étapes de préparation"] %}
+												<li>{{ étape }}</li>
+											{% endfor %}
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+                    {% endfor %}
+                    
+                {% else %}
+                    <div>
+                        <br>Aucune recette à afficher.<br>
+                    </div>
+                {% endif %}
+        </div><br><br>
+		
+		<!--================  FIN DE Résultat généré par l'IA   ==================================--->	
+
+		
+		<!--===================  Les différents sites  ===========================================--->
+		
+		<div class="text-service-aide">    
+			<div class="les_sites">
+				<!--===============  Sites Scrappés        ===========================================--->
+				<h2> Quelques sites de recettes </h2>
+					<a href="https://www.cuisine-libre.org/recettes" target="_blank">cuisine-libre.org</a><br><br>
+					<a href="https://www.marmiton.org/" target="_blank">Marmiton.org</a><br><br>
+					<a href="https://tasty.co/" target="_blank">tasty.co</a><br><br>
+					<a href="https://www.epicurious.com/" target="_blank">Épicurious.com</a><br><br>
+
+				<!--===============  FIN DE Sites Scrappés ===========================================--->
+				
+				<!--===============  Sites JSON ONline     ===========================================--->
+				
+					<a href="https://www.themealdb.com/">themealdb.com</a>
+				
+				<!--===============  FIN DE Sites JSON ONline ===========================================--->	
+			</div>
+
+			<div class="les_utilitaires">
+				<h2> Des utilitaires </h2>
+				<a href="https://www.cuisine-libre.org/saison" target="_blank">Visuel sur quelques Ingrédiens usuels de la cuisine</a><br><br>
+				<a href="https://www.cuisine-libre.org/familles-alimentaires" target="_blank">Les familles d'aliments</a><br><br>
+				<a href="https://www.cuisine-libre.org/ingredients" target="_blank">Ingrédiens par famille avec les recettes</a>
+			</div>
+
+		</div><br>
+
+		<!--===============  Proposes-moi des recettes quelconques ===========================================--->
+		
+		<div class="text-service-aide">
+			Proposes-moi des recettes de                                                                      <br>
+			<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br> 
+			que je peux faire en                                                                              <br>
+			<input type="text" name="temps_proposition_de_recette" placeholder="Ex : 10"> min
+		</div>
+
+		<div class="text-service-aide">
+			<h2>recettes quelconques</h2>
+		</div>
+
+		<!--===============  FIN DE Sites Scrappés ===========================================--->
+
+		<div class="text-service-aide">
+			Les différents types de régimes
+		</div>
+
+		<div class="text-service-aide">
+			Meilleurs et Pires aliments
+		</div>
+
+		<br><br><br>
+        
+		<!--======================== Le pied de page ===========================================================-->
+		<footer>
+			Venez visiter le site et surtout, n'oubliez pas de nous laisser vos commentaires pour pouvoir l'améliorer | Tout Droits Réservés |
+		</footer>
+		
+		<script src="/static/js/data_chat.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	   	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+	
+		<!--======================== Le Caroussel du Défilement des Cuisines Africaines - Italiennes ... ===========================================================-->
+		<script>
+			(function(){
+			const track = document.querySelector('#regions-carousel .carousel-track');
+			const prev = document.querySelector('.carousel-prev');
+			const next = document.querySelector('.carousel-next');
+
+			function step() {
+				const card = track.querySelector('.carousel-item');
+				const w = card ? card.getBoundingClientRect().width + 16 : 300; // élément + gap
+				return Math.max(220, Math.min(w, 480));
+			}
+
+			prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+			next.addEventListener('click', () => track.scrollBy({ left:  step(), behavior: 'smooth' }));
+			})();
+		</script>
+
+	
+	
+	
+	</body>
+</html>

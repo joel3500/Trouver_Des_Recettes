@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recettes de Cuisine</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="bg-danger text-white text-center py-4">
+        <h1>Recettes de Cuisine</h1>
+    </header>
+    <main class="container my-4">
+        <div class="row">
+            {% if recettes %}
+                {% for recette in recettes %}
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            {% if recette["Image"] %}
+                                <img src="{{ recette['Image'] }}" class="card-img-top" alt="Image de {{ recette['Titre de la recette'] }}">
+                            {% else %}
+                                <img src="static/img/default.jpg" class="card-img-top" alt="Image par défaut">
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ recette["Titre de la recette"] }}</h5>
+                                <p class="card-text"><strong>Temps de cuisson :</strong> {{ recette["Temps de cuisson"] }}</p>
+                                <p class="card-text"><strong>Nombre de personnes :</strong> {{ recette["Nombre de personnes prévues pour les portions présentées"] }}</p>
+                                <p class="card-text"><strong>Durée de préparation :</strong> {{ recette["Durée de préparation"] }}</p>
+                                <p class="card-text"><strong>Durée de cuisson :</strong> {{ recette["Durée de cuisson"] }}</p>
+                                <p class="card-text"><strong>Ingrédients :</strong></p>
+                                <ul>
+                                    {% for ingrédient in recette["Liste des ingrédients"] %}
+                                        <li>{{ ingrédient }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <p class="card-text"><strong>Étapes de préparation :</strong></p>
+                                <ol>
+                                    {% for étape in recette["Les étapes de préparation"] %}
+                                        <li>{{ étape }}</li>
+                                    {% endfor %}
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Aucune recette à afficher.</p>
+            {% endif %}
+        </div><br><br><br>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Recettes de Cuisine</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

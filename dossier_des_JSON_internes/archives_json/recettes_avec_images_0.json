@@ -1,0 +1,41 @@
+{
+    "Recette 1": {
+        "Titre de la recette": "Poivrons farcis à la viande",
+        "Temps de cuisson": "1 heure",
+        "Nombre de personnes": 4,
+        "Durée de préparation": "30 minutes",
+        "Durée de cuisson": "1 heure",
+        "Liste des ingrédients": [
+            "4 poivrons",
+            "2 oignons",
+            "500g de viande hachée"
+        ],
+        "Les étapes de préparation": [
+            "1. Préchauffer le four à 180°C (Th. 6).",
+            "2. Couper le chapeau des poivrons, enlever les graines et les rincer.",
+            "3. Émincer les oignons et les faire revenir dans une poêle chaude avec un peu d'huile. Ajouter la viande hachée et cuire pendant 10 minutes.",
+            "4. Remplir les poivrons avec le mélange de viande hachée et d'oignons, puis remettre les chapeaux.",
+            "5. Placer les poivrons farcis dans un plat allant au four et cuire pendant 1 heure. Servir chaud."
+        ],
+        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-qIPRfOjetRHfLkPLkbIZAwJM/user-Osm9mEpbFIECwntrrju9aF9I/img-dter2FFPROLRVUhwUZBvEluh.png?st=2025-01-09T00%3A37%3A24Z&se=2025-01-09T02%3A37%3A24Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-01-09T00%3A42%3A38Z&ske=2025-01-10T00%3A42%3A38Z&sks=b&skv=2024-08-04&sig=nq9B2K9oKr0noxKzy9QkT3Ejw0YjkH9z7be30/JmHnE%3D"
+    },
+    "Recette 2": {
+        "Titre de la recette": "Stir Fry de viande avec poivrons et oignons",
+        "Temps de cuisson": "20 minutes",
+        "Nombre de personnes": 4,
+        "Durée de préparation": "10 minutes",
+        "Durée de cuisson": "20 minutes",
+        "Liste des ingrédients": [
+            "2 poivrons",
+            "2 oignons",
+            "500g de viande de bœuf hachée"
+        ],
+        "Les étapes de préparation": [
+            "1. Émincer les poivrons et les oignons.",
+            "2. Faire chauffer de l'huile dans une poêle à feu moyen. Ajouter les oignons et cuire jusqu'à ce qu'ils soient dorés.",
+            "3. Ajouter les poivrons et la viande de bœuf hachée. Cuire jusqu'à ce que la viande soit dorée et que les poivrons soient tendres.",
+            "4. Servir chaud avec du riz ou des nouilles si désiré."
+        ],
+        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-qIPRfOjetRHfLkPLkbIZAwJM/user-Osm9mEpbFIECwntrrju9aF9I/img-EJZ9O7tGwXKDn1KilzT3Gvoy.png?st=2025-01-09T00%3A37%3A34Z&se=2025-01-09T02%3A37%3A34Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-01-09T00%3A19%3A38Z&ske=2025-01-10T00%3A19%3A38Z&sks=b&skv=2024-08-04&sig=W6P3Fp4zHyoEbhngcY5dacXAMeo8xDvya50s/aTKEmc%3D"
+    }
+}

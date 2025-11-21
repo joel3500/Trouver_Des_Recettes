@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Entete de la page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Idée de Menu ce soir : Un outil proposant des Menu avec ce que vous avez en ce moment à la maison | Joel Sandé</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/design_find_recettes.css"/>
+		<script src="../static/js/data_chat.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Sofia|Trirong|Audiowide">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&effect=fire|neon|outline|emboss|shadow-multiple"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+		<a href="{{ url_for('vos_impressions') }}" title="Formulaire de satisfaction : Laissez-nous savoir votre expérience de visite du site"><img id="formulaire2" src="/static/img/feedback_1.png"/></a>
+	</head>
+
+	<!--=================    Corps de la page   =======================-->
+	<body>
+		<header>
+			<h2> TROUVER DES RECETTES </h2>
+			<p class="oublie"> Idée de Menu pour ce soir  <br>
+							   Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br>
+							   Un outil proposant des RECETTES avec ce que vous avez en ce moment à la maison. 
+			</p>
+			<a href="{{ url_for('vos_impressions') }}" title="Formulaire de satisfaction : Laissez-nous savoir votre expérience de visite du site"><img id="formulaire2" src="../static/img/feedback_1.png"/></a>
+        </header>
+
+        <div class="text-service-aide">
+				<p>
+					Ce petit site a pour objectif de TROUVER DES MENUS, RECETTES DE CUISINE avec les ingrédients que vous avez à la maison. <br><br>
+					Rentrez les ingrédients que vous avez, et l’application vous proposera une liste de menus possibles. Des menus qui contiennent ces ingrédients ou partie de ces ingrédients. <br>
+				</p>
+
+				<form action="{{ url_for('index') }}" method="POST">
+					<div id="input-container">
+						<input type="text" name="ingredient" placeholder="Ex : Oignon">
+					</div>
+					
+					<div class="container">	
+						<div class="add-button" onclick="addInput()">Ajouter un ingrédient</div>
+						<div class="suppress-button" onclick="deleteFn()">Supprimer dernière case</div>
+						<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
+					</div>
+				</form>
+
+			<!--===================  Les bouttons administrateurs ==========================--->
+
+			<div class="les_buttons">
+				<button type="button" title="Ce boutton permettra de voir la liste des Ingrédiens généralement soumis à l'App, avec les dates et heures concernées."><a href="{{ url_for('index_admin') }}">Index Administrateur</a></button><br>
+				<button type="button" title="Ce boutton permettra de voir la liste des Ingrédiens généralement soumis à l'App, avec les dates et heures concernées."><a href="{{ url_for('faire_le_suivis') }}">Liste des requêtes</a></button><br>
+				<button type="button" title="SimilarWeb pour observer à temps réel le traffic sur le site."><a href="{{ url_for('similarweb_pdf') }}" target="_blank">SimilarWeb</a></button><br>
+				<button type="button" title="Ce boutton permettra de rouler l'IA uniquement."><a href="{{ url_for('index_IA') }}" target="_blank">Rouler l'IA uniquement</a></button><br>
+				<button type="button" title="Ce boutton permet de tout rescrapper au complet les sites [ Openrecipes - AllRecipes.com - Marmiton.org - Tasty.co - Epicurious.com ] pour produire les fichiers JSON internes." class="tout_rescrapper"><a href="{{ url_for('tout_rescrapper') }}">Tout Rescrapper</a></button><br>
+				<button type="button" title="Ce boutton permet de récupérer toutes les données JSON en ligne provenants des sites [ Spoonacular - Edamam TheMealDB - RecipePuppy ] pour produire les fichiers JSON internes." class="tout_rescrapper"><a href="{{ url_for('tout_json_online_recuperer') }}">Tout JSON online recupérer</a></button><br>
+			</div>
+
+			<!--===================  FIN des bouttons administrateurs ==========================--->
+		</div>
+        <div class="text-service-aide">
+            <h2>Document PDF</h2>
+            <iframe src="{{ url_for('Similarweb') }}" width="100%" height="600px"></iframe>
+        </div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<footer>
+			Venez visiter le site et surtout, n'oubliez pas de nous laisser vos commentaires pour pouvoir l'améliorer | Tout Droits Réservés |
+		</footer>
+		<script src="/static/js/data_chat.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	   	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>		
+	</body>
+</html>

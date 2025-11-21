@@ -1,0 +1,62 @@
+{
+  "fichier": "meilleurs_et_pires_aliments.json",
+  "derniere_mise_a_jour": "2025-11-20",
+  "avertissement": "Informations générales, pas un avis médical.",
+  "organes": [
+    {
+      "organe": "Yeux",
+      "meilleurs_aliments": ["Carotte", "Patate douce", "Épinards", "Kale", "Poissons gras (saumon, maquereau)", "Œufs", "Agrumes", "Amandes"],
+      "pires_aliments": ["Boissons sucrées", "Excès d’alcool", "Fritures répétées", "Excès de sodium", "Tabac (non alimentaire mais à éviter)"]
+    },
+    {
+      "organe": "Cœur",
+      "meilleurs_aliments": ["Poissons gras (oméga-3)", "Huile d’olive", "Noix/noisettes", "Légumineuses", "Avoine/orge", "Baies", "Légumes verts"],
+      "pires_aliments": ["Charcuteries", "Graisses trans", "Sucres ajoutés", "Excès de sel", "Farines raffinées"]
+    },
+    {
+      "organe": "Foie",
+      "meilleurs_aliments": ["Café (modéré)", "Légumes crucifères (brocoli, chou)", "Ail", "Thé vert", "Céréales complètes", "Lentilles"],
+      "pires_aliments": ["Alcool", "Sucres/fructose excessifs", "Fast-food et fritures", "Suppléments/herbes hépatotoxiques (abus)"]
+    },
+    {
+      "organe": "Reins",
+      "meilleurs_aliments": ["Eau (hydratation)", "Fruits/légumes variés", "Poissons", "Céréales complètes (selon bilan)", "Huiles non saturées"],
+      "pires_aliments": ["Sodium élevé", "Excès de protéines animales (si insuffisance rénale)", "Boissons énergétiques", "Ultra-transformés riches en phosphates"]
+    },
+    {
+      "organe": "Cerveau",
+      "meilleurs_aliments": ["Poissons gras (DHA/EPA)", "Noix", "Fruits rouges (polyphénols)", "Huile d’olive", "Légumes verts", "Grains entiers", "Myrtilles – riches en flavonoïde"],
+      "pires_aliments": ["Sucres rapides", "Alcool excessif", "Graisses trans", "Ultra-transformés"]
+    },
+    {
+      "organe": "Intestin (microbiote)",
+      "meilleurs_aliments": ["Fibres (fruits/légumes)", "Légumineuses", "Céréales complètes", "Aliments fermentés (yaourt, kéfir, choucroute)", "Prébiotiques (ail, oignon, banane)"],
+      "pires_aliments": ["Édulcorants certains (abus)", "Alcool", "Excès d’ultra-transformés", "Graisses trans"]
+    },
+    {
+      "organe": "Estomac",
+      "meilleurs_aliments": ["Repas fractionnés/peu épicés si sensibilité", "Avoine", "Bananes", "Riz", "Gingembre (nausées)"],
+      "pires_aliments": ["Alcool", "Piments forts (si reflux)", "Café (excès)", "Agrumes (si reflux)", "Fritures"]
+    },
+    {
+      "organe": "Poumons",
+      "meilleurs_aliments": ["Fruits/ légumes riches en antioxydants", "Poissons gras", "Noix", "Thé vert"],
+      "pires_aliments": ["Tabac (non alimentaire)", "Polluants de cuisson (huile brûlée)", "Excès de sel (rétention)"]
+    },
+    {
+      "organe": "Peau",
+      "meilleurs_aliments": ["Eau (hydratation)", "Fruits et légumes colorés", "Poissons gras", "Noix/graines (vit. E)", "Tomates (lycopène)"],
+      "pires_aliments": ["Sucres élevés (glycation)", "Alcool", "Carences en graisses essentielles"]
+    },
+    {
+      "organe": "Os/Articulations",
+      "meilleurs_aliments": ["Produits laitiers/alternatives enrichies (calcium)", "Poissons avec arêtes (sardines)", "Légumes verts", "Vitamine D (poissons/œufs)", "Noix (magnésium)"],
+      "pires_aliments": ["Boissons sucrées (colas: phosphore)", "Alcool", "Excès de sel"]
+    },
+    {
+      "organe": "Pancréas (glycémie)",
+      "meilleurs_aliments": ["Céréales complètes", "Légumineuses", "Fruits entiers", "Protéines maigres", "Gras insaturés"],
+      "pires_aliments": ["Boissons sucrées", "Sucres raffinés", "Portions massives à IG élevé", "Graisses trans"]
+    }
+  ]
+}

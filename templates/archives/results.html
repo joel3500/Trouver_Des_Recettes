@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de Recherche</title>
+</head>
+<body>
+    <h1>Résultats pour les ingrédients : {{ search_query }}</h1>
+    {% if recipes %}
+        <ul>
+        {% for recipe in recipes %}
+            <li>
+                <h2>{{ recipe['titre'] }}</h2>
+                <a href="{{ recipe['url'] }}"><img src="{{ recipe['url_image'] }}" alt="Image de la recette" style="width:200px;"></a>
+                <p><strong>Nombre de personnes :</strong> {{ recipe['recette']['Nombre_de_personnes'] }}</p>
+                <p><strong>Durée de préparation :</strong> {{ recipe['recette']['Infos']['duree_preparation'] }}</p>
+                <p><strong>Durée de cuisson :</strong> {{ recipe['recette']['Infos']['duree_cuisson'] or 'N/A' }}</p>
+                <p><strong>Ingrédients :</strong> {{ recipe['recette']['Ingrediens'] | join(', ') }}</p>
+                <h3>Étapes :</h3>
+                <ol>
+                {% for step in recipe['recette']['Etapes'] %}
+                    <li>{{ step }}</li>
+                {% endfor %}
+                </ol>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucune recette trouvée avec ces ingrédients.</p>
+    {% endif %}
+    <a href="/">Faire une nouvelle recherche</a>
+</body>
+</html>
