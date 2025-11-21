@@ -14,7 +14,6 @@ import openai
 from openai import OpenAI
 
 from flask_cors import CORS
-from sqlalchemy import null
 from dotenv import load_dotenv
 
 from pathlib import Path
