@@ -322,7 +322,7 @@ def obtenir_recettes_quelconques(proposition_recette_quelconque, temps_propositi
     client = get_openai_client()
     prompt = (
         f"Proposes-moi quelques recettes de {proposition_recette_quelconque} \n" 
-        "que je peux faire en {temps_proposition_recette_quelconque} \n"
+        f"que je peux faire en {temps_proposition_recette_quelconque} \n"
         "Pour chacune des recettes produis les champs suivants : \n"
         "- Titre de la recette \n"
         "- Temps de cuisson \n"
@@ -789,7 +789,7 @@ def similarweb_pdf():
 @main.route("/formulaire_de_satisfaction")                                          
 def formulaire_de_satisfaction():                                       
     # Chemin du vers le formulaire web
-    url = "https://forms.office.com/pages/designpagev2.aspx?origin=OfficeDotCom&lang=fr-CA&sessionid=167640ce-fbad-4f19-8407-4b8021e4c7da&route=CreateCenter&subpage=design&id=sXh5yUy9tUSbuyAhXv32Ebw-rZdK0KJLtTpSvuZeICJUOFFSNVVGNjc4RkEwM0tETk1QUDBOMVhPOS4u&topview=Preview"
+    url = "https://docs.google.com/forms/d/e/1FAIpQLSdsDb-UXxTRrVsxzoOnCf6rMfjUPmXeogcu63TUu4EkJasOYw/viewform"
     return redirect(url)
 
 
