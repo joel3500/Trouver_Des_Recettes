@@ -92,7 +92,7 @@ def build_carousel_items():
     return items
 
 
-def register_region_routes(app):
+def register_region_routes(main):
     """
     Crée dynamiquement une route par image:
       'cuisine_africaine.jpeg' -> /cuisine_africaine  (endpoint: region_cuisine_africaine)
@@ -112,8 +112,8 @@ def register_region_routes(app):
             )
 
         # Évite de redéclarer si code rechargé en debug
-        if endpoint_name not in app.view_functions:
-            app.add_url_rule(f"/{slug}", endpoint=endpoint_name, view_func=_view)
+        if endpoint_name not in main.view_functions:
+            main.add_url_rule(f"/{slug}", endpoint=endpoint_name, view_func=_view)
 
 
 # Récupérer la date actuelle
