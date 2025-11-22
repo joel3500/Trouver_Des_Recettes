@@ -485,9 +485,9 @@ def charger_recettes():
 #from tout_rescrapper import *
 #from tout_json_online_recuperer import *
 
-@main.route("/healthz")  # ON met cette route lorsque l'objet ne s'appelle pas app.py
-def healthz():
-    return "ok", 200
+# @main.route("/healthz")  # ON met cette route lorsque l'objet ne s'appelle pas app.py
+# def healthz():
+#   return "ok", 200
 
 
 """
