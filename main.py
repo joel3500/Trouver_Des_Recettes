@@ -37,7 +37,7 @@ load_dotenv()
 key =  os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 
-client = OpenAI()
+client = OpenAI(api_key=key)
 
 #===========================================================================================#
 # chemins robustes, indépendants du cwd
