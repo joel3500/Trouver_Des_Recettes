@@ -237,7 +237,7 @@
 		background-color: orange;  /* orange plus FONCÉ pour dire de REFFLÉCHIR À 2 FOIS avant de clicker ce boutton. */
 	}
 
-	.les_sites, .les_utilitaires
+	.les_sites, .les_utilitaires, .propose_moi
 	{	
 		margin-top : 30px;
 		width : 100%;

@@ -231,7 +231,7 @@
 											</ul>
 										<p class="card-text"><strong>Étapes de préparation :</strong></p>
 										<ol>
-											{% for étape in recette["Les étapes de préparation"] %}
+											{% for étape in recette["Étapes de préparation"] %}
 												<li>{{ étape }}</li>
 											{% endfor %}
 										</ol>
@@ -283,13 +283,15 @@
 		<!--===============  Proposes-moi des recettes quelconques ===========================================--->
 		
 		<div class="text-service-aide">
-			<form action="{{ url_for('propose_moi_une_recette') }}" method="POST">
-				Proposes-moi des recettes de	
-				<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br>
-				que je peux faire en <br>
-				<input type="text" name="temps_proposition_recette_quelconque" placeholder="Ex : 10"> min
-				<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
-			</form>
+			<div class="propose_moi">
+				<form action="{{ url_for('propose_moi_une_recette') }}" method="POST">
+					Proposes-moi des recettes de	
+					<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br>
+					que je peux faire en <br>
+					<input type="text" name="temps_proposition_recette_quelconque" placeholder="Ex : 10"> min
+					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
+				</form>
+			</div>
 		</div>
 
 		<div class="text-service-aide">

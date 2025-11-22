@@ -256,7 +256,7 @@ def obtenir_recettes(liste_ingredients, nombre_recettes):
         "- Durée de préparation \n"
         "- Durée de cuisson \n"
         "- Liste des ingrédients (avec un apport energétique correspondant en face de chaque ingrédient) \n"
-        "- Les étapes de préparation \n"
+        "- Étapes de préparation \n"
         "- Image : None  \n"
         "NE DONNE PAS DE RÉPONSES EN DEHORS DU JSON \n"
         "NE DONNE PAS DE RÉPONSES INCOMPLÈTES. N'AJOUTE AUCUN COMMENTAIRE après le ``` final"
@@ -315,7 +315,7 @@ def obtenir_recettes_quelconques(proposition_recette_quelconque, temps_propositi
         "- Durée de préparation \n"
         "- Durée de cuisson \n"
         "- Liste des ingrédients (avec un apport energétique correspondant en face de chaque ingrédient) \n"
-        "- Les étapes de préparation \n"
+        "- Étapes de préparation \n"
         "- Image : None  \n"
         "NE DONNE PAS DE RÉPONSES EN DEHORS DU JSON \n"
         "NE DONNE PAS DE RÉPONSES INCOMPLÈTES. N'AJOUTE AUCUN COMMENTAIRE après le ``` final"
@@ -404,42 +404,60 @@ def enregistrer_recettes(recettes, fichier_sortie):
 # Charger les recettes depuis le fichier JSON au démarrage de l'application.
 # Ajoute une variable modifie = False au début de la boucle et écris le JSON si une image a été ajoutée.
 def charger_recettes():
-    """Charge les recettes générées par l’IA (TRANSIT_IA_FILE) et complète l'image si manquante."""
     try:
-        with open(TRANSIT_IA_FILE, 'r', encoding='utf-8') as f:
+        with TRANSIT_IA_FILE.open("r", encoding="utf-8") as f:
             data = json.load(f)
-
-        modifie = False
-        for index, element in enumerate(data):
-            print(f"Index {index}:")
-            for cle, valeur in element.items():
-                if isinstance(valeur, list):
-                    print(f"  {cle}:")
-                    for item in valeur:
-                        print(f"    - {item}")
-                else:
-                    if cle == "Image" and (valeur in (None, "None", "", "null")):
-                        element[cle] = generer_image_recette(element["Titre de la recette"])
-                        modifie = True
-                        print('limage vient detre creéé ')
-                        # print(f"  {cle}: {element[cle]}") # pas besoin de l'imprimer. Ca nous gagnera du temps
-                    else:
-                        print(f"  {cle}: {valeur}")  # imprimer uniquement si quelque chose ne va pas.
-            print("\n")
-
-        # Si on a complété des images, on réécrit le fichier pour ne pas regénérer à chaque requête
-        if modifie:
-            with open(TRANSIT_IA_FILE, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
-
-        return data
-
     except FileNotFoundError:
-        print(f"Le fichier {TRANSIT_IA_FILE} n'a pas été trouvé.")
+        print(f"[charger_recettes] Fichier introuvable: {TRANSIT_IA_FILE}")
         return []
     except json.JSONDecodeError as e:
-        print(f"Erreur de décodage JSON : {e}")
+        print(f"[charger_recettes] JSON invalide: {e}")
         return []
+
+    # Normaliser la structure: on veut une liste de dicts
+    if isinstance(data, dict):
+        # Cas 1: le dict contient une clé 'recettes' qui est une liste
+        if "recettes" in data and isinstance(data["recettes"], list):
+            data = data["recettes"]
+        else:
+            # Cas 2: un seul objet recette au lieu d'une liste
+            data = [data]
+    elif not isinstance(data, list):
+        print(f"[charger_recettes] Format inattendu ({type(data).__name__}), on retourne liste vide.")
+        return []
+
+    recettes = []
+    modifie = False
+
+    for idx, element in enumerate(data):
+        if not isinstance(element, dict):
+            print(f"[charger_recettes] Entrée ignorée à l'index {idx}: type {type(element).__name__}")
+            continue
+
+        # Compléter l'image si absente / vide
+        img = element.get("Image")
+        if img in (None, "", "None", "null"):
+            # Sécuriser le titre
+            titre = element.get("Titre de la recette") or element.get("titre") or "Recette"
+            try:
+                element["Image"] = generer_image_recette(titre)  # ta fonction existante
+                modifie = True
+                print(f"[charger_recettes] Image générée pour: {titre}")
+            except Exception as e:
+                print(f"[charger_recettes] Génération image échouée pour '{titre}': {e}")
+
+        recettes.append(element)
+
+    # Si on a enrichi le JSON, on réécrit (facultatif)
+    if modifie:
+        try:
+            with TRANSIT_IA_FILE.open("w", encoding="utf-8") as f:
+                json.dump(recettes, f, ensure_ascii=False, indent=4)
+            print("[charger_recettes] Fichier mis à jour avec les nouvelles images.")
+        except Exception as e:
+            print(f"[charger_recettes] Impossible d’écrire {TRANSIT_IA_FILE}: {e}")
+
+    return recettes
 
 
 #===========================================================================================#
