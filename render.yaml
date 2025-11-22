@@ -13,4 +13,4 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: OPENAI_API_KEY   # valeur à définir dans l'UI Render (ne pas commiter la vraie clé)
-    healthCheckPath: /healthz
+    #healthCheckPath: /healthz
