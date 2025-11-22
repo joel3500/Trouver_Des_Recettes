@@ -4,10 +4,13 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn -w 2 -k gthread -t 120 -b 0.0.0.0:$PORT main_chemins_relatifs:app"
+    startCommand: "gunicorn -w 2 -k gthread -t 120 -b 0.0.0.0:$PORT main:app"
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: FLASK_ENV
         value: production
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: OPENAI_API_KEY   # valeur à définir dans l'UI Render (ne pas commiter la vraie clé)
     healthCheckPath: /healthz
