@@ -34,10 +34,23 @@ CORS(main)
 # Configuration des clés API
 
 load_dotenv()
-key =  os.getenv("OPENAI_API_KEY")
-openai.api_key = key
+from openai import OpenAI, __version__ as openai_version
 
-client = OpenAI(api_key=key)
+_openai_client = None
+
+def get_openai_client(): # Dans ce Projet-ci La clé refuse de s'importer, d'oèu l'usage de cette fonction utilitaire
+    """Crée le client OpenAI une seule fois, si la clé est présente."""
+    global _openai_client
+    if _openai_client is None:
+        api_key = (os.getenv("OPENAI_API_KEY") or "").strip()
+        if not api_key:
+            # On n'explose plus à l'import: l'erreur sera claire à l'appel
+            raise RuntimeError(
+                "OPENAI_API_KEY manquante. "
+                "Définis-la dans Render > Environment."
+            )
+        _openai_client = OpenAI(api_key=api_key)
+    return _openai_client
 
 #===========================================================================================#
 # chemins robustes, indépendants du cwd
@@ -247,6 +260,7 @@ def obtenir_recettes(liste_ingredients, nombre_recettes):
     Returns:
         list: Liste de dictionnaires contenant les détails des recettes.
     """
+    client = get_openai_client()
     prompt = (
         f"Trouve au moins {nombre_recettes} recettes de cuisine contenant un ou plusieurs des ingrédients suivants : {', '.join(liste_ingredients)}.\n"
         "Pour chacune des recettes produis les champs suivants : \n"
@@ -305,6 +319,7 @@ def obtenir_recettes_quelconques(proposition_recette_quelconque, temps_propositi
     Returns:
         list: Liste de dictionnaires contenant les détails des recettes.
     """
+    client = get_openai_client()
     prompt = (
         f"Proposes-moi quelques recettes de {proposition_recette_quelconque} \n" 
         "que je peux faire en {temps_proposition_recette_quelconque} \n"
@@ -359,6 +374,7 @@ def generer_image_recette(titre_recette):
     Retourne prioritairement une URL http(s). Si l'API renvoie du base64,
     on retourne une Data-URL 'data:image/png;base64,...'. Aucun fichier local.
     """
+    client = get_openai_client()
     try:
         resp = client.images.generate(
             model="gpt-image-1",
@@ -472,6 +488,19 @@ def charger_recettes():
 @main.route("/healthz")  # ON met cette route lorsque l'objet ne s'appelle pas app.py
 def healthz():
     return "ok", 200
+
+
+"""
+    Une mini route de check (facultatif, super utile sur Render)
+    https://<mon-service>.onrender.com/_envcheck
+    OPENAI_API_KEY_present: true → OK
+    sinon, retourne dans Environment et corrige la clé (pas d’espaces avant/après, bonne casse).
+"""
+@main.route("/_envcheck")
+def _envcheck():
+    present = bool((os.getenv("OPENAI_API_KEY") or "").strip())
+    return {"OPENAI_API_KEY_present": present, "openai_version": openai_version}, 200
+
 
 @main.route("/", methods=['GET', 'POST'])                                          
 def index():
