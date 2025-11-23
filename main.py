@@ -307,7 +307,6 @@ def obtenir_recettes(liste_ingredients, nombre_recettes):
     print("Le type de retour de l'objet est un : ", type(recettes))
     return recettes
 
-
 def obtenir_recettes_quelconques(proposition_recette_quelconque, temps_proposition_recette_quelconque):
     """
     Génère des recettes à partir d'une liste d'ingrédients en utilisant ChatOpenAI.
@@ -367,7 +366,6 @@ def obtenir_recettes_quelconques(proposition_recette_quelconque, temps_propositi
     print("Le type de retour de l'objet est un : ", type(recettes))
     return recettes
 
-
 def generer_image_recette(titre_recette):
     """
     Génère une image pour une recette en utilisant l'API OpenAI Images.
@@ -375,14 +373,15 @@ def generer_image_recette(titre_recette):
     on retourne une Data-URL 'data:image/png;base64,...'. Aucun fichier local.
     """
     client = openai_client
-    
+    mon_modele = "dall-e-3" # ou "gpt-image-1"
+    mon_prompt = ( f"Belle photo appétissante du plat « {titre_recette} » ")
     try:
         resp = client.images.generate(
-            model="gpt-image-1",
-            prompt=f"Belle photo appétissante du plat « {titre_recette} », vue de dessus, fond clair, très nette.",
+            model = mon_modele,
+            prompt = mon_prompt,
             # tailles valides: "1024x1024", "1024x1536", "1536x1024", ou "auto"
-            size="1024x1024",
-            n=1,
+            size = "1024x1024",
+            n = 1,
         )
         item = resp.data[0]
 
@@ -671,8 +670,8 @@ def propose_moi_une_recette():
     if request.method == 'POST':
         # Récupérer la proposition_recette_quelconque envoyée par le formulaire
         proposition_recette_quelconque = request.form.get('proposition_recette_quelconque') 
-        temps_proposition_recette_quelconque = request.form.get('proposition_recette_quelconque')
-        print(proposition_recette_quelconque, " en ", temps_proposition_recette_quelconque, " min")
+        temps_proposition_recette_quelconque = request.form.get('temps_proposition_recette_quelconque')
+        print(proposition_recette_quelconque, " en ", temps_proposition_recette_quelconque, " minutes")
 
         # Récupérer la date actuelle
         current_date = date_de_requette()

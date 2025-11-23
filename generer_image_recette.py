@@ -12,7 +12,7 @@ from openai import OpenAI
 load_dotenv()
 
 API_KEY = (
-    os.getenv("OPENAI_API_KEY_1")
+    os.getenv("OPENAI_API_KEY")
     or os.getenv("OPENAI_API_KEY_2")
     or os.getenv("OPENAI_API_KEY_3")
 )
@@ -28,7 +28,7 @@ IMAGE_SIZE = os.getenv("OPENAI_IMAGE_SIZE", "1024x1024" or "1024x1536" or "1536x
 # valeurs valides: "1024x1024" | "1024x1536" | "1536x1024" | "auto"
 
 BASE_DIR = Path(__file__).resolve().parent
-IMAGES_DIR = BASE_DIR / "images_poissons"
+IMAGES_DIR = BASE_DIR / "mon_image"
 
 # ===================== Téléchargement/sauvegarde ===================== #
 
@@ -59,7 +59,7 @@ def _sanity_check_image_api():
     try:
         resp = client.images.generate(
             model=IMAGE_MODEL,
-            prompt="Foutou banane èa la sauce graine",
+            prompt="Couscous èa la sauce légume",
             size=IMAGE_SIZE,
             n=1
         )
@@ -77,3 +77,6 @@ def _sanity_check_image_api():
         print(f"[CHECK] OK via {kind}. Fichier: {IMAGES_DIR / ('0.jpg' if kind=='url' else '0.png')}")
     except Exception as e:
         print("[CHECK] Échec:", e)
+
+
+_sanity_check_image_api()
