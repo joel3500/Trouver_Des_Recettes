@@ -49,7 +49,6 @@
 		</div>
 
 		<div class="text-service-aide">
-
 			<form action="{{ url_for('index') }}" method="POST">
 				<div id="input-container">
 					<input type="text" name="ingredient" placeholder="Ex : Oignon">
@@ -61,6 +60,12 @@
 					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
 				</div>
 			</form>
+
+			<!-- Loader (animation de chargement "Génération en cours...") -->
+			<div class="js-loader" style="display:none; margin-top: 20px;">
+				<div class="spinner"></div>
+				<div>Génération en cours...</div>
+			</div>
 		</div>	
 
 		<!--================  Audit des Ingrédiens           ==========================--->
@@ -230,6 +235,12 @@
 				<input type="text" name="temps_proposition_recette_quelconque" placeholder="Ex : 10"> min
 				<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
 			</form>
+
+			<!-- Loader (animation de chargement "Génération en cours...") -->
+			<div class="js-loader" style="display:none; margin-top: 20px;">
+				<div class="spinner"></div>
+				<div>Génération en cours...</div>
+			</div>
 		</div>
 
 		<div class="text-service-aide">
