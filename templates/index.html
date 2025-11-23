@@ -50,8 +50,7 @@
 		</div>
 
 		<div class="text-service-aide">
-
-			<form action="{{ url_for('index') }}" method="POST">
+			<form action="{{ url_for('index') }}" method="POST" class="js-submit">
 				<div id="input-container">
 					<input type="text" name="ingredient" placeholder="Ex : Oignon">
 				</div>
@@ -62,6 +61,13 @@
 					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
 				</div>
 			</form>
+
+			<!-- Loader (animation de chargement "Génération en cours...") -->
+			<div class="js-loader" style="display:none; margin-top: 20px;">
+			<div class="spinner"></div>
+			<p>Génération en cours...</p>
+			</div>
+
 		</div>	
 
 		<!--================  Audit des Ingrédiens           ==========================--->
@@ -284,7 +290,7 @@
 		
 		<div class="text-service-aide">
 			<div class="propose_moi">
-				<form action="{{ url_for('propose_moi_une_recette') }}" method="POST">
+				<form action="{{ url_for('propose_moi_une_recette') }}" method="POST" class="js-submit">
 					Proposes-moi des recettes de	
 					<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br>
 					que je peux faire en <br>
@@ -292,6 +298,13 @@
 					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
 				</form>
 			</div>
+
+			<!-- Loader (animation de chargement "Génération en cours...") -->
+			<div class="js-loader" style="display:none; margin-top: 20px;">
+			<div class="spinner"></div>
+			<p>Génération en cours...</p>
+			</div>
+
 		</div>
 
 		<div class="text-service-aide">
@@ -603,6 +616,29 @@
 			}
 			})();
 		</script>
+
+		<script>
+			(function () {
+			const loaders = [...document.querySelectorAll('.js-loader')];
+			const show = () => loaders.forEach(el => el.style.display = 'block');
+			const hide = () => loaders.forEach(el => el.style.display = 'none');
+			document.addEventListener('DOMContentLoaded', hide);
+
+			const forms = [
+				document.querySelector(`form[action="{{ url_for('index') }}"]`),
+				document.querySelector(`form[action="{{ url_for('propose_moi_une_recette') }}"]`)
+			].filter(Boolean);
+
+			forms.forEach(form => {
+				form.addEventListener('submit', () => {
+				const btn = form.querySelector('button[type="submit"]');
+				if (btn) { btn.disabled = true; btn.setAttribute('aria-busy','true'); }
+				show(); // affiche l’animation
+				}, { passive: true });
+			});
+			})();
+		</script>
+
 
 	</body>
 </html>
