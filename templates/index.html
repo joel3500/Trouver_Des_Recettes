@@ -16,11 +16,12 @@
 	<body>
 		<header>
 			<h2> TROUVER DES RECETTES </h2>
-			<p class="oublie"> Idée de Menu pour ce soir  <br>
-							   Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br>
-							   Un outil proposant des RECETTES avec ce que vous avez en ce moment à la maison. <br>
-							   Rentrez les ingrédients que vous avez, et l’application vous proposera une liste de menus possibles. 
-							   Des menus qui contiennent ces ingrédients ou partie de ces ingrédients. <br> 
+			<p class="oublie"> Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br><br>
+							   
+						 	   Prenez une photo OU Saisissez manuellement les ingrédients. 
+							   L’application vous proposera une liste de menus possibles. <br><br>
+
+							   Un outil vous proposant une panoplie de RECETTES.
 			</p>
 			
 			<a href="{{ url_for('vos_impressions') }}" title="Formulaire de satisfaction : Laissez-nous savoir votre expérience de visite du site"><img id="formulaire2" src="../static/img/feedback_1.png"/></a>
@@ -29,7 +30,7 @@
 			
 		<div class="text-service-aide">
 			<div class="carousel-wrap">
-				<h2>Cuisines selon les régions</h2>
+				<h3>Cuisines selon les régions</h3>
 				<button class="carousel-btn carousel-prev" type="button" aria-label="Précédent">&#10094;</button>
 				<div id="regions-carousel" class="carousel">
 					<div class="carousel-track">
@@ -46,7 +47,7 @@
 		</div>
 
 		<div class="text-service-aide">
-			<h2>cuisine sélectionnée</h2>
+			<h3>cuisine sélectionnée</h3>
 		</div>
 
 		<div class="text-service-aide">
@@ -72,7 +73,7 @@
 		<!--================  Audit des Ingrédiens           ==========================--->
 		
 		<div type="text" class="reponse_assistant" name="reponse_assistant">
-			<h2>l'Audit des ingrédients</h2>
+			<h3>l'Audit des ingrédients</h3>
 			{% if liste_des_ingrediens %}<br>		
 				<div class="audit_ingrediens">
 					{{ current_date }} : {{ liste_des_ingrediens }}    
@@ -183,7 +184,7 @@
 					</li>                 <br><br> <!-- Pour séparer les recettes entre elles pour un m meilleur visuel -->
 				{% endfor %}
 				</ol>
-		</div><br><br>
+		</div><br>
 		{% endif %}
 		<!--================  FIN DE Recette provenant de CUISINE-LIBRE  ==================================--->
 
@@ -191,7 +192,7 @@
 		<!--================  Résultat généré par l'IA           ==================================--->	
 
         <div class="reponse_assistant">
-            <h2>Résultats générés par l'IA</h2>
+            <h3>Résultats générés par l'IA</h3>
 
                 {% if results_IA %} <br>
                     {% for recette in results_IA %}
@@ -251,44 +252,15 @@
                         <br>Aucune recette à afficher.<br>
                     </div>
                 {% endif %}
-        </div><br><br>
+        </div>
 		
 		<!--================  FIN DE Résultat généré par l'IA   ==================================--->	
-
-		
-		<!--===================  Les différents sites  ===========================================--->
-		
-		<div class="text-service-aide">    
-			<div class="les_sites">
-				<!--===============  Sites Scrappés        ===========================================--->
-				<h2> Quelques sites de recettes </h2>
-					<a href="https://www.cuisine-libre.org/recettes" target="_blank">cuisine-libre.org</a><br><br>
-					<a href="https://www.marmiton.org/" target="_blank">Marmiton.org</a><br><br>
-					<a href="https://tasty.co/" target="_blank">tasty.co</a><br><br>
-					<a href="https://www.epicurious.com/" target="_blank">Épicurious.com</a><br><br>
-
-				<!--===============  FIN DE Sites Scrappés ===========================================--->
-				
-				<!--===============  Sites JSON ONline     ===========================================--->
-				
-					<a href="https://www.themealdb.com/">themealdb.com</a>
-				
-				<!--===============  FIN DE Sites JSON ONline ===========================================--->	
-			</div>
-
-			<div class="les_utilitaires">
-				<h2> Des utilitaires </h2>
-				<a href="https://www.cuisine-libre.org/saison" target="_blank">Visuel sur quelques Ingrédiens usuels de la cuisine</a><br><br>
-				<a href="https://www.cuisine-libre.org/familles-alimentaires" target="_blank">Les familles d'aliments</a><br><br>
-				<a href="https://www.cuisine-libre.org/ingredients" target="_blank">Ingrédiens par famille avec les recettes</a>
-			</div>
-
-		</div><br>
 
 		<!--===============  Proposes-moi des recettes quelconques ===========================================--->
 		
 		<div class="text-service-aide">
 			<div class="propose_moi">
+				<h3> Propose-moi </h3>
 				<form action="{{ url_for('propose_moi_une_recette') }}" method="POST" class="js-submit">
 					Proposes-moi des recettes de	
 					<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br>
@@ -307,10 +279,40 @@
 		</div>
 
 		<div class="text-service-aide">
-			<h2>recettes quelconques</h2>
+			<h3>recettes quelconques</h3>
 		</div>
 
-		<!--===============  FIN DE Sites Scrappés ===========================================--->
+		<!--===============  FIN DES Recettes quelconques  ===========================================--->
+
+		<!--===============  Les différents sites  ===================================================--->
+		
+		<div class="text-service-aide">    
+			<div class="les_sites">
+				<!--===============  Sites Scrappés  =================================================--->
+				<h3> Quelques sites de recettes </h3>
+					<a href="https://www.cuisine-libre.org/recettes" target="_blank">cuisine-libre.org</a><br><br>
+					<a href="https://www.marmiton.org/" target="_blank">Marmiton.org</a><br><br>
+					<a href="https://tasty.co/" target="_blank">tasty.co</a><br><br>
+					<a href="https://www.epicurious.com/" target="_blank">Épicurious.com</a><br><br>
+
+				<!--===============  FIN DE Sites Scrappés ===========================================--->
+				
+				<!--===============  Sites JSON ONline     ===========================================--->
+				
+					<a href="https://www.themealdb.com/">themealdb.com</a>
+				
+				<!--===============  FIN DE Sites JSON ONline ===========================================--->	
+			</div>
+
+			<div class="les_utilitaires">
+				<h3> Des utilitaires </h3>
+				<a href="https://www.cuisine-libre.org/saison" target="_blank">Visuel sur quelques Ingrédiens usuels de la cuisine</a><br><br>
+				<a href="https://www.cuisine-libre.org/familles-alimentaires" target="_blank">Les familles d'aliments</a><br><br>
+				<a href="https://www.cuisine-libre.org/ingredients" target="_blank">Ingrédiens par famille avec les recettes</a>
+			</div>
+
+		</div><br>
+
 
 		<div id="toggle-regimes" class="text-service-aide" role="button" tabindex="0" aria-expanded="false" aria-controls="regimes-container" style="cursor:pointer;">
 			Les différents types de régimes
@@ -323,10 +325,9 @@
 		<div id="toggle-aliments" class="text-service-aide" role="button" tabindex="0" aria-expanded="false" aria-controls="aliments-container" style="cursor:pointer;">
 			Meilleurs et Pires aliments
 		</div>
-		<div id="aliments-container" class="text-service-aide" hidden></div>
+		<div id="aliments-container" class="text-service-aide" hidden>
+		</div><br>
 
-
-		<br><br><br>
         
 		<!--======================== Le pied de page ===========================================================-->
 		<footer>

@@ -23,7 +23,6 @@
 		font-family : Arial, sans-serif;
 		font-size : 20px; 
 		background-color: gray;
-        text-align: center;
 		padding-bottom: 30px;
 	}
 	
@@ -32,6 +31,7 @@
 		width : 100%;
 		display : inline-block;
 		margin : auto;
+   		text-align: center;
 		margin-bottom : 10px;
 		margin-top : 10px;
 		border : 3px solid blue;
@@ -64,39 +64,31 @@
 		border-radius: 10px;
 	}
 
-    .text-service-aide
+    .text-service-aide, .vos_impressions, .reponse_assistant, .suivis-requetes
 	{
 		display : inline-block;
 		margin : auto;
-		margin-top : 20px;
-		margin-bottom : 20px;
 		width : 90%;
+		margin-top : 10px;
+		margin-bottom : 10px;
+		margin-left : 5%;
 		padding : 2%;
 		border : 2px solid rgb(216, 214, 214);
 		border-radius: 10px;
+		background-color : pink;
 		white-space : initial;
-		text-align : justify;
+		/*text-align : justify;*/
 		color : blue;
-		text-justify : auto; /*inter-word*/
+		/*text-justify : auto; */
 		border : 3px solid blue;
 		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
 	}
 
 	.vos_impressions, .reponse_assistant, .suivis-requetes
     {
-        display : inline-block;
-		background-color:white;
-		margin : auto;
-		margin-top : 20px;
-		margin-bottom : 20px;
-		width : 90%;
-		padding : 2%;
-		border : 2px solid rgb(216, 214, 214);
-		border-radius: 10px;
 		white-space : initial;
 		text-align: justify;
 		text-justify : auto; /*inter-word*/
-		font-family : Poppins; /* font-family : Audiowide, Trirong, Poppins ; */
     }
 
 	h1, h2, h3
@@ -126,12 +118,14 @@
 		right : 2.5%;
 		/*margin-top : 20px;*/
 		margin : auto;
+		padding : 20px;
 		background-color : black;
 		text-align : center;
 		min-height : 70px;
 		color : rgba(142, 144, 251, 0.977);
 		vertical-align : middle;
-		/*font-family : Poppins; */
+		font-family : Poppins;
+		font-size: 16px;
 	}
 
 	/*
@@ -153,14 +147,15 @@
 
 	input {
 		display : inline-block;
-		width : 50%;
+		width : 70%;
 		height : 50px;
 		border: 1px solid blue;
 		border-radius : 10px;
 		text-align : center;
 		font-size : 20px;
-		margin : 10px; 
-		margin-left : 25%;
+		margin : auto;
+		margin-top : 10px;
+		margin-bottom : 10px;
 	}
 
 	/*---==================== Structure pour l'ajout/suppression dun ingredien ================================---*/
@@ -178,8 +173,8 @@
 
 	.add-button, .suppress-button, .soumettre
 	{
-		width : 90%;
-		min-height : 70px;
+		width : 70%;
+		/*min-height : 70px;*/
 		color: #fff;
 		font-size : 20px;
 		border: none;
@@ -220,7 +215,7 @@
 
 	.les_buttons > button
 	{
-		width : 80%;
+		width : 90%;
 		margin-left : auto;
 		margin-right : auto;
 		margin-top: 20px;
@@ -242,7 +237,7 @@
 	{	
 		margin-top : 30px;
 		width : 100%;
-		padding : 50px;
+		padding : 10px;
 	}
 
 	.les_sites a, .les_utilitaires a
@@ -296,7 +291,7 @@
 		.text-service-aide, .suivis-requetes, .vos_impressions, .reponse_assistant
 		{
 			width : 50%;
-			margin-left : 20px;
+			margin-left : 25%;
 		}
 
 		.container 
@@ -316,7 +311,7 @@
 			min-height : 70px;
 			padding: 10px;
 			color: #fff;
-			font-size : 20px;
+			font-size : 16px;
 			border: none;
 			border-radius: 10px;
 			padding: 8px 20px;
@@ -367,7 +362,7 @@ header{
 h1, h2, h3 {
   color:var(--accent);
   border-bottom:1px solid var(--border);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Blocs de contenu */
@@ -385,7 +380,8 @@ h1, h2, h3 {
 .container,
 .les_buttons,
 .les_sites,
-.les_utilitaires{
+.les_utilitaires, 
+.propose_moi {
   border:1px solid var(--border);
 }
 
@@ -429,6 +425,7 @@ input:focus{
 .soumettre{
   background-color:var(--success);
   border:1px solid transparent;
+  font-size: 18px;
 }
 .soumettre:hover{ background-color:#15803d; }
 
