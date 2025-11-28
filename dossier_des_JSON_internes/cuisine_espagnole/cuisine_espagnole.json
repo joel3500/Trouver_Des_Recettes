@@ -1,0 +1,959 @@
+[
+{
+"Titre de la recette": "Paella valenciana",
+"Temps de cuisson": "1 h 15 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "55 min",
+"Liste des ingrédients": [
+{ "Riz": "130 kcal pour 100g" },
+{ "Poulet": "215 kcal pour 100g" },
+{ "Lapin": "173 kcal pour 100g" },
+{ "Haricots plats (garrofó)": "127 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Safran": "310 kcal pour 100g" },
+{ "Bouillon de volaille": "15 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Saisir poulet et lapin dans l’huile.",
+"Ajouter poivron et tomate, faire revenir.",
+"Incorporer haricots, safran et riz.",
+"Mouiller avec le bouillon chaud.",
+"Cuire à feu moyen sans remuer, puis laisser reposer."
+],
+"Image": 1
+},
+{
+"Titre de la recette": "Tortilla de patatas",
+"Temps de cuisson": "35 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Frire doucement pommes de terre et oignon dans l’huile.",
+"Battre les œufs avec sel.",
+"Mélanger pommes de terre égouttées et œufs.",
+"Cuire la tortilla des deux côtés.",
+"Laisser tiédir avant de servir."
+],
+"Image": 2
+},
+{
+"Titre de la recette": "Gazpacho andalou",
+"Temps de cuisson": "0 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "0 min",
+"Liste des ingrédients": [
+{ "Tomate": "18 kcal pour 100g" },
+{ "Concombre": "16 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Pain rassis": "265 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Vinaigre de xérès": "21 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Mixer tous les légumes avec le pain trempé.",
+"Ajouter huile et vinaigre en émulsion.",
+"Assaisonner.",
+"Réfrigérer au moins 1 heure.",
+"Servir bien frais."
+],
+"Image": 3
+},
+{
+"Titre de la recette": "Pan con tomate",
+"Temps de cuisson": "5 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Pain rustique": "265 kcal pour 100g" },
+{ "Tomate mûre": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Griller les tranches de pain.",
+"Frotter d’ail puis de tomate.",
+"Arroser d’huile d’olive.",
+"Saler légèrement.",
+"Servir aussitôt."
+],
+"Image": 4
+},
+{
+"Titre de la recette": "Pulpo a la gallega",
+"Temps de cuisson": "1 h",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "50 min",
+"Liste des ingrédients": [
+{ "Poulpe": "82 kcal pour 100g" },
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Cuire le poulpe jusqu’à tendreté.",
+"Cuire les pommes de terre séparément.",
+"Trancher le poulpe sur les pommes de terre.",
+"Assaisonner de paprika, sel et huile.",
+"Servir tiède."
+],
+"Image": 5
+},
+{
+"Titre de la recette": "Croquetas de jamón",
+"Temps de cuisson": "35 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "15 min",
+"Liste des ingrédients": [
+{ "Jambon serrano": "241 kcal pour 100g" },
+{ "Lait": "64 kcal pour 100g" },
+{ "Beurre": "717 kcal pour 100g" },
+{ "Farine": "364 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Chapelure": "351 kcal pour 100g" },
+{ "Huile de friture": "884 kcal pour 100ml" },
+{ "Noix de muscade": "525 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Réaliser une béchamel épaisse avec lait, beurre et farine.",
+"Ajouter jambon et muscade, refroidir.",
+"Façonner des croquetas.",
+"Paner dans œuf et chapelure.",
+"Frire jusqu’à dorure."
+],
+"Image": 6
+},
+{
+"Titre de la recette": "Patatas bravas",
+"Temps de cuisson": "30 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "20 min",
+"Liste des ingrédients": [
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Tomate concassée": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Piment": "40 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Frire les cubes de pommes de terre.",
+"Préparer une sauce tomate pimentée et paprika.",
+"Saler les pommes de terre.",
+"Napper de sauce brava.",
+"Servir immédiatement."
+],
+"Image": 7
+},
+{
+"Titre de la recette": "Calamares a la romana",
+"Temps de cuisson": "20 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "10 min",
+"Liste des ingrédients": [
+{ "Calamar": "92 kcal pour 100g" },
+{ "Farine": "364 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Huile de friture": "884 kcal pour 100ml" },
+{ "Citron": "29 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Couper les anneaux de calamar.",
+"Enrober légèrement de farine et d’œuf.",
+"Frire jusqu’à dorure légère.",
+"Égoutter et saler.",
+"Servir avec citron."
+],
+"Image": 8
+},
+{
+"Titre de la recette": "Fabada asturiana",
+"Temps de cuisson": "2 h 30 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "2 h 15 min",
+"Liste des ingrédients": [
+{ "Haricots blancs (fabes)": "127 kcal pour 100g" },
+{ "Chorizo": "455 kcal pour 100g" },
+{ "Boudin (morcilla)": "379 kcal pour 100g" },
+{ "Lard": "816 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Mettre haricots trempés avec charcuteries.",
+"Ajouter oignon, ail et paprika.",
+"Couvrir d’eau froide et mijoter doucement.",
+"Écumer et surveiller la cuisson.",
+"Reposer avant service."
+],
+"Image": 9
+},
+{
+"Titre de la recette": "Cocido madrileño",
+"Temps de cuisson": "3 h",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "2 h 40 min",
+"Liste des ingrédients": [
+{ "Pois chiches": "164 kcal pour 100g" },
+{ "Bœuf (jarret)": "250 kcal pour 100g" },
+{ "Poulet": "215 kcal pour 100g" },
+{ "Chorizo": "455 kcal pour 100g" },
+{ "Morcilla": "379 kcal pour 100g" },
+{ "Chou": "25 kcal pour 100g" },
+{ "Carotte": "41 kcal pour 100g" },
+{ "Pomme de terre": "77 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Cuire pois chiches trempés avec viandes.",
+"Ajouter légumes en cours de cuisson.",
+"Séparer bouillon, viandes et légumes.",
+"Servir en plusieurs services (soupe puis solide).",
+"Assaisonner selon goût."
+],
+"Image": 10
+},
+{
+"Titre de la recette": "Pisto manchego",
+"Temps de cuisson": "45 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "30 min",
+"Liste des ingrédients": [
+{ "Tomate": "18 kcal pour 100g" },
+{ "Courgette": "17 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Aubergine": "33 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Sauter oignon et ail.",
+"Ajouter poivron, courgette et aubergine.",
+"Incorporer tomate et mijoter.",
+"Rectifier le sel.",
+"Servir nature ou avec œuf."
+],
+"Image": 11
+},
+{
+"Titre de la recette": "Empanada gallega au thon",
+"Temps de cuisson": "50 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "30 min",
+"Liste des ingrédients": [
+{ "Pâte à empanada": "320 kcal pour 100g" },
+{ "Thon en conserve": "132 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Préparer une garniture tomate-oignon-poivron-thon.",
+"Étaler la pâte et garnir.",
+"Recouvrir d’un second disque, sceller.",
+"Badigeonner d’huile ou d’œuf.",
+"Cuire jusqu’à dorure."
+],
+"Image": 12
+},
+{
+"Titre de la recette": "Salmorejo cordobés",
+"Temps de cuisson": "0 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "0 min",
+"Liste des ingrédients": [
+{ "Tomate": "18 kcal pour 100g" },
+{ "Pain": "265 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Vinaigre": "21 kcal pour 100g" },
+{ "Sel": "0 kcal" },
+{ "Œuf dur (garniture)": "155 kcal pour 100g" },
+{ "Jambon (garniture)": "241 kcal pour 100g" }
+],
+"Les étapes de préparation": [
+"Mixer tomate, pain, ail, huile et vinaigre.",
+"Assaisonner et lisser.",
+"Réfrigérer.",
+"Servir épais, garni d’œuf et jambon.",
+"Arroser d’un filet d’huile."
+],
+"Image": 13
+},
+{
+"Titre de la recette": "Bacalao al pil-pil",
+"Temps de cuisson": "25 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "15 min",
+"Liste des ingrédients": [
+{ "Morue dessalée": "105 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Guindilla (piment)": "40 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Confire doucement ail et piment dans l’huile.",
+"Cuire la morue côté peau.",
+"Emulsionner l’huile avec la gélatine du poisson.",
+"Napper la morue de sauce pil-pil.",
+"Servir chaud."
+],
+"Image": 14
+},
+{
+"Titre de la recette": "Gambas al ajillo",
+"Temps de cuisson": "10 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "5 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Gambas": "99 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Piment": "40 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Persil": "36 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Chauffer l’huile avec ail et piment.",
+"Saisir rapidement les gambas.",
+"Saler et parsemer de persil.",
+"Servir grésillant.",
+"Accompagner de pain."
+],
+"Image": 15
+},
+{
+"Titre de la recette": "Huevos rotos",
+"Temps de cuisson": "20 min",
+"Nombre de personnes": 2,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "10 min",
+"Liste des ingrédients": [
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Jambon ibérique": "241 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Frire des pommes de terre en tranches.",
+"Déposer jambon et œufs sur les pommes.",
+"Cuire les œufs au jaune coulant.",
+"Saler légèrement.",
+"Casser les œufs avant de servir."
+],
+"Image": 16
+},
+{
+"Titre de la recette": "Migas",
+"Temps de cuisson": "35 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Pain de la veille": "265 kcal pour 100g" },
+{ "Chorizo": "455 kcal pour 100g" },
+{ "Lardons": "541 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Raisins secs (option)": "299 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Humidifier le pain émietté.",
+"Sauter ail, chorizo et lardons.",
+"Ajouter le pain et le paprika.",
+"Cuire en remuant jusqu’à croustillant.",
+"Ajouter raisins si désiré."
+],
+"Image": 17
+},
+{
+"Titre de la recette": "Escalivada",
+"Temps de cuisson": "45 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "35 min",
+"Liste des ingrédients": [
+{ "Aubergine": "33 kcal pour 100g" },
+{ "Poivron rouge": "31 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Rôtir les légumes entiers au four.",
+"Peler et couper en lanières.",
+"Assaisonner d’huile et sel.",
+"Laisser tiédir.",
+"Servir en tapas."
+],
+"Image": 18
+},
+{
+"Titre de la recette": "Merlu à la basque (Merluza a la vasca)",
+"Temps de cuisson": "20 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "10 min",
+"Liste des ingrédients": [
+{ "Merlu": "96 kcal pour 100g" },
+{ "Asperges blanches": "20 kcal pour 100g" },
+{ "Petits pois": "81 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Persil": "36 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Bouillon de poisson": "20 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Chauffer l’huile avec ail et persil.",
+"Pocher le merlu dans le bouillon.",
+"Ajouter asperges et petits pois.",
+"Napper d’huile parfumée.",
+"Servir aussitôt."
+],
+"Image": 19
+},
+{
+"Titre de la recette": "Bacalao a la vizcaína",
+"Temps de cuisson": "40 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Morue dessalée": "105 kcal pour 100g" },
+{ "Poivrons choriceros": "120 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Préparer la sauce avec poivrons, oignon et tomate.",
+"Cuire la morue doucement dans la sauce.",
+"Agiter pour émulsionner légèrement.",
+"Rectifier l’assaisonnement.",
+"Servir chaud."
+],
+"Image": 20
+},
+{
+"Titre de la recette": "Arroz negro",
+"Temps de cuisson": "40 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "30 min",
+"Liste des ingrédients": [
+{ "Riz": "130 kcal pour 100g" },
+{ "Seiche/Calamar": "92 kcal pour 100g" },
+{ "Encre de seiche": "79 kcal pour 100g" },
+{ "Bouillon de poisson": "20 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Sauter seiche et ail.",
+"Ajouter tomate puis riz.",
+"Verser bouillon et encre.",
+"Cuire sans remuer jusqu’à absorption.",
+"Servir avec aïoli."
+],
+"Image": 21
+},
+{
+"Titre de la recette": "Fideuà",
+"Temps de cuisson": "35 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Pâtes fideus": "371 kcal pour 100g (sec)" },
+{ "Calamar": "92 kcal pour 100g" },
+{ "Gambas": "99 kcal pour 100g" },
+{ "Bouillon de poisson": "20 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Sauter les pâtes dans l’huile jusqu’à doré.",
+"Ajouter calamar, tomate et ail.",
+"Mouiller au bouillon.",
+"Cuire jusqu’à absorption.",
+"Finir au four si besoin."
+],
+"Image": 22
+},
+{
+"Titre de la recette": "Zarzuela de mariscos",
+"Temps de cuisson": "45 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Moules": "86 kcal pour 100g" },
+{ "Palourdes": "148 kcal pour 100g" },
+{ "Gambas": "99 kcal pour 100g" },
+{ "Calamar": "92 kcal pour 100g" },
+{ "Poisson blanc": "82 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Amande moulue": "579 kcal pour 100g" },
+{ "Vin blanc": "82 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Ouvrir moules et palourdes.",
+"Sauter poissons et fruits de mer.",
+"Ajouter sauce tomate, vin et amande.",
+"Mijoter pour lier la sauce.",
+"Servir chaud."
+],
+"Image": 23
+},
+{
+"Titre de la recette": "Ensaladilla rusa",
+"Temps de cuisson": "30 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "10 min",
+"Liste des ingrédients": [
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Carotte": "41 kcal pour 100g" },
+{ "Petits pois": "81 kcal pour 100g" },
+{ "Thon en conserve": "132 kcal pour 100g" },
+{ "Mayonnaise": "680 kcal pour 100g" },
+{ "Olives": "145 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Cuire pommes de terre, carottes et œufs.",
+"Couper en dés et mélanger avec petits pois et thon.",
+"Ajouter mayonnaise.",
+"Assaisonner.",
+"Refroidir avant de servir."
+],
+"Image": 24
+},
+{
+"Titre de la recette": "Pa amb oli i sal (Majorque)",
+"Temps de cuisson": "5 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Pain de campagne": "265 kcal pour 100g" },
+{ "Tomate ramallet": "18 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" },
+{ "Jambon ou fromage (option)": "300 kcal pour 100g" }
+],
+"Les étapes de préparation": [
+"Frotter le pain de tomate.",
+"Arroser d’huile d’olive.",
+"Saler légèrement.",
+"Ajouter jambon ou fromage selon goût.",
+"Servir."
+],
+"Image": 25
+},
+{
+"Titre de la recette": "Paella de mariscos",
+"Temps de cuisson": "45 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "30 min",
+"Liste des ingrédients": [
+{ "Riz": "130 kcal pour 100g" },
+{ "Calamar": "92 kcal pour 100g" },
+{ "Moules": "86 kcal pour 100g" },
+{ "Gambas": "99 kcal pour 100g" },
+{ "Bouillon de poisson": "20 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Safran": "310 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Sauter les fruits de mer, réserver.",
+"Revenir ail et tomate, ajouter le riz.",
+"Mouiller au bouillon safrané.",
+"Cuire sans remuer et ajouter fruits de mer.",
+"Repos avant service."
+],
+"Image": 26
+},
+{
+"Titre de la recette": "Paella mixte",
+"Temps de cuisson": "55 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "35 min",
+"Liste des ingrédients": [
+{ "Riz": "130 kcal pour 100g" },
+{ "Poulet": "215 kcal pour 100g" },
+{ "Crevettes": "99 kcal pour 100g" },
+{ "Calamar": "92 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Bouillon": "15 kcal pour 100g" },
+{ "Safran": "310 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Saisir poulet puis fruits de mer.",
+"Ajouter légumes et riz.",
+"Mouiller au bouillon safrané.",
+"Cuire jusqu’à absorption.",
+"Repos 5 minutes."
+],
+"Image": 27
+},
+{
+"Titre de la recette": "Pulgas (mini-sandwichs)",
+"Temps de cuisson": "5 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Petits pains": "265 kcal pour 100g" },
+{ "Jambon serrano": "241 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Ouvrir les pains et frotter de tomate.",
+"Ajouter jambon serrano.",
+"Arroser d’un filet d’huile.",
+"Refermer.",
+"Servir en tapas."
+],
+"Image": 28
+},
+{
+"Titre de la recette": "Patatas a la riojana",
+"Temps de cuisson": "40 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "30 min",
+"Liste des ingrédients": [
+{ "Pommes de terre": "77 kcal pour 100g" },
+{ "Chorizo": "455 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Paprika": "282 kcal pour 100g" },
+{ "Bouillon": "15 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Suer oignon, ail et chorizo.",
+"Ajouter pommes de terre et paprika.",
+"Couvrir de bouillon et poivron.",
+"Mijoter jusqu’à tendreté.",
+"Assaisonner."
+],
+"Image": 29
+},
+{
+"Titre de la recette": "Caldereta de cordero",
+"Temps de cuisson": "1 h 30 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "1 h 10 min",
+"Liste des ingrédients": [
+{ "Agneau (morceaux)": "294 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Poivron": "31 kcal pour 100g" },
+{ "Vin blanc": "82 kcal pour 100g" },
+{ "Bouillon": "15 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Saisir l’agneau.",
+"Ajouter aromatiques et déglacer au vin.",
+"Incorporer tomate et bouillon.",
+"Mijoter jusqu’à viande fondante.",
+"Rectifier l’assaisonnement."
+],
+"Image": 30
+},
+{
+"Titre de la recette": "Pimientos de Padrón",
+"Temps de cuisson": "10 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "5 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Piments de Padrón": "20 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Sauter rapidement les piments dans l’huile.",
+"Saler généreusement.",
+"Servir brûlants.",
+"Accompagner de pain.",
+"Déguster en tapas."
+],
+"Image": 31
+},
+{
+"Titre de la recette": "Boquerones en vinagre",
+"Temps de cuisson": "0 min (marinade)",
+"Nombre de personnes": 4,
+"Durée de préparation": "20 min",
+"Durée de cuisson": "0 min",
+"Liste des ingrédients": [
+{ "Anchois frais": "131 kcal pour 100g" },
+{ "Vinaigre": "21 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Persil": "36 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Lever les filets et congeler 24 h (sécurité).",
+"Mariner au vinaigre jusqu’à blanchir.",
+"Égoutter et couvrir d’huile avec ail et persil.",
+"Saler légèrement.",
+"Servir frais."
+],
+"Image": 32
+},
+{
+"Titre de la recette": "Tosta de escalivada et anchois",
+"Temps de cuisson": "15 min",
+"Nombre de personnes": 2,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Pain": "265 kcal pour 100g" },
+{ "Escalivada": "60 kcal pour 100g (moy.)" },
+{ "Anchois à l’huile": "210 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Griller le pain.",
+"Disposer l’escalivada.",
+"Ajouter les anchois.",
+"Arroser d’huile.",
+"Servir en tapas."
+],
+"Image": 33
+},
+{
+"Titre de la recette": "Cremà catalana",
+"Temps de cuisson": "30 min",
+"Nombre de personnes": 6,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "15 min",
+"Liste des ingrédients": [
+{ "Lait": "64 kcal pour 100g" },
+{ "Crème": "340 kcal pour 100g" },
+{ "Jaunes d’œufs": "322 kcal pour 100g" },
+{ "Sucre": "387 kcal pour 100g" },
+{ "Zeste de citron": "29 kcal pour 100g" },
+{ "Cannelle": "247 kcal pour 100g" }
+],
+"Les étapes de préparation": [
+"Chauffer lait et arômes.",
+"Blanchir jaunes et sucre.",
+"Épaissir sur feu doux.",
+"Refroidir puis caraméliser le dessus.",
+"Servir."
+],
+"Image": 34
+},
+{
+"Titre de la recette": "Churros con chocolate",
+"Temps de cuisson": "25 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "15 min",
+"Liste des ingrédients": [
+{ "Farine": "364 kcal pour 100g" },
+{ "Eau": "0 kcal" },
+{ "Sel": "0 kcal" },
+{ "Huile de friture": "884 kcal pour 100ml" },
+{ "Sucre": "387 kcal pour 100g" },
+{ "Chocolat à boire": "85 kcal pour 100g" }
+],
+"Les étapes de préparation": [
+"Préparer une pâte eau-farine-sel.",
+"Former les churros et frire.",
+"Égoutter et sucrer.",
+"Préparer un chocolat épais.",
+"Servir chaud."
+],
+"Image": 35
+},
+{
+"Titre de la recette": "Tarta de Santiago",
+"Temps de cuisson": "35 min",
+"Nombre de personnes": 8,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "20 min",
+"Liste des ingrédients": [
+{ "Poudre d’amande": "579 kcal pour 100g" },
+{ "Sucre": "387 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Zeste de citron": "29 kcal pour 100g" },
+{ "Sucre glace": "389 kcal pour 100g" }
+],
+"Les étapes de préparation": [
+"Mélanger amande, sucre, œufs et zeste.",
+"Verser dans un moule.",
+"Cuire jusqu’à dorure.",
+"Refroidir et saupoudrer de sucre glace.",
+"Servir."
+],
+"Image": 36
+},
+{
+"Titre de la recette": "Piquillos farcis à la morue",
+"Temps de cuisson": "25 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "10 min",
+"Liste des ingrédients": [
+{ "Piquillos": "29 kcal pour 100g" },
+{ "Morue dessalée": "105 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Crème": "340 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" }
+],
+"Les étapes de préparation": [
+"Emietter la morue et la mélanger à une fondue d’oignon.",
+"Lier avec un peu de crème.",
+"Farcir les piquillos.",
+"Napper d’huile et chauffer doucement.",
+"Servir."
+],
+"Image": 37
+},
+{
+"Titre de la recette": "Rabas (anneaux de calamar frits)",
+"Temps de cuisson": "15 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Calamar": "92 kcal pour 100g" },
+{ "Farine": "364 kcal pour 100g" },
+{ "Œufs": "155 kcal pour 100g" },
+{ "Huile de friture": "884 kcal pour 100ml" },
+{ "Citron": "29 kcal pour 100g" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Enrober les anneaux de calamar.",
+"Frire rapidement.",
+"Égoutter et saler.",
+"Servir avec citron.",
+"Déguster chaud."
+],
+"Image": 38
+},
+{
+"Titre de la recette": "Albondigas en salsa",
+"Temps de cuisson": "40 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "15 min",
+"Durée de cuisson": "25 min",
+"Liste des ingrédients": [
+{ "Bœuf haché": "250 kcal pour 100g" },
+{ "Porc haché": "290 kcal pour 100g" },
+{ "Pain trempé": "265 kcal pour 100g" },
+{ "Œuf": "155 kcal pour 100g" },
+{ "Tomate": "18 kcal pour 100g" },
+{ "Oignon": "40 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Former des boulettes avec viandes, pain et œuf.",
+"Saisir à l’huile.",
+"Préparer une sauce tomate-oignon.",
+"Mijoter les boulettes dans la sauce.",
+"Servir avec pain."
+],
+"Image": 39
+},
+{
+"Titre de la recette": "Cocochas en salsa verde",
+"Temps de cuisson": "15 min",
+"Nombre de personnes": 4,
+"Durée de préparation": "10 min",
+"Durée de cuisson": "5 min",
+"Liste des ingrédients": [
+{ "Cocochas de morue": "120 kcal pour 100g" },
+{ "Ail": "149 kcal pour 100g" },
+{ "Persil": "36 kcal pour 100g" },
+{ "Vin blanc": "82 kcal pour 100g" },
+{ "Huile d'olive": "884 kcal pour 100ml" },
+{ "Sel": "0 kcal" }
+],
+"Les étapes de préparation": [
+"Chauffer l’huile avec ail.",
+"Ajouter cocochas et persil.",
+"Déglacer au vin.",
+"Emulsionner la sauce verte.",
+"Servir aussitôt."
+],
+"Image": 40
+}
+]

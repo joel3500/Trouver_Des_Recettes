@@ -1,0 +1,949 @@
+[
+	{
+		"Titre de la recette": "Sushi nigiri assortis",
+		"Temps de cuisson": "35 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "40 min",
+		"Durée de cuisson": "15 min",
+		"Liste des ingrédients": {
+		"Riz à sushi cuit": "130 kcal/100g",
+		"Vinaigre de riz": "18 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Sel": "0 kcal/100g",
+		"Saumon cru": "208 kcal/100g",
+		"Thon cru": "144 kcal/100g",
+		"Crevettes cuites": "99 kcal/100g",
+		"Nori": "35 kcal/100g",
+		"Wasabi": "109 kcal/100g",
+		"Sauce soja": "53 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Assaisonner le riz chaud avec vinaigre-sucre-sel puis refroidir.",
+		"Façonner de petites quenelles de riz.",
+		"Déposer une tranche de poisson ou une crevette sur chaque riz.",
+		"Ajouter un peu de wasabi si souhaité.",
+		"Servir avec sauce soja."
+		],
+		"Image": 1
+	},
+	{
+		"Titre de la recette": "Ramen shoyu",
+		"Temps de cuisson": "1 h 30 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "1 h 10 min",
+		"Liste des ingrédients": {
+		"Bouillon de poulet": "15 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Nouilles ramen": "138 kcal/100g (cuit)",
+		"Pointe de mirin": "226 kcal/100g",
+		"Porc braisé (chashu)": "290 kcal/100g",
+		"Œufs mollets": "155 kcal/100g",
+		"Algue nori": "35 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Gingembre": "80 kcal/100g",
+		"Ail": "149 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Parfumer le bouillon avec soja, ail et gingembre.",
+		"Cuire les nouilles à part.",
+		"Dresser bol: nouilles, bouillon chaud.",
+		"Ajouter chashu, œuf, nori et ciboule.",
+		"Servir immédiatement."
+		],
+		"Image": 2
+	},
+	{
+		"Titre de la recette": "Tempura de crevettes et légumes",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Crevettes": "99 kcal/100g",
+		"Patate douce": "86 kcal/100g",
+		"Aubergine": "33 kcal/100g",
+		"Poivron": "31 kcal/100g",
+		"Farine": "364 kcal/100g",
+		"Fécule": "381 kcal/100g",
+		"Eau très froide": "0 kcal/100g",
+		"Huile de friture": "884 kcal/100g",
+		"Sauce tentsuyu": "30 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Préparer une pâte fluide avec farine, fécule et eau glacée.",
+		"Sécher crevettes et légumes.",
+		"Enrober légèrement et frire jusqu’à doré clair.",
+		"Égoutter sur papier.",
+		"Servir avec sauce tentsuyu."
+		],
+		"Image": 3
+	},
+	{
+		"Titre de la recette": "Yakitori (brochettes de poulet)",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Poulet en dés": "215 kcal/100g",
+		"Poireau japonais": "31 kcal/100g",
+		"Sauce tare (soja, mirin, sucre)": "120 kcal/100g (moy.)",
+		"Graines de sésame": "573 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Monter poulet et poireau sur brochettes.",
+		"Griller en badigeonnant de sauce tare.",
+		"Saupoudrer de sésame.",
+		"Reposer 2 minutes.",
+		"Servir chaud."
+		],
+		"Image": 4
+	},
+	{
+		"Titre de la recette": "Bibimbap",
+		"Temps de cuisson": "40 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "20 min",
+		"Liste des ingrédients": {
+		"Riz cuit": "130 kcal/100g",
+		"Épinards": "23 kcal/100g",
+		"Carottes": "41 kcal/100g",
+		"Champignons": "22 kcal/100g",
+		"Courgette": "17 kcal/100g",
+		"Bœuf haché": "250 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Gochujang": "190 kcal/100g",
+		"Huile de sésame": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter séparément les légumes assaisonnés.",
+		"Poêler le bœuf.",
+		"Dresser riz, légumes et bœuf.",
+		"Coiffer d’un œuf au plat.",
+		"Assaisonner de gochujang et huile de sésame."
+		],
+		"Image": 5
+	},
+	{
+		"Titre de la recette": "Kimchi jjigae (ragoût de kimchi)",
+		"Temps de cuisson": "35 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "25 min",
+		"Liste des ingrédients": {
+		"Kimchi": "15 kcal/100g",
+		"Porc en dés": "290 kcal/100g",
+		"Tofu": "76 kcal/100g",
+		"Oignons": "40 kcal/100g",
+		"Gochugaru": "282 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Bouillon": "10 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Faire revenir porc et oignons.",
+		"Ajouter kimchi, ail et gochugaru.",
+		"Mouiller de bouillon et mijoter.",
+		"Ajouter tofu en cubes.",
+		"Servir brûlant."
+		],
+		"Image": 6
+	},
+	{
+		"Titre de la recette": "Pho bo",
+		"Temps de cuisson": "3 h",
+		"Nombre de personnes": 6,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "2 h 40 min",
+		"Liste des ingrédients": {
+		"Os et jarret de bœuf": "250 kcal/100g",
+		"Oignons grillés": "40 kcal/100g",
+		"Gingembre grillé": "80 kcal/100g",
+		"Anis étoilé": "337 kcal/100g",
+		"Cannelle": "247 kcal/100g",
+		"Sauce nuoc-mam": "60 kcal/100g",
+		"Nouilles de riz": "109 kcal/100g (cuit)",
+		"Bœuf finement tranché": "250 kcal/100g",
+		"Herbes fraîches": "30 kcal/100g",
+		"Citron vert": "29 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Faire mijoter longuement le bouillon aromatique.",
+		"Cuire les nouilles.",
+		"Dresser bol: nouilles, bœuf cru.",
+		"Verser le bouillon brûlant.",
+		"Servir avec herbes et citron."
+		],
+		"Image": 7
+	},
+	{
+		"Titre de la recette": "Banh mi",
+		"Temps de cuisson": "15 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "15 min",
+		"Liste des ingrédients": {
+		"Baguettes": "270 kcal/100g",
+		"Porc mariné/grillé": "290 kcal/100g",
+		"Pâté ou charcuterie": "300 kcal/100g",
+		"Concombres": "16 kcal/100g",
+		"Pickles carotte-daikon": "40 kcal/100g",
+		"Coriandre": "23 kcal/100g",
+		"Mayonnaise": "680 kcal/100g",
+		"Piment frais": "40 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Ouvrir les pains et tartiner légèrement de mayonnaise.",
+		"Garnir de viande, pickles et concombres.",
+		"Ajouter coriandre et piment.",
+		"Réchauffer brièvement si souhaité.",
+		"Servir aussitôt."
+		],
+		"Image": 8
+	},
+	{
+		"Titre de la recette": "Pad Thaï",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Nouilles de riz": "109 kcal/100g (cuit)",
+		"Crevettes": "99 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Pousses de soja": "42 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Sauce tamarin": "239 kcal/100g",
+		"Sauce poisson": "60 kcal/100g",
+		"Sucre de palme": "387 kcal/100g",
+		"Cacahuètes": "567 kcal/100g",
+		"Citron vert": "29 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter œufs brouillés puis réserver.",
+		"Sauter crevettes et nouilles hydratées.",
+		"Ajouter sauces, sucre et pousses de soja.",
+		"Remettre œufs, terminer à la ciboule.",
+		"Servir avec cacahuètes et citron."
+		],
+		"Image": 9
+		},
+		{
+		"Titre de la recette": "Tom Yum Goong",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Bouillon": "10 kcal/100g",
+		"Citronnelle": "99 kcal/100g",
+		"Galanga": "60 kcal/100g",
+		"Feuilles de kaffir": "33 kcal/100g",
+		"Pâte de piment": "100 kcal/100g",
+		"Crevettes": "99 kcal/100g",
+		"Champignons": "22 kcal/100g",
+		"Jus de citron vert": "29 kcal/100g",
+		"Sauce poisson": "60 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Infuser citronnelle, galanga et kaffir dans le bouillon.",
+		"Ajouter pâte de piment et champignons.",
+		"Cuire brièvement les crevettes.",
+		"Assaisonner de sauce poisson et citron vert.",
+		"Servir chaud."
+		],
+		"Image": 10
+	},
+	{
+		"Titre de la recette": "Green curry au poulet",
+		"Temps de cuisson": "30 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "15 min",
+		"Liste des ingrédients": {
+		"Pâte de curry vert": "120 kcal/100g",
+		"Lait de coco": "190 kcal/100g",
+		"Poulet": "215 kcal/100g",
+		"Aubergines thaï": "25 kcal/100g",
+		"Feuilles de basilic thaï": "23 kcal/100g",
+		"Sauce poisson": "60 kcal/100g",
+		"Sucre": "387 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Frire la pâte de curry dans la crème de coco.",
+		"Ajouter le reste de lait de coco et le poulet.",
+		"Incorporer légumes et assaisonnements.",
+		"Mijoter court jusqu’à cuisson.",
+		"Terminer au basilic."
+		],
+		"Image": 11
+	},
+	{
+		"Titre de la recette": "Nasi Goreng",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Riz cuit de la veille": "130 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Crevettes/poulet": "150 kcal/100g (moy.)",
+		"Ail": "149 kcal/100g",
+		"Échalotes": "72 kcal/100g",
+		"Kecap manis": "180 kcal/100g",
+		"Pâte de piment": "100 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter ail et échalotes.",
+		"Ajouter protéines puis riz.",
+		"Assaisonner de kecap et piment.",
+		"Servir avec œuf au plat.",
+		"Accompagner de concombre."
+		],
+		"Image": 12
+	},
+	{
+		"Titre de la recette": "Rendang de bœuf",
+		"Temps de cuisson": "2 h 30 min",
+		"Nombre de personnes": 6,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "2 h 10 min",
+		"Liste des ingrédients": {
+		"Bœuf en cubes": "250 kcal/100g",
+		"Lait de coco": "190 kcal/100g",
+		"Pâte d’épices (citronnelle, galanga, piment)": "120 kcal/100g",
+		"Feuilles de kaffir": "33 kcal/100g",
+		"Curcuma": "312 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mijoter bœuf dans lait de coco et pâte d’épices.",
+		"Remuer régulièrement jusqu’à réduction.",
+		"Caraméliser doucement.",
+		"Rectifier sel.",
+		"Servir avec riz."
+		],
+		"Image": 13
+	},
+	{
+		"Titre de la recette": "Gado-Gado",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Légumes variés (haricots, chou, pousses)": "30 kcal/100g (moy.)",
+		"Tofu": "76 kcal/100g",
+		"Tempeh": "192 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Sauce cacahuète": "590 kcal/100g",
+		"Krupuk (chips)": "500 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Blanchir les légumes.",
+		"Dorer tofu et tempeh.",
+		"Assembler avec œufs.",
+		"Napper de sauce cacahuète.",
+		"Ajouter krupuk au service."
+		],
+		"Image": 14
+	},
+	{
+		"Titre de la recette": "Hainanese Chicken Rice",
+		"Temps de cuisson": "1 h",
+		"Nombre de personnes": 6,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "40 min",
+		"Liste des ingrédients": {
+		"Poulet entier": "215 kcal/100g",
+		"Riz jasmin": "130 kcal/100g (cuit)",
+		"Gingembre": "80 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Huile de sésame": "884 kcal/100g",
+		"Concombre": "16 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Pocher le poulet et réserver bouillon.",
+		"Sauter ail-gingembre puis nacrer le riz.",
+		"Cuire le riz au bouillon.",
+		"Découper le poulet.",
+		"Servir avec sauces et concombre."
+		],
+		"Image": 15
+	},
+	{
+		"Titre de la recette": "Laksa curry",
+		"Temps de cuisson": "30 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "15 min",
+		"Liste des ingrédients": {
+		"Pâte laksa": "120 kcal/100g",
+		"Lait de coco": "190 kcal/100g",
+		"Bouillon": "10 kcal/100g",
+		"Nouilles de riz": "109 kcal/100g (cuit)",
+		"Poulet/crevettes": "150 kcal/100g (moy.)",
+		"Germes de soja": "42 kcal/100g",
+		"Citron vert": "29 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Frire la pâte laksa, ajouter lait de coco et bouillon.",
+		"Cuire protéines et nouilles.",
+		"Assembler en bol.",
+		"Garnir de germes.",
+		"Finir au citron vert."
+		],
+		"Image": 16
+	},
+	{
+		"Titre de la recette": "Hokkien Mee",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Nouilles aux œufs et riz": "140 kcal/100g (cuit)",
+		"Crevettes et porc": "180 kcal/100g (moy.)",
+		"Ail": "149 kcal/100g",
+		"Bouillon": "10 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Saindoux/huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter ail, porc et crevettes.",
+		"Ajouter nouilles et bouillon.",
+		"Assaisonner de sauces.",
+		"Réduire jusqu’à nappant.",
+		"Servir avec citron et sambal."
+		],
+		"Image": 17
+	},
+	{
+		"Titre de la recette": "Mapo Tofu",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Tofu soyeux": "76 kcal/100g",
+		"Porc haché": "290 kcal/100g",
+		"Doubanjiang": "120 kcal/100g",
+		"Pâte d’ail-gingembre": "100 kcal/100g",
+		"Poivre de Sichuan": "300 kcal/100g",
+		"Bouillon": "10 kcal/100g",
+		"Fécule": "381 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter porc avec doubanjiang.",
+		"Ajouter ail-gingembre.",
+		"Mouiller de bouillon et ajouter tofu.",
+		"Lier à la fécule.",
+		"Poivrer Sichuan et servir."
+		],
+		"Image": 18
+	},
+	{
+		"Titre de la recette": "Kung Pao Chicken",
+		"Temps de cuisson": "18 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "3 min",
+		"Liste des ingrédients": {
+		"Poulet en dés": "215 kcal/100g",
+		"Cacahuètes": "567 kcal/100g",
+		"Piments secs": "282 kcal/100g",
+		"Poivrons": "31 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Vinaigre noir": "21 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Fécule": "381 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mariner poulet avec soja et fécule.",
+		"Sauter piments et poivrons.",
+		"Ajouter poulet, puis sauce sucrée-vinaigrée.",
+		"Jeter cacahuètes et enrober.",
+		"Servir aussitôt."
+		],
+		"Image": 19
+	},
+	{
+		"Titre de la recette": "Bœuf aux brocolis",
+		"Temps de cuisson": "15 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "0 min",
+		"Liste des ingrédients": {
+		"Bœuf émincé": "250 kcal/100g",
+		"Brocolis": "34 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Huile d’huître": "50 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Fécule": "381 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mariner le bœuf avec soja et fécule.",
+		"Blanchir les brocolis.",
+		"Sauter bœuf à feu vif.",
+		"Ajouter brocolis et sauces.",
+		"Servir sur riz."
+		],
+		"Image": 20
+	},
+	{
+		"Titre de la recette": "Xiao Long Bao",
+		"Temps de cuisson": "1 h 15 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "45 min",
+		"Durée de cuisson": "30 min",
+		"Liste des ingrédients": {
+		"Farce porc": "290 kcal/100g",
+		"Gélatine de bouillon": "5 kcal/100g",
+		"Farine": "364 kcal/100g",
+		"Eau": "0 kcal/100g",
+		"Vinaigre noir": "21 kcal/100g",
+		"Gingembre": "80 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Préparer la pâte et la farce avec gélatine.",
+		"Façonner des raviolis.",
+		"Cuire à la vapeur.",
+		"Servir avec vinaigre et gingembre.",
+		"Déguster chaud."
+		],
+		"Image": 21
+	},
+	{
+		"Titre de la recette": "Butter Chicken (Inde)",
+		"Temps de cuisson": "45 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "25 min",
+		"Liste des ingrédients": {
+		"Poulet": "215 kcal/100g",
+		"Yaourt": "61 kcal/100g",
+		"Pâte tandoori": "120 kcal/100g",
+		"Tomates concassées": "18 kcal/100g",
+		"Crème": "340 kcal/100g",
+		"Beurre": "717 kcal/100g",
+		"Garam masala": "350 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mariner le poulet au yaourt et épices.",
+		"Saisir le poulet.",
+		"Cuire sauce tomate-crème-beurre.",
+		"Mijoter avec le poulet.",
+		"Servir avec naan ou riz."
+		],
+		"Image": 22
+	},
+	{
+		"Titre de la recette": "Dal Tadka",
+		"Temps de cuisson": "35 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "25 min",
+		"Liste des ingrédients": {
+		"Lentilles jaunes": "116 kcal/100g",
+		"Tomates": "18 kcal/100g",
+		"Oignons": "40 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Gingembre": "80 kcal/100g",
+		"Cumin": "375 kcal/100g",
+		"Ghee/huile": "884 kcal/100g",
+		"Coriandre": "23 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Cuire les lentilles.",
+		"Réaliser le tadka d’épices dans le ghee.",
+		"Mélanger au dal avec tomates et oignons.",
+		"Assaisonner.",
+		"Servir avec riz basmati."
+		],
+		"Image": 23
+	},
+	{
+		"Titre de la recette": "Biryani de poulet",
+		"Temps de cuisson": "1 h 10 min",
+		"Nombre de personnes": 6,
+		"Durée de préparation": "25 min",
+		"Durée de cuisson": "45 min",
+		"Liste des ingrédients": {
+		"Riz basmati": "130 kcal/100g (cuit)",
+		"Poulet": "215 kcal/100g",
+		"Yaourt": "61 kcal/100g",
+		"Oignons frits": "403 kcal/100g",
+		"Épices biryani": "350 kcal/100g",
+		"Ghee": "884 kcal/100g",
+		"Safran": "310 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mariner le poulet au yaourt et épices.",
+		"Cuire partiellement le riz.",
+		"Monter en couches avec oignons et ghee.",
+		"Cuire à l’étouffée (dum).",
+		"Servir avec raita."
+		],
+		"Image": 24
+	},
+	{
+		"Titre de la recette": "Tom Kha Gai",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Lait de coco": "190 kcal/100g",
+		"Bouillon": "10 kcal/100g",
+		"Poulet": "215 kcal/100g",
+		"Galanga": "60 kcal/100g",
+		"Citronnelle": "99 kcal/100g",
+		"Kaffir": "33 kcal/100g",
+		"Champignons": "22 kcal/100g",
+		"Jus de citron vert": "29 kcal/100g",
+		"Sauce poisson": "60 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Infuser galanga, citronnelle et kaffir.",
+		"Ajouter poulet et champignons.",
+		"Verser lait de coco.",
+		"Assaisonner sauce poisson et citron.",
+		"Servir chaud."
+		],
+		"Image": 25
+	},
+	{
+		"Titre de la recette": "Char Kway Teow",
+		"Temps de cuisson": "10 min",
+		"Nombre de personnes": 2,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Large nouilles de riz": "109 kcal/100g (cuit)",
+		"Crevettes": "99 kcal/100g",
+		"Saucisse chinoise": "420 kcal/100g",
+		"Germes de soja": "42 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Sauce soja + douce": "110 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Saindoux/huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Chauffer très fort le wok.",
+		"Sauter garnitures puis nouilles.",
+		"Assaisonner de sauces.",
+		"Ajouter œufs et ciboule.",
+		"Servir immédiatement."
+		],
+		"Image": 26
+	},
+	{
+		"Titre de la recette": "Satay de poulet",
+		"Temps de cuisson": "15 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "15 min",
+		"Liste des ingrédients": {
+		"Poulet en lanières": "215 kcal/100g",
+		"Marinade (soja, ail, curcuma)": "80 kcal/100g",
+		"Sauce cacahuète": "590 kcal/100g",
+		"Citron vert": "29 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mariner le poulet 30 minutes.",
+		"Griller sur braise ou poêle.",
+		"Servir avec sauce cacahuète.",
+		"Presser citron vert.",
+		"Déguster chaud."
+		],
+		"Image": 27
+	},
+	{
+		"Titre de la recette": "Gua Bao (Taiwan)",
+		"Temps de cuisson": "2 h",
+		"Nombre de personnes": 6,
+		"Durée de préparation": "25 min",
+		"Durée de cuisson": "1 h 35 min",
+		"Liste des ingrédients": {
+		"Pains vapeur": "230 kcal/100g",
+		"Pork belly braisé": "520 kcal/100g",
+		"Coriandre": "23 kcal/100g",
+		"Cacahuètes pilées": "567 kcal/100g",
+		"Pickles moutarde": "20 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Braiser le porc.",
+		"Cuire les pains à la vapeur.",
+		"Assembler porc, pickles et cacahuètes.",
+		"Ajouter coriandre.",
+		"Servir chaud."
+		],
+		"Image": 28
+	},
+	{
+		"Titre de la recette": "Okonomiyaki",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 3,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Chou émincé": "25 kcal/100g",
+		"Farine": "364 kcal/100g",
+		"Dashi": "10 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Porc en fines tranches": "290 kcal/100g",
+		"Sauce okonomiyaki": "150 kcal/100g",
+		"Mayonnaise": "680 kcal/100g",
+		"Aonori/bonite": "290 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mélanger pâte et chou.",
+		"Cuire en galette avec porc.",
+		"Napper de sauce et mayonnaise.",
+		"Parsemer aonori et bonite.",
+		"Servir chaud."
+		],
+		"Image": 29
+	},
+	{
+		"Titre de la recette": "Tteokbokki",
+		"Temps de cuisson": "15 min",
+		"Nombre de personnes": 3,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Gâteaux de riz (tteok)": "175 kcal/100g",
+		"Gochujang": "190 kcal/100g",
+		"Gochugaru": "282 kcal/100g",
+		"Bouillon d’anchois": "10 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Ciboule": "32 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Dissoudre gochujang dans le bouillon.",
+		"Cuire tteok jusqu’à texture moelleuse.",
+		"Sucrer et pimenter.",
+		"Ajouter ciboule.",
+		"Servir brûlant."
+		],
+		"Image": 30
+	},
+	{
+		"Titre de la recette": "Hiyashi Chuka (ramen froids)",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 2,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "5 min",
+		"Liste des ingrédients": {
+		"Nouilles ramen": "138 kcal/100g (cuit)",
+		"Jambon/omelette": "180 kcal/100g (moy.)",
+		"Concombre": "16 kcal/100g",
+		"Tomate": "18 kcal/100g",
+		"Sauce vinaigrée sucrée": "120 kcal/100g",
+		"Graines de sésame": "573 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Cuire puis refroidir les nouilles.",
+		"Tailler garnitures en julienne.",
+		"Assembler dans l’assiette.",
+		"Napper de sauce.",
+		"Servir très frais."
+		],
+		"Image": 31
+	},
+	{
+		"Titre de la recette": "Hoppers (Sri Lanka)",
+		"Temps de cuisson": "30 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "20 min",
+		"Liste des ingrédients": {
+		"Farine de riz": "366 kcal/100g",
+		"Lait de coco": "190 kcal/100g",
+		"Levure": "325 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Sel": "0 kcal/100g",
+		"Œufs (option)": "155 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mélanger pâte fermentée.",
+		"Cuire en crêpes bols crousti-moelleuses.",
+		"Ajouter œuf si souhaité.",
+		"Servir avec sambols.",
+		"Déguster chaud."
+		],
+		"Image": 32
+	},
+	{
+		"Titre de la recette": "Khachapuri adjaruli (Caucase)",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "1 h (pousse)",
+		"Durée de cuisson": "25 min",
+		"Liste des ingrédients": {
+		"Pâte levée": "270 kcal/100g",
+		"Fromages (suluguni/feta)": "280 kcal/100g",
+		"Œufs": "155 kcal/100g",
+		"Beurre": "717 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Façonner barques de pâte.",
+		"Garnir de fromage et cuire.",
+		"Ajouter œuf et beurre en fin.",
+		"Mélanger au service.",
+		"Déguster chaud."
+		],
+		"Image": 33
+	},
+	{
+		"Titre de la recette": "Som Tam (salade de papaye verte)",
+		"Temps de cuisson": "0 min",
+		"Nombre de personnes": 2,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "0 min",
+		"Liste des ingrédients": {
+		"Papaye verte râpée": "43 kcal/100g",
+		"Haricots longs": "31 kcal/100g",
+		"Tomates": "18 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Piment": "40 kcal/100g",
+		"Cacahuètes": "567 kcal/100g",
+		"Nuoc-mam": "60 kcal/100g",
+		"Sucre de palme": "387 kcal/100g",
+		"Citron vert": "29 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Piler ail, piment et sucre.",
+		"Ajouter haricots et tomates, écraser légèrement.",
+		"Incorporer papaye, nuoc-mam et citron.",
+		"Mélanger vivement.",
+		"Parsemer de cacahuètes."
+		],
+		"Image": 34
+	},
+	{
+		"Titre de la recette": "Hokkien Prawn Mee (soupe)",
+		"Temps de cuisson": "1 h",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "20 min",
+		"Durée de cuisson": "40 min",
+		"Liste des ingrédients": {
+		"Têtes/coques de crevettes pour bouillon": "99 kcal/100g",
+		"Nouilles œufs et riz": "140 kcal/100g (cuit)",
+		"Porc/poisson": "180 kcal/100g (moy.)",
+		"Ail": "149 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Pâte de piment": "100 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Réaliser bouillon de crevettes corsé.",
+		"Cuire les nouilles.",
+		"Assembler bol avec garnitures.",
+		"Ajouter bouillon chaud.",
+		"Servir avec piment."
+		],
+		"Image": 35
+	},
+	{
+		"Titre de la recette": "Onigiri",
+		"Temps de cuisson": "10 min",
+		"Nombre de personnes": 3,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "0 min",
+		"Liste des ingrédients": {
+		"Riz japonais": "130 kcal/100g (cuit)",
+		"Sel": "0 kcal/100g",
+		"Garniture (saumon, ume, thon mayo)": "200 kcal/100g (moy.)",
+		"Nori": "35 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Assaisonner légèrement le riz.",
+		"Façonner triangles avec garniture.",
+		"Envelopper de nori.",
+		"Option: griller (yaki onigiri).",
+		"Servir à température ambiante."
+		],
+		"Image": 36
+	},
+	{
+		"Titre de la recette": "Jjajangmyeon",
+		"Temps de cuisson": "25 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "15 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Nouilles épaisses": "150 kcal/100g (cuit)",
+		"Pâte de soja noir (chunjang)": "180 kcal/100g",
+		"Porc en dés": "290 kcal/100g",
+		"Oignon": "40 kcal/100g",
+		"Courgette": "17 kcal/100g",
+		"Pommes de terre": "77 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Fécule": "381 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Sauter porc et légumes.",
+		"Frire chunjang puis l’ajouter.",
+		"Mouiller, sucrer et lier.",
+		"Servir sur nouilles.",
+		"Ajouter concombre en julienne."
+		],
+		"Image": 37
+	},
+	{
+		"Titre de la recette": "Hiyashi Gyoza (gyoza grillés)",
+		"Temps de cuisson": "20 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "25 min",
+		"Durée de cuisson": "10 min",
+		"Liste des ingrédients": {
+		"Pâte à gyoza": "250 kcal/100g",
+		"Porc haché": "290 kcal/100g",
+		"Chou": "25 kcal/100g",
+		"Ciboule": "32 kcal/100g",
+		"Gingembre": "80 kcal/100g",
+		"Ail": "149 kcal/100g",
+		"Sauce soja": "53 kcal/100g",
+		"Huile": "884 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Mélanger farce et façonner gyozas.",
+		"Poêler puis ajouter un peu d’eau et couvrir.",
+		"Finir à découvert pour croustiller.",
+		"Servir avec sauce soja-vinaigre.",
+		"Déguster chaud."
+		],
+		"Image": 38
+	},
+	{
+		"Titre de la recette": "Mango Sticky Rice",
+		"Temps de cuisson": "40 min",
+		"Nombre de personnes": 4,
+		"Durée de préparation": "10 min",
+		"Durée de cuisson": "30 min",
+		"Liste des ingrédients": {
+		"Riz gluant": "130 kcal/100g (cuit)",
+		"Lait de coco": "190 kcal/100g",
+		"Sucre": "387 kcal/100g",
+		"Mangue": "60 kcal/100g",
+		"Sel": "0 kcal/100g",
+		"Graines de sésame": "573 kcal/100g"
+		},
+		"Les étapes de préparation": [
+		"Cuire le riz gluant à la vapeur.",
+		"Chauffer lait de coco, sucre et sel.",
+		"Mélanger au riz et laisser absorber.",
+		"Servir avec mangue.",
+		"Parsemer de sésame."
+		],
+		"Image": 39
+	}
+]

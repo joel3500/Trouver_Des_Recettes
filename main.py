@@ -373,7 +373,7 @@ def generer_image_recette(titre_recette):
     on retourne une Data-URL 'data:image/png;base64,...'. Aucun fichier local.
     """
     client = openai_client
-    mon_modele = "dall-e-3" # ou "gpt-image-1"
+    mon_modele = "gpt-image-1" # ou "gpt-image-1"
     mon_prompt = ( f"Belle photo appétissante du plat « {titre_recette} » ")
     try:
         resp = client.images.generate(
