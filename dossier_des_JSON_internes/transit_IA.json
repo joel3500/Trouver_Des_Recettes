@@ -1,316 +1,240 @@
 [
     {
-        "Titre de la recette": "Couscous de légumes et viande",
-        "Temps de cuisson": "1 h",
-        "Nombre de personnes": 4,
-        "Durée de préparation": "30 min",
-        "Durée de cuisson": "1 h",
-        "Liste des ingrédients": [
-            {
-                "ingrédient": "Couscous (semoule de blé dur)",
-                "quantité": "300 g",
-                "apport_énergétique": "1080 kcal"
-            },
-            {
-                "ingrédient": "Épaule d’agneau (ou bœuf) désossée",
-                "quantité": "400 g",
-                "apport_énergétique": "880 kcal"
-            },
-            {
-                "ingrédient": "Carottes",
-                "quantité": "3 moyennes (240 g)",
-                "apport_énergétique": "100 kcal"
-            },
-            {
-                "ingrédient": "Oignons",
-                "quantité": "2 moyens (200 g)",
-                "apport_énergétique": "80 kcal"
-            },
-            {
-                "ingrédient": "Tomates",
-                "quantité": "3 moyennes (360 g)",
-                "apport_énergétique": "70 kcal"
-            },
-            {
-                "ingrédient": "Pois chiches cuits",
-                "quantité": "150 g",
-                "apport_énergétique": "240 kcal"
-            },
-            {
-                "ingrédient": "Courgettes",
-                "quantité": "2 moyennes (250 g)",
-                "apport_énergétique": "45 kcal"
-            },
-            {
-                "ingrédient": "Navets",
-                "quantité": "2 petits (160 g)",
-                "apport_énergétique": "40 kcal"
-            },
-            {
-                "ingrédient": "Poivron rouge",
-                "quantité": "1 moyen (150 g)",
-                "apport_énergétique": "45 kcal"
-            },
-            {
-                "ingrédient": "Concentré de tomate",
-                "quantité": "2 c. à soupe (30 g)",
-                "apport_énergétique": "45 kcal"
-            },
-            {
-                "ingrédient": "Huile d’olive",
-                "quantité": "3 c. à soupe (30 ml)",
-                "apport_énergétique": "270 kcal"
-            },
-            {
-                "ingrédient": "Ras el-hanout",
-                "quantité": "2 c. à café (6 g)",
-                "apport_énergétique": "18 kcal"
-            },
-            {
-                "ingrédient": "Paprika",
-                "quantité": "1 c. à café (3 g)",
-                "apport_énergétique": "9 kcal"
-            },
-            {
-                "ingrédient": "Cumin moulu",
-                "quantité": "1 c. à café (3 g)",
-                "apport_énergétique": "8 kcal"
-            },
-            {
-                "ingrédient": "Sel",
-                "quantité": "1,5 c. à café (8 g)",
-                "apport_énergétique": "0 kcal"
-            },
-            {
-                "ingrédient": "Poivre",
-                "quantité": "1/2 c. à café (1 g)",
-                "apport_énergétique": "3 kcal"
-            },
-            {
-                "ingrédient": "Bouillon de légumes ou de poulet",
-                "quantité": "1 L",
-                "apport_énergétique": "40 kcal"
-            },
-            {
-                "ingrédient": "Beurre",
-                "quantité": "20 g",
-                "apport_énergétique": "150 kcal"
-            },
-            {
-                "ingrédient": "Coriandre fraîche",
-                "quantité": "1/2 botte (15 g)",
-                "apport_énergétique": "4 kcal"
-            }
-        ],
-        "Étapes de préparation": [
-            "Éplucher les carottes, navets et oignons. Couper les carottes en bâtonnets, les navets en quartiers, les courgettes en gros morceaux et le poivron en lanières. Monder et concasser les tomates (ou les couper finement).",
-            "Couper la viande en gros cubes. Assaisonner avec sel, poivre, 1 c. à café de ras el-hanout et le cumin.",
-            "Dans une grande cocotte, faire chauffer 2 c. à soupe d’huile d’olive. Faire revenir la viande à feu vif jusqu’à ce qu’elle soit bien dorée de tous les côtés, puis la réserver.",
-            "Dans la même cocotte, ajouter les oignons émincés et les faire revenir 5 minutes jusqu’à légère coloration. Ajouter le poivron, les carottes, les navets et faire revenir encore 5 minutes.",
-            "Ajouter les tomates concassées, le concentré de tomate, le reste de ras el-hanout, le paprika, sel et poivre. Bien mélanger et laisser cuire 2–3 minutes pour concentrer les arômes.",
-            "Remettre la viande dans la cocotte, ajouter le bouillon de manière à couvrir largement. Porter à ébullition, puis réduire le feu et laisser mijoter à couvert 30 minutes.",
-            "Ajouter les courgettes et les pois chiches rincés et égouttés, poursuivre la cuisson 20–25 minutes supplémentaires jusqu’à ce que la viande et les légumes soient tendres. Rectifier l’assaisonnement en sel et poivre.",
-            "Pendant ce temps, préparer le couscous : verser la semoule dans un grand saladier, ajouter 1 c. à soupe d’huile d’olive et 1 c. à café de sel, mélanger. Verser 300 ml d’eau bouillante par-dessus, couvrir et laisser gonfler 5–7 minutes.",
-            "Égrainer la semoule à la fourchette, ajouter le beurre en petits morceaux et mélanger pour bien l’incorporer. Garder au chaud.",
-            "Servir la semoule dans un grand plat, disposer la viande et les légumes au centre, napper généreusement de bouillon. Parsemer de coriandre fraîche ciselée avant de servir."
-        ],
-        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-uwioomYVAQfvO5z5qDvms1nV.png?st=2025-11-23T08%3A57%3A40Z&se=2025-11-23T10%3A57%3A40Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=32836cae-d25f-4fe9-827b-1c8c59c442cc&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T08%3A25%3A04Z&ske=2025-11-24T08%3A25%3A04Z&sks=b&skv=2024-08-04&sig=sVtqR%2B54oWKZNH3/Im5TwsmaQKcUKUZhIWSENDOtoGo%3D"
-    },
-    {
-        "Titre de la recette": "Bol de riz à l'avocat, sardines et légumes rôtis",
-        "Temps de cuisson": "25 min",
-        "Nombre de personnes": 2,
-        "Durée de préparation": "20 min",
-        "Durée de cuisson": "25 min",
-        "Liste des ingrédients": [
-            {
-                "ingrédient": "Riz basmati",
-                "quantité": "160 g (cru)",
-                "apport_énergétique": "570 kcal"
-            },
-            {
-                "ingrédient": "Sardines en boîte à l’huile d’olive",
-                "quantité": "1 boîte (120 g égoutté)",
-                "apport_énergétique": "260 kcal"
-            },
-            {
-                "ingrédient": "Avocat",
-                "quantité": "1 moyen (150 g de chair)",
-                "apport_énergétique": "240 kcal"
-            },
-            {
-                "ingrédient": "Carotte",
-                "quantité": "1 grande (120 g)",
-                "apport_énergétique": "50 kcal"
-            },
-            {
-                "ingrédient": "Poivron rouge",
-                "quantité": "1 petit (120 g)",
-                "apport_énergétique": "35 kcal"
-            },
-            {
-                "ingrédient": "Oignon rouge",
-                "quantité": "1 petit (80 g)",
-                "apport_énergétique": "32 kcal"
-            },
-            {
-                "ingrédient": "Tomate",
-                "quantité": "1 moyenne (120 g)",
-                "apport_énergétique": "22 kcal"
-            },
-            {
-                "ingrédient": "Huile d’olive (pour rôtir les légumes)",
-                "quantité": "2 c. à soupe (20 ml)",
-                "apport_énergétique": "180 kcal"
-            },
-            {
-                "ingrédient": "Jus de citron",
-                "quantité": "2 c. à soupe (20 ml)",
-                "apport_énergétique": "6 kcal"
-            },
-            {
-                "ingrédient": "Ail",
-                "quantité": "1 gousse (5 g)",
-                "apport_énergétique": "8 kcal"
-            },
-            {
-                "ingrédient": "Paprika fumé",
-                "quantité": "1/2 c. à café (1,5 g)",
-                "apport_énergétique": "5 kcal"
-            },
-            {
-                "ingrédient": "Cumin moulu",
-                "quantité": "1/4 c. à café (1 g)",
-                "apport_énergétique": "3 kcal"
-            },
-            {
-                "ingrédient": "Sel",
-                "quantité": "1 c. à café (5 g)",
-                "apport_énergétique": "0 kcal"
-            },
-            {
-                "ingrédient": "Poivre",
-                "quantité": "1/2 c. à café (1 g)",
-                "apport_énergétique": "3 kcal"
-            },
-            {
-                "ingrédient": "Coriandre ou persil frais",
-                "quantité": "2 c. à soupe ciselées (8 g)",
-                "apport_énergétique": "3 kcal"
-            }
-        ],
-        "Étapes de préparation": [
-            "Préchauffer le four à 200 °C (chaleur tournante).",
-            "Rincer le riz à l’eau froide jusqu’à ce que l’eau soit claire. Le mettre dans une casserole avec 1,5 fois son volume d’eau légèrement salée. Porter à ébullition, couvrir, baisser le feu et laisser cuire 10–12 minutes, puis laisser reposer 5 minutes hors du feu sans découvrir.",
-            "Pendant que le riz cuit, éplucher la carotte et la couper en bâtonnets. Couper le poivron en lanières en retirant graines et parties blanches. Peler l’oignon et le couper en quartiers.",
-            "Mettre carotte, poivron et oignon sur une plaque recouverte de papier cuisson. Arroser de 2 c. à soupe d’huile d’olive, saler, poivrer, saupoudrer de paprika fumé et de cumin. Mélanger pour bien enrober les légumes.",
-            "Enfourner les légumes pour 18–20 minutes, en les remuant à mi-cuisson, jusqu’à ce qu’ils soient légèrement caramélisés et tendres.",
-            "Ouvrir la boîte de sardines, les égoutter (en gardant un peu d’huile pour le goût si souhaité) et retirer les arêtes principales si elles sont grosses. Réserver.",
-            "Couper l’avocat en deux, retirer le noyau, prélever la chair et la trancher en lamelles. Arroser de jus de citron pour éviter qu’il ne noircisse et saler légèrement.",
-            "Couper la tomate en petits dés. Presser ou hacher finement la gousse d’ail et la mélanger à la tomate avec une pincée de sel, de poivre et un peu de jus de citron.",
-            "Égrainer le riz cuit à la fourchette. Le répartir au fond de deux bols.",
-            "Disposer harmonieusement les légumes rôtis, les sardines, les lamelles d’avocat et la salsa de tomate à l’ail sur le riz.",
-            "Parsemer de coriandre ou de persil frais ciselé. Ajuster l’assaisonnement en sel, poivre et éventuellement un filet d’huile d’olive ou de jus de citron avant de servir."
-        ],
-        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-zJd0rK6AW5yX5NwIH1JJ2uSp.png?st=2025-11-23T08%3A57%3A53Z&se=2025-11-23T10%3A57%3A53Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=38e27a3b-6174-4d3e-90ac-d7d9ad49543f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T09%3A05%3A18Z&ske=2025-11-24T09%3A05%3A18Z&sks=b&skv=2024-08-04&sig=ADs4Cb/riOWmOXuTT5CxvCvJxAwNnPigL2DX3iVq6JU%3D"
-    },
-    {
-        "Titre de la recette": "Poivrons farcis à la viande, riz, tomate et oignon",
-        "Temps de cuisson": "45 min",
+        "Titre de la recette": "Saka-Saka (Feuilles de manioc à la pâte d’arachide)",
+        "Temps de cuisson": "1 h 30",
         "Nombre de personnes": 4,
         "Durée de préparation": "25 min",
-        "Durée de cuisson": "45 min",
-        "Liste des ingrédients": [
+        "Durée de cuisson": "1 h 30",
+        "Ingrédients": [
             {
-                "ingrédient": "Poivrons (rouges ou verts)",
-                "quantité": "4 gros (600 g)",
-                "apport_énergétique": "180 kcal"
+                "nom": "Feuilles de manioc fraîches ou surgelées",
+                "quantité": "600 g",
+                "apport_energetique": "environ 600 kcal"
             },
             {
-                "ingrédient": "Viande hachée (bœuf ou veau)",
-                "quantité": "400 g",
-                "apport_énergétique": "880 kcal"
+                "nom": "Pâte d’arachide (100 % cacahuète)",
+                "quantité": "120 g",
+                "apport_energetique": "environ 700 kcal"
             },
             {
-                "ingrédient": "Riz blanc",
-                "quantité": "120 g (cru)",
-                "apport_énergétique": "430 kcal"
+                "nom": "Oignon jaune",
+                "quantité": "1 gros (120 g)",
+                "apport_energetique": "environ 48 kcal"
             },
             {
-                "ingrédient": "Oignons",
-                "quantité": "2 petits (150 g)",
-                "apport_énergétique": "60 kcal"
+                "nom": "Huile de palme rouge ou huile végétale neutre",
+                "quantité": "3 c. à soupe (30 g)",
+                "apport_energetique": "environ 270 kcal"
             },
             {
-                "ingrédient": "Tomates concassées en boîte",
-                "quantité": "400 g",
-                "apport_énergétique": "80 kcal"
+                "nom": "Gousses d’ail",
+                "quantité": "2 (10 g)",
+                "apport_energetique": "environ 15 kcal"
             },
             {
-                "ingrédient": "Carotte",
-                "quantité": "1 moyenne (80 g)",
-                "apport_énergétique": "33 kcal"
+                "nom": "Cube de bouillon ou sel",
+                "quantité": "1 cube (10 g)",
+                "apport_energetique": "environ 20 kcal"
             },
             {
-                "ingrédient": "Ail",
-                "quantité": "2 gousses (10 g)",
-                "apport_énergétique": "16 kcal"
+                "nom": "Piment frais ou en poudre (facultatif)",
+                "quantité": "au goût (5 g)",
+                "apport_energetique": "environ 15 kcal"
             },
             {
-                "ingrédient": "Huile d’olive",
-                "quantité": "3 c. à soupe (30 ml)",
-                "apport_énergétique": "270 kcal"
-            },
-            {
-                "ingrédient": "Herbes de Provence (ou origan)",
-                "quantité": "1 c. à café (2 g)",
-                "apport_énergétique": "6 kcal"
-            },
-            {
-                "ingrédient": "Paprika",
-                "quantité": "1 c. à café (3 g)",
-                "apport_énergétique": "9 kcal"
-            },
-            {
-                "ingrédient": "Sel",
-                "quantité": "1,5 c. à café (8 g)",
-                "apport_énergétique": "0 kcal"
-            },
-            {
-                "ingrédient": "Poivre",
-                "quantité": "1/2 c. à café (1 g)",
-                "apport_énergétique": "3 kcal"
-            },
-            {
-                "ingrédient": "Fromage râpé (emmental ou mozzarella, facultatif)",
-                "quantité": "60 g",
-                "apport_énergétique": "210 kcal"
-            },
-            {
-                "ingrédient": "Bouillon de légumes ou dinde",
-                "quantité": "200 ml",
-                "apport_énergétique": "20 kcal"
-            },
-            {
-                "ingrédient": "Persil frais",
-                "quantité": "1/2 botte (15 g)",
-                "apport_énergétique": "5 kcal"
+                "nom": "Eau",
+                "quantité": "1 à 1,2 L (selon texture souhaitée)",
+                "apport_energetique": "0 kcal"
             }
         ],
         "Étapes de préparation": [
-            "Préchauffer le four à 190 °C.",
-            "Rincer le riz et le précuire 8 minutes dans de l’eau bouillante salée (il doit rester légèrement ferme). Égoutter et réserver.",
-            "Laver les poivrons, couper le chapeau (en conservant la partie supérieure), retirer les graines et les cloisons blanches. Saler légèrement l’intérieur et les placer debout dans un plat allant au four.",
-            "Éplucher les oignons et l’ail. Émincer finement les oignons, hacher l’ail. Éplucher la carotte et la râper ou la couper en très petits dés.",
-            "Dans une grande poêle, faire chauffer 2 c. à soupe d’huile d’olive. Faire revenir les oignons 5 minutes jusqu’à ce qu’ils soient translucides.",
-            "Ajouter la carotte, l’ail et la viande hachée. Faire revenir à feu moyen-vif 6–8 minutes en émiettant bien la viande jusqu’à ce qu’elle soit dorée. Saler, poivrer, ajouter le paprika et les herbes de Provence.",
-            "Incorporer le riz précuit dans la poêle et mélanger. Ajouter 3–4 c. à soupe de tomates concassées pour lier la farce. Rectifier l’assaisonnement.",
-            "Farcir généreusement chaque poivron avec le mélange riz–viande–légumes, sans trop tasser pour permettre au riz de finir de cuire. Remettre les chapeaux sur les poivrons.",
-            "Dans le fond du plat allant au four, verser le reste des tomates concassées et le bouillon. Ajouter 1 c. à soupe d’huile d’olive, saler et poivrer légèrement la sauce.",
-            "Couvrir le plat d’une feuille de papier aluminium et enfourner pour 35 minutes.",
-            "Retirer l’aluminium, parsemer le dessus des poivrons de fromage râpé si utilisé, et poursuivre la cuisson 10 minutes supplémentaires, jusqu’à ce que les poivrons soient tendres et légèrement grillés.",
-            "À la sortie du four, laisser reposer 5 minutes, puis parsemer de persil frais ciselé avant de servir, nappé de la sauce tomate au fond du plat."
+            "1. Si vous utilisez des feuilles de manioc fraîches, les laver soigneusement, retirer les grosses nervures et les écraser ou les piler finement. Si elles sont surgelées, les laisser décongeler et les presser légèrement pour retirer l’excès d’eau.",
+            "2. Éplucher l’oignon et l’ail. Émincer finement l’oignon et hacher l’ail.",
+            "3. Dans une grande casserole, chauffer l’huile à feu moyen. Ajouter l’oignon émincé et faire revenir 3 à 4 minutes jusqu’à ce qu’il devienne translucide.",
+            "4. Ajouter l’ail haché et, si désiré, le piment. Faire revenir encore 1 minute en remuant pour ne pas brûler l’ail.",
+            "5. Incorporer les feuilles de manioc pilées dans la casserole, bien mélanger avec la base aromatique à l’oignon, puis ajouter environ 800 ml d’eau pour commencer.",
+            "6. Porter à ébullition, ajouter le cube de bouillon ou le sel, puis réduire le feu à moyen-doux. Couvrir partiellement et laisser mijoter 45 minutes en remuant de temps en temps pour éviter que cela n’attache au fond.",
+            "7. Pendant ce temps, détendre la pâte d’arachide dans un bol avec une petite louche du liquide chaud prélevé dans la casserole, bien mélanger pour obtenir une crème lisse sans grumeaux.",
+            "8. Au bout de 45 minutes de cuisson des feuilles de manioc, verser la pâte d’arachide diluée dans la casserole, bien mélanger. Ajuster la quantité d’eau (200 à 400 ml supplémentaires) selon la consistance souhaitée, plus ou moins épaisse.",
+            "9. Laisser mijoter encore 35 à 45 minutes à feu doux, sans couvrir complètement, en remuant régulièrement. Le plat est prêt lorsque l’huile commence à remonter à la surface et que les feuilles sont bien tendres.",
+            "10. Goûter et rectifier l’assaisonnement en sel et en piment si nécessaire. Servir bien chaud, idéalement accompagné de riz, de foufou, de bananes plantains bouillies ou grillées."
         ],
-        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-Fqya0cjjQFXS6Nq0NhPltH1S.png?st=2025-11-23T08%3A58%3A01Z&se=2025-11-23T10%3A58%3A01Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=38e27a3b-6174-4d3e-90ac-d7d9ad49543f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T09%3A58%3A01Z&ske=2025-11-24T09%3A58%3A01Z&sks=b&skv=2024-08-04&sig=5erLVjShK4Z6Kl6VLEMzgDKNlekkEne4hUlJMqKlgn0%3D"
+        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-GCptqFotdPEFdIxOlZ04vCaZ.png?st=2025-11-23T21%3A48%3A13Z&se=2025-11-23T23%3A48%3A13Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T22%3A04%3A35Z&ske=2025-11-24T22%3A04%3A35Z&sks=b&skv=2024-08-04&sig=otxaMt2IlQO3FZURIkd1n%2B8zL9cyKakONyJ5YqrGyfU%3D"
+    },
+    {
+        "Titre de la recette": "Ragoût de bœuf aux arachides et bananes plantains",
+        "Temps de cuisson": "1 h 40",
+        "Nombre de personnes": 4,
+        "Durée de préparation": "30 min",
+        "Durée de cuisson": "1 h 40",
+        "Ingrédients": [
+            {
+                "nom": "Viande de bœuf à braiser (paleron, macreuse)",
+                "quantité": "800 g",
+                "apport_energetique": "environ 1600 kcal"
+            },
+            {
+                "nom": "Pâte d’arachide (100 % cacahuète) ou beurre de cacahuète non sucré",
+                "quantité": "150 g",
+                "apport_energetique": "environ 875 kcal"
+            },
+            {
+                "nom": "Bananes plantains mûres mais fermes",
+                "quantité": "3 grosses (600 g sans peau)",
+                "apport_energetique": "environ 540 kcal"
+            },
+            {
+                "nom": "Oignons jaunes",
+                "quantité": "2 moyens (240 g)",
+                "apport_energetique": "environ 96 kcal"
+            },
+            {
+                "nom": "Tomates fraîches ou concassées",
+                "quantité": "300 g",
+                "apport_energetique": "environ 60 kcal"
+            },
+            {
+                "nom": "Huile végétale (arachide, tournesol ou autre)",
+                "quantité": "3 c. à soupe (30 g)",
+                "apport_energetique": "environ 270 kcal"
+            },
+            {
+                "nom": "Gousses d’ail",
+                "quantité": "3 (15 g)",
+                "apport_energetique": "environ 22 kcal"
+            },
+            {
+                "nom": "Bouillon de bœuf ou eau",
+                "quantité": "800 ml",
+                "apport_energetique": "environ 20 kcal"
+            },
+            {
+                "nom": "Feuille de laurier",
+                "quantité": "1",
+                "apport_energetique": "environ 2 kcal"
+            },
+            {
+                "nom": "Piment frais ou en poudre",
+                "quantité": "au goût (5 g)",
+                "apport_energetique": "environ 15 kcal"
+            },
+            {
+                "nom": "Sel",
+                "quantité": "1,5 c. à café (8 g)",
+                "apport_energetique": "0 kcal"
+            },
+            {
+                "nom": "Poivre noir moulu",
+                "quantité": "1/2 c. à café (1 g)",
+                "apport_energetique": "environ 3 kcal"
+            }
+        ],
+        "Étapes de préparation": [
+            "1. Découper la viande de bœuf en cubes de 3 à 4 cm. Éponger avec du papier absorbant pour bien les sécher et saler légèrement.",
+            "2. Éplucher les oignons et l’ail. Émincer les oignons et hacher finement l’ail. Couper les tomates en dés si vous utilisez des tomates fraîches.",
+            "3. Dans une grande cocotte, chauffer l’huile à feu vif. Ajouter les cubes de bœuf en plusieurs fois pour ne pas surcharger la cocotte et les faire dorer sur toutes les faces pendant 5 à 7 minutes. Réserver la viande dorée dans un plat.",
+            "4. Dans la même cocotte, réduire le feu à moyen et ajouter les oignons. Faire revenir 5 minutes jusqu’à ce qu’ils soient légèrement caramélisés en grattant le fond pour décoller les sucs.",
+            "5. Ajouter l’ail haché, le piment et la feuille de laurier. Faire cuire encore 1 minute en remuant.",
+            "6. Remettre la viande dans la cocotte, ajouter les tomates, saler et poivrer. Mélanger puis verser le bouillon de bœuf ou l’eau. Porter à ébullition.",
+            "7. Baisser le feu à moyen-doux, couvrir et laisser mijoter environ 50 minutes, en remuant de temps en temps. La viande doit commencer à s’attendrir.",
+            "8. Pendant que la viande cuit, peler les bananes plantains. Les couper en grosses rondelles ou en tronçons de 3 cm. Réserver.",
+            "9. Détendre la pâte d’arachide dans un bol avec une louche de bouillon chaud prélevé de la cocotte. Fouetter pour obtenir une sauce lisse, sans grumeaux.",
+            "10. Après 50 minutes de cuisson, verser la pâte d’arachide diluée dans la cocotte. Bien mélanger pour l’incorporer au jus de cuisson.",
+            "11. Ajouter les morceaux de banane plantain. Si le ragoût vous semble trop épais, ajouter un peu d’eau ou de bouillon supplémentaire (100 à 150 ml).",
+            "12. Couvrir à moitié et laisser mijoter encore 40 à 50 minutes à feu doux, en remuant délicatement de temps à autre pour ne pas écraser les plantains. La sauce va épaissir et la viande devenir très tendre.",
+            "13. Goûter et ajuster l’assaisonnement en sel, poivre et piment en fin de cuisson. Retirer la feuille de laurier.",
+            "14. Servir le ragoût bien chaud, avec du riz blanc, de l’attiéké ou un foufou de manioc, en veillant à avoir dans chaque assiette à la fois des morceaux de viande, de plantain et de sauce aux arachides."
+        ],
+        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-lOHBu8aarl0GkexzCcIqWfGx.png?st=2025-11-23T21%3A48%3A22Z&se=2025-11-23T23%3A48%3A22Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=38e27a3b-6174-4d3e-90ac-d7d9ad49543f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T22%3A48%3A22Z&ske=2025-11-24T22%3A48%3A22Z&sks=b&skv=2024-08-04&sig=d0AmdHa2ADQMdM%2B5VdyjK1ZY0PycZ56K9U9MQzMym4w%3D"
+    },
+    {
+        "Titre de la recette": "Poulet DG revisité (Poulet, bananes plantains et oignons)",
+        "Temps de cuisson": "1 h 15",
+        "Nombre de personnes": 4,
+        "Durée de préparation": "35 min",
+        "Durée de cuisson": "1 h 15",
+        "Ingrédients": [
+            {
+                "nom": "Poulet découpé (cuisses, hauts de cuisse, ailes)",
+                "quantité": "1,2 kg avec os",
+                "apport_energetique": "environ 2400 kcal"
+            },
+            {
+                "nom": "Bananes plantains bien mûres (jaunes, légèrement tachetées)",
+                "quantité": "4 moyennes (800 g sans peau)",
+                "apport_energetique": "environ 720 kcal"
+            },
+            {
+                "nom": "Oignons jaunes",
+                "quantité": "3 moyens (360 g)",
+                "apport_energetique": "environ 144 kcal"
+            },
+            {
+                "nom": "Poivrons rouges et verts",
+                "quantité": "2 moyens (300 g)",
+                "apport_energetique": "environ 75 kcal"
+            },
+            {
+                "nom": "Tomates fraîches ou concassées",
+                "quantité": "300 g",
+                "apport_energetique": "environ 60 kcal"
+            },
+            {
+                "nom": "Ail",
+                "quantité": "4 gousses (20 g)",
+                "apport_energetique": "environ 30 kcal"
+            },
+            {
+                "nom": "Gingembre frais",
+                "quantité": "2 cm de racine (10 g)",
+                "apport_energetique": "environ 8 kcal"
+            },
+            {
+                "nom": "Huile végétale pour friture et cuisson",
+                "quantité": "80 ml (environ 72 g, une partie restera dans le bain de friture)",
+                "apport_energetique": "environ 650 kcal"
+            },
+            {
+                "nom": "Cube de bouillon volaille ou légumes",
+                "quantité": "1 (10 g)",
+                "apport_energetique": "environ 20 kcal"
+            },
+            {
+                "nom": "Feuille de laurier",
+                "quantité": "1",
+                "apport_energetique": "environ 2 kcal"
+            },
+            {
+                "nom": "Sel",
+                "quantité": "1,5 c. à café (8 g)",
+                "apport_energetique": "0 kcal"
+            },
+            {
+                "nom": "Poivre noir",
+                "quantité": "1/2 c. à café (1 g)",
+                "apport_energetique": "environ 3 kcal"
+            },
+            {
+                "nom": "Piment (facultatif)",
+                "quantité": "au goût (5 g)",
+                "apport_energetique": "environ 15 kcal"
+            }
+        ],
+        "Étapes de préparation": [
+            "1. Laver et sécher les morceaux de poulet. Les déposer dans un grand saladier et les assaisonner avec 1/2 c. à café de sel et le poivre.",
+            "2. Peler l’ail et le gingembre. Les écraser au pilon ou les mixer avec un peu d’eau pour obtenir une pâte. Ajouter cette pâte au poulet, bien masser pour enrober chaque morceau. Laisser mariner au moins 20 à 30 minutes (ou plus longtemps au frais si possible).",
+            "3. Pendant la marinade, éplucher les bananes plantains et les couper en rondelles épaisses ou en tronçons biseautés de 2 à 3 cm. Les réserver dans un saladier.",
+            "4. Éplucher les oignons et les émincer en fines lamelles. Laver les poivrons, enlever les graines et les couper en lanières. Couper les tomates en dés si elles sont fraîches.",
+            "5. Faire chauffer un bain d’huile dans une grande poêle ou une friteuse à feu moyen-vif. Lorsque l’huile est chaude, y faire frire les rondelles de bananes plantains par petites quantités jusqu’à ce qu’elles soient bien dorées à l’extérieur et fondantes à l’intérieur, environ 5 à 7 minutes par tournée.",
+            "6. Égoutter les plantains sur du papier absorbant et les saler très légèrement. Réserver.",
+            "7. Dans une grande cocotte, chauffer 2 à 3 c. à soupe de l’huile de friture filtrée. Faire dorer les morceaux de poulet sur toutes les faces 8 à 10 minutes, jusqu’à obtenir une belle coloration. Retirer et réserver.",
+            "8. Dans la même cocotte, ajouter les oignons émincés et la feuille de laurier. Faire revenir 5 à 7 minutes à feu moyen en remuant, jusqu’à ce que les oignons soient tendres et légèrement caramélisés.",
+            "9. Ajouter les poivrons et poursuivre la cuisson 3 à 4 minutes. Incorporer ensuite les tomates, le cube de bouillon émietté et, si souhaité, un peu de piment. Mélanger et laisser mijoter 5 minutes.",
+            "10. Remettre les morceaux de poulet dans la cocotte avec les légumes. Verser un petit verre d’eau (100 ml) pour éviter que ça n’attache, couvrir et laisser cuire doucement 25 à 30 minutes, jusqu’à ce que le poulet soit bien cuit et tendre.",
+            "11. Vérifier l’assaisonnement en sel et poivre, ajuster si nécessaire. Si la sauce est trop liquide, laisser réduire quelques minutes à découvert.",
+            "12. Ajouter délicatement les bananes plantains frites dans la cocotte. Mélanger très doucement pour ne pas les écraser, de façon à ce qu’elles s’enrobent de sauce et se réchauffent, pendant 3 à 5 minutes à feu doux.",
+            "13. Retirer la feuille de laurier. Servir immédiatement le poulet, nappé de sauce aux oignons et poivrons, accompagné des rondelles de plantain et, si désiré, d’un peu de riz ou de légumes sautés."
+        ],
+        "Image": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-zpwVrB4tDlDUr9xuUH80FHCw/user-1Rk6bR7ygTGdFPIh17pkpAqP/img-DuzbPnMCPPuBb6AuFjqBeChg.png?st=2025-11-23T21%3A48%3A36Z&se=2025-11-23T23%3A48%3A36Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=31d50bd4-689f-439b-a875-f22bd677744d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-23T13%3A35%3A56Z&ske=2025-11-24T13%3A35%3A56Z&sks=b&skv=2024-08-04&sig=FJjIwfRHjfJ%2B/UWhwIGDaGD0xUPM2SYk0DAn4II3htY%3D"
     }
 ]
