@@ -29,12 +29,12 @@
 			
 		<div class="text-service-aide">
 			<div class="carousel-wrap">
-				<h2>Cuisines selon les régions</h2>
+				<h3>Cuisines selon les régions</h3>
 				<button class="carousel-btn carousel-prev" type="button" aria-label="Précédent">&#10094;</button>
 				<div id="regions-carousel" class="carousel">
 					<div class="carousel-track">
 						{% for item in carousel_images %}
-						<a class="carousel-item" href="{{ url_for('region_' ~ item.slug) }}" title="Voir {{ item.display }}">
+						<a class="carousel-item" href="{{ url_for(item.endpoint) }}" title="Voir {{ item.display }}">
 							<img src="{{ item.url }}" alt="{{ item.display }}" loading="lazy">
 							<div class="carousel-overlay">{{ item.display }}</div>
 						</a>
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="text-service-aide">
-			<h2>cuisine sélectionnée</h2>
+			<h2>aucune cuisine sélectionnée</h2>
 		</div>
 
 		<div class="text-service-aide">

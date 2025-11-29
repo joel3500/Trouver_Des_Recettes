@@ -77,19 +77,38 @@ CAROUSEL_DIR = BASE_DIR / "static" / "img" / "caroussel"
 ALLOWED_IMG = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 
 def build_carousel_items():
-    """
-    Retourne une liste de dicts:
-      { 'slug': 'cuisine_africaine', 'display': 'cuisine africaine', 'url': '/static/img/caroussel/cuisine_africaine.jpeg' }
-    """
-    items = []
-    if CAROUSEL_DIR.exists():
-        for p in sorted(CAROUSEL_DIR.iterdir()):
-            if p.is_file() and p.suffix.lower() in ALLOWED_IMG:
-                slug = p.stem  # 'cuisine_africaine'  (sans extension)
-                display = slug.replace("_", " ")
-                url = f"/static/img/caroussel/{p.name}"
-                items.append({"slug": slug, "display": display, "url": url})
-    return items
+    return [
+        {
+            "display": "Cuisine Africaine",
+            "url": url_for("static", filename="img/caroussel/cuisine_africaine.jpeg"),
+            "endpoint": "region_cuisine_africaine"  # <— avec le préfixe du blueprint
+        },
+        {
+            "display": "Cuisine Asiatique",
+            "url": url_for("static", filename="img/caroussel/cuisine_asiatique.jpeg"),
+            "endpoint": "region_cuisine_asiatique"  # <— avec le préfixe du blueprint
+        },
+        {
+            "display": "Cuisine Espagnole",
+            "url": url_for("static", filename="img/caroussel/cuisine_espagnole.jpeg"),
+            "endpoint": "region_cuisine_espagnole"  # <— avec le préfixe du blueprint
+        },
+        {
+            "display": "Cuisine Francaise",
+            "url": url_for("static", filename="img/caroussel/cuisine_francaise.jpeg"),
+            "endpoint": "region_cuisine_francaise"  # <— avec le préfixe du blueprint
+        },
+        {
+            "display": "Cuisine Italienne",
+            "url": url_for("static", filename="img/caroussel/cuisine_italienne.jpeg"),
+            "endpoint": "region_cuisine_italienne"  # <— avec le préfixe du blueprint
+        },
+        {
+            "display": "Cuisine Quebecoise",
+            "url": url_for("static", filename="img/caroussel/cuisine_quebecoise.jpeg"),
+            "endpoint": "region_cuisine_quebecoise"  # <— avec le préfixe du blueprint
+        }
+    ]
 
 
 def register_region_routes(main):

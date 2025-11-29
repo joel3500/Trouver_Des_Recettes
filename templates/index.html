@@ -35,10 +35,11 @@
 				<div id="regions-carousel" class="carousel">
 					<div class="carousel-track">
 						{% for item in carousel_images %}
-						<a class="carousel-item" href="{{ url_for('region_' ~ item.slug) }}" title="Voir {{ item.display }}">
+						<a class="carousel-item" href="{{ url_for(item.endpoint) }}" title="Voir {{ item.display }}">
 							<img src="{{ item.url }}" alt="{{ item.display }}" loading="lazy">
 							<div class="carousel-overlay">{{ item.display }}</div>
 						</a>
+
 						{% endfor %}
 					</div>
 				</div>
