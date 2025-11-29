@@ -16,11 +16,12 @@
 	<body>
 		<header>
 			<h2> TROUVER DES RECETTES </h2>
-			<p class="oublie"> Idée de Menu pour ce soir  <br>
-							   Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br>
-							   Un outil proposant des RECETTES avec ce que vous avez en ce moment à la maison. <br>
-							   Rentrez les ingrédients que vous avez, et l’application vous proposera une liste de menus possibles. 
-							   Des menus qui contiennent ces ingrédients ou partie de ces ingrédients. <br> 
+			<p class="oublie"> Qu’est -ce que je cuisine ce soir avec ce que j’ai à la maison ? <br><br>
+							   
+						 	   Prenez une photo OU Saisissez manuellement les ingrédients. 
+							   L’application vous proposera une liste de menus possibles. <br><br>
+
+							   Un outil vous proposant une panoplie de RECETTES.
 			</p>
 			
 			<a href="{{ url_for('vos_impressions') }}" title="Formulaire de satisfaction : Laissez-nous savoir votre expérience de visite du site"><img id="formulaire2" src="../static/img/feedback_1.png"/></a>
@@ -47,6 +48,73 @@
 
 		<div class="text-service-aide">
 			<h2>Cuisine Francaise</h2>
+			{% if results_cuisine %}
+				<br>
+				{% for recette in results_cuisine %}
+				<div class="une_recette">
+					<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						{% if recette["Image"] %}
+						<img src="{{ recette['Image'] }}" alt="Image de {{ recette['Titre de la recette'] }}"
+							class="dfcard-img-top"
+							alt="Image de {{ recette['Titre de la recette'] }}"
+							style="max-width:400px; height:auto; border-radius:10px; display:block; margin-bottom:10px">
+						{% else %}
+						<img src="{{ url_for('static', filename='img/default.jpg') }}"
+							class="card-img-top"
+							alt="Image par défaut"
+							style="max-width:400px; height:auto; border-radius:10px; display:block; margin:0 auto 10px">
+						{% endif %}
+
+						<div class="card-body">
+						<h5 class="card-title">{{ recette["Titre de la recette"] }}</h5>
+
+						<p class="card-text">
+							<strong>Temps de cuisson :</strong>
+							{{ recette["Temps de cuisson"] }} = (Durée de Préparation + Durée de Cuisson)
+						</p>
+						<p class="card-text"><strong>Nombre de personnes :</strong> {{ recette["Nombre de personnes"] }}</p>
+						<p class="card-text"><strong>Durée de préparation :</strong> {{ recette["Durée de préparation"] }}</p>
+						<p class="card-text"><strong>Durée de cuisson :</strong> {{ recette["Durée de cuisson"] }}</p>
+
+						<p class="card-text"><strong>Liste des ingrédients :</strong></p>
+						<ul>
+							{% set ing = recette["Liste des ingrédients"] %}
+							{# Cas 1 : dict -> "Nom : Valeur" #}
+							{% if ing is mapping %}
+							{% for nom, kcal in ing.items() %}
+								<li>{{ nom }} : {{ kcal }}</li>
+							{% endfor %}
+							{# Cas 2 : liste -> chaque item peut être un dict à 1 paire clé:valeur, ou une chaîne #}
+							{% elif ing is sequence %}
+							{% for item in ing %}
+								{% if item is mapping %}
+								{% for nom, kcal in item.items() %}
+									<li>{{ nom }} : {{ kcal }}</li>
+								{% endfor %}
+								{% else %}
+								<li>{{ item }}</li>
+								{% endif %}
+							{% endfor %}
+							{% endif %}
+						</ul>
+
+						<p class="card-text"><strong>Étapes de préparation :</strong></p>
+						<ol>
+							{# La clé du JSON est "Les étapes de préparation" #}
+							{% for etape in recette["Les étapes de préparation"] %}
+							<li>{{ etape }}</li>
+							{% endfor %}
+						</ol>
+						</div>
+					</div>
+					</div>
+				</div><br>
+				{% endfor %}
+
+			{% else %}
+				<div><br>Aucune recette à afficher.<br></div>
+			{% endif %}
 		</div>
 
 		<div class="text-service-aide">
@@ -105,7 +173,6 @@
 		{% endif %}		
 		<!--================  FIN DU Résultat généré par EDAMAM  ===========--->
 		
-
 		<!--================  Résultat généré par THE MEAL DB  =====================--->	
 		{% if result_TheMealDB %} <br>
 		<div class="reponse_assistant">
@@ -141,6 +208,7 @@
 		{% endif %}
 		<!--================  FIN DU Résultat généré par OPEN RECIPES  =======--->
 
+
 		<!--================  Résultat généré par EPICURIOUS  ============--->	
 		{% if result_Epicurious %} <br>
 		<div class="reponse_assistant">
@@ -151,6 +219,7 @@
 		</div><br>
 		{% endif %}
 		<!--================  FIN DU Résultat généré par EPICURIOUS  =======--->
+
 
 		<!--================  Résultat généré par cuisine libre  =================--->	
 		{% if recipes_cuisinelibre %}
@@ -178,15 +247,15 @@
 					</li>                 <br><br> <!-- Pour séparer les recettes entre elles pour un m meilleur visuel -->
 				{% endfor %}
 				</ol>
-		</div><br><br>
+		</div><br>
 		{% endif %}
 		<!--================  FIN DE Recette provenant de CUISINE-LIBRE  ==================================--->
 
+		<!--================  FIN DE Sites Scrappés ===========================================================--->
 		
-		<!--================  Résultat généré par l'IA           ==================================--->	
-
+		<!--================  Résultat généré par l'IA  =======================================================--->	
         <div class="reponse_assistant">
-            <h2>Résultats générés par l'IA</h2>
+            <h3>Résultats générés par l'IA</h3>
 
                 {% if results_IA %} <br>
                     {% for recette in results_IA %}
@@ -205,14 +274,33 @@
 										<p class="card-text"><strong>Durée de préparation : </strong> {{ recette["Durée de préparation"] }}</p>
 										<p class="card-text"><strong>Durée de cuisson : </strong> {{ recette["Durée de cuisson"] }}</p>
 										<p class="card-text"><strong>Ingrédients : </strong></p>
-										<ul>
-											{% for ingrédient in recette["Liste des ingrédients"] %}
-												<li>{{ ingrédient }}</li>
-											{% endfor %}
-										</ul>
+											<ul>
+												{% set ing = recette["Liste des ingrédients"] %}
+
+												{# Cas 1 : c'est un dict -> "Nom : Valeur" #}
+												{% if ing is mapping %}
+													{% for nom, kcal in ing.items() %}
+													<li>{{ nom }} : {{ kcal }}</li>
+													{% endfor %}
+
+												{# Cas 2 : c'est une liste #}
+												{% elif ing is sequence %}
+													{% for item in ing %}
+													{# Sous-cas 2a : chaque item est un dict -> extraire sa (seule) paire clé:valeur #}
+													{% if item is mapping %}
+														{% for nom, kcal in item.items() %}
+														<li>{{ nom }} : {{ kcal }}</li>
+														{% endfor %}
+													{# Sous-cas 2b : item déjà une chaîne -> l'afficher tel quel #}
+													{% else %}
+														<li>{{ item }}</li>
+													{% endif %}
+													{% endfor %}
+												{% endif %}
+											</ul>
 										<p class="card-text"><strong>Étapes de préparation :</strong></p>
 										<ol>
-											{% for étape in recette["Les étapes de préparation"] %}
+											{% for étape in recette["Étapes de préparation"] %}
 												<li>{{ étape }}</li>
 											{% endfor %}
 										</ol>
@@ -227,17 +315,42 @@
                         <br>Aucune recette à afficher.<br>
                     </div>
                 {% endif %}
-        </div><br><br>
-		
+        </div>
 		<!--================  FIN DE Résultat généré par l'IA   ==================================--->	
 
+		<!--================  Proposes-moi des recettes quelconques ===================================--->
 		
-		<!--===================  Les différents sites  ===========================================--->
+		<div class="text-service-aide">
+			<div class="propose_moi">
+				<h3> Propose-moi </h3>
+				<form action="{{ url_for('propose_moi_une_recette') }}" method="POST" class="js-submit">
+					Proposes-moi des recettes de	
+					<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br>
+					que je peux faire en <br>
+					<input type="text" name="temps_proposition_recette_quelconque" placeholder="Ex : 10"> min
+					<button class="soumettre" type="submit"  title="soumettre pour voir les recettes disponibles">Soumettre</button>
+				</form>
+			</div>
+
+			<!-- Loader (animation de chargement "Génération en cours...") -->
+			<div class="js-loader" style="display:none; margin-top: 20px;">
+				<div class="spinner"></div>
+				<div>Génération en cours...</div>
+			</div>
+		</div>
+
+		<div class="text-service-aide">
+			<h3>recettes quelconques</h3>
+		</div>
+
+		<!--===============  FIN DES Recettes quelconques  ===========================================--->
+
+		<!--===============  Les différents sites  ===================================================--->
 		
 		<div class="text-service-aide">    
 			<div class="les_sites">
-				<!--===============  Sites Scrappés        ===========================================--->
-				<h2> Quelques sites de recettes </h2>
+				<!--===============  Sites Scrappés  =================================================--->
+				<h3> Quelques sites de recettes </h3>
 					<a href="https://www.cuisine-libre.org/recettes" target="_blank">cuisine-libre.org</a><br><br>
 					<a href="https://www.marmiton.org/" target="_blank">Marmiton.org</a><br><br>
 					<a href="https://tasty.co/" target="_blank">tasty.co</a><br><br>
@@ -253,7 +366,7 @@
 			</div>
 
 			<div class="les_utilitaires">
-				<h2> Des utilitaires </h2>
+				<h3> Des utilitaires </h3>
 				<a href="https://www.cuisine-libre.org/saison" target="_blank">Visuel sur quelques Ingrédiens usuels de la cuisine</a><br><br>
 				<a href="https://www.cuisine-libre.org/familles-alimentaires" target="_blank">Les familles d'aliments</a><br><br>
 				<a href="https://www.cuisine-libre.org/ingredients" target="_blank">Ingrédiens par famille avec les recettes</a>
@@ -261,30 +374,22 @@
 
 		</div><br>
 
-		<!--===============  Proposes-moi des recettes quelconques ===========================================--->
-		
-		<div class="text-service-aide">
-			Proposes-moi des recettes de                                                                      <br>
-			<input type="text" name="proposition_recette_quelconque" placeholder="Ex : Pomme de terre">       <br> 
-			que je peux faire en                                                                              <br>
-			<input type="text" name="temps_proposition_de_recette" placeholder="Ex : 10"> min
-		</div>
 
-		<div class="text-service-aide">
-			<h2>recettes quelconques</h2>
-		</div>
-
-		<!--===============  FIN DE Sites Scrappés ===========================================--->
-
-		<div class="text-service-aide">
+		<div id="toggle-regimes" class="text-service-aide" role="button" tabindex="0" aria-expanded="false" aria-controls="regimes-container" style="cursor:pointer;">
 			Les différents types de régimes
 		</div>
 
-		<div class="text-service-aide">
+		<!-- Conteneur qui recevra le tableau (caché par défaut) -->
+		<div id="regimes-container" class="text-service-aide" hidden></div>
+
+
+		<div id="toggle-aliments" class="text-service-aide" role="button" tabindex="0" aria-expanded="false" aria-controls="aliments-container" style="cursor:pointer;">
 			Meilleurs et Pires aliments
 		</div>
 
-		<br><br><br>
+		<!-- Conteneur qui recevra le tableau (caché par défaut) -->
+		<div id="aliments-container" class="text-service-aide" hidden>
+		</div><br>
         
 		<!--======================== Le pied de page ===========================================================-->
 		<footer>
@@ -313,8 +418,288 @@
 			})();
 		</script>
 
-	
-	
+		<script>
+			(function () {
+			const trigger   = document.getElementById("toggle-regimes");
+			const container = document.getElementById("regimes-container");
+			let cache = null; // on charge /api/regimes une seule fois
+
+			async function ensureLoaded() {
+				if (!cache) {
+				const res = await fetch("/api/regimes");
+				if (!res.ok) throw new Error("HTTP " + res.status);
+				cache = await res.json();
+				}
+				return cache;
+			}
+
+			// ====== NOUVEL AFFICHAGE VERTICAL (cartes + <details>) ======
+			function renderVertical(data) {
+				const frag = document.createDocumentFragment();
+
+				// Style local (sobre, vertical, responsive)
+				const style = document.createElement("style");
+				style.textContent = `
+				#regimes-container .meta { margin: 8px 0 12px; font-size: .95rem; }
+				#regimes-container .meta em { opacity:.8 }
+				#regimes-container .grid {
+					display: grid;
+					gap: 12px;
+				}
+				#regimes-container details {
+					background: #fff;
+					border: 1px solid rgba(0,0,0,.08);
+					border-radius: 12px;
+					padding: 10px 12px;
+					box-shadow: 0 1px 2px rgba(0,0,0,.03);
+				}
+				#regimes-container summary {
+					cursor: pointer;
+					list-style: none;
+					user-select: none;
+					font-weight: 600;
+					display: flex; align-items: center; justify-content: space-between;
+				}
+				#regimes-container summary::marker { display:none; }
+				#regimes-container .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+				#regimes-container .chip {
+					font-size:.78rem; padding:2px 8px; border-radius:999px;
+					background: rgba(0,0,0,.06);
+				}
+				#regimes-container .kv {
+					display:grid; grid-template-columns: 160px 1fr; gap:8px 14px; margin-top:10px;
+				}
+				#regimes-container .kv div.k { font-weight:600; opacity:.8; }
+				#regimes-container .kv div.v { white-space:pre-wrap; }
+				@media (max-width: 700px) {
+					#regimes-container .kv { grid-template-columns: 1fr; }
+				}
+				`;
+				frag.appendChild(style);
+
+				const meta = document.createElement("div");
+				meta.className = "meta";
+				meta.innerHTML = `<strong>Dernière mise à jour :</strong> ${data.derniere_mise_a_jour || "—"}<br>
+								<em>${data.avertissement || ""}</em>`;
+				frag.appendChild(meta);
+
+				const grid = document.createElement("div");
+				grid.className = "grid";
+
+				(data.regimes || []).forEach(r => {
+				const d = document.createElement("details");
+				// ouvert par défaut? mets 'open' si tu veux le premier déplié
+				const s = document.createElement("summary");
+				s.textContent = r.nom || "—";
+				d.appendChild(s);
+
+				// petits objectifs en chips sous le titre
+				const chipsWrap = document.createElement("div");
+				chipsWrap.className = "chips";
+				(r.objectifs || []).forEach(o => {
+					const c = document.createElement("span");
+					c.className = "chip"; c.textContent = o;
+					chipsWrap.appendChild(c);
+				});
+				d.appendChild(chipsWrap);
+
+				// bloc clef/valeur vertical
+				const kv = document.createElement("div");
+				kv.className = "kv";
+
+				function row(k, v) {
+					const K = document.createElement("div"); K.className = "k"; K.textContent = k;
+					const V = document.createElement("div"); V.className = "v"; V.textContent = v;
+					kv.appendChild(K); kv.appendChild(V);
+				}
+
+				// helpers
+				const list = arr => (arr && arr.length) ? arr.join(", ") : "—";
+				const macros = m => {
+					if (!m || typeof m !== "object") return "—";
+					const parts = [];
+					if (m.glucides)  parts.push(`Glucides: ${m.glucides}`);
+					if (m.proteines) parts.push(`Protéines: ${m.proteines}`);
+					if (m.lipides)   parts.push(`Lipides: ${m.lipides}`);
+					return parts.join(" · ") || "—";
+				};
+
+				row("Objectifs",           list(r.objectifs));
+				row("Description",         r.description || "—");
+				row("Macros (approx.)",    macros(r.macros_approx));
+				row("Convient à",          list(r.convient_a));
+				row("Déconseillé pour",    list(r.deconseille_pour));
+				row("Exemples d'aliments", list(r.exemples_d_aliments));
+				row("Limiter",             list(r.aliments_a_limite));
+
+				d.appendChild(kv);
+				grid.appendChild(d);
+				});
+
+				frag.appendChild(grid);
+				return frag;
+			}
+
+			// ====== TOGGLE FIABLE ======
+			async function toggleRegimes() {
+				// si visible -> masquer
+				if (!container.hasAttribute("hidden")) {
+				container.setAttribute("hidden", "");
+				container.replaceChildren(); // vide le contenu
+				trigger.setAttribute("aria-expanded", "false");
+				return;
+				}
+				// sinon charger + afficher
+				try {
+				const data = await ensureLoaded();
+				container.replaceChildren(renderVertical(data));
+				container.removeAttribute("hidden");
+				trigger.setAttribute("aria-expanded", "true");
+				} catch (e) {
+				container.innerHTML = `<div style="color:#b00020;">Erreur: impossible de charger les régimes.</div>`;
+				container.removeAttribute("hidden");
+				trigger.setAttribute("aria-expanded", "true");
+				// (laisse visible l'erreur pour feedback)
+				}
+			}
+
+			if (trigger && container) {
+				trigger.addEventListener("click", toggleRegimes);
+				trigger.addEventListener("keydown", (e) => {
+				if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleRegimes(); }
+				});
+			}
+			})();
+		</script>
+
+		<script>
+			(function () {
+			const trigger   = document.getElementById("toggle-aliments");
+			const container = document.getElementById("aliments-container");
+			let cache = null;
+
+			async function ensureLoaded() {
+				if (!cache) {
+				const res = await fetch("/api/aliments-organe");
+				if (!res.ok) throw new Error("HTTP " + res.status);
+				cache = await res.json();
+				}
+				return cache;
+			}
+
+			function renderVertical(data) {
+				const frag = document.createDocumentFragment();
+
+				const style = document.createElement("style");
+				style.textContent = `
+				#aliments-container .meta { margin: 8px 0 12px; font-size: .95rem; }
+				#aliments-container .meta em { opacity:.8 }
+				#aliments-container .grid { display:grid; gap:12px; }
+				#aliments-container details {
+					background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px;
+					padding:10px 12px; box-shadow:0 1px 2px rgba(0,0,0,.03);
+				}
+				#aliments-container summary { cursor:pointer; list-style:none; user-select:none; font-weight:600; }
+				#aliments-container summary::marker { display:none; }
+				#aliments-container .kv { display:grid; grid-template-columns: 160px 1fr; gap:8px 14px; margin-top:10px; }
+				#aliments-container .k { font-weight:600; opacity:.8; }
+				#aliments-container .v { white-space:pre-wrap; }
+				@media (max-width: 700px) { #aliments-container .kv { grid-template-columns: 1fr; } }
+				#aliments-container .list { margin:0; padding-left:18px; }
+				`;
+				frag.appendChild(style);
+
+				const meta = document.createElement("div");
+				meta.className = "meta";
+				meta.innerHTML = `<strong>Dernière mise à jour :</strong> ${data.derniere_mise_a_jour || "—"}<br>
+								<em>${data.avertissement || ""}</em>`;
+				frag.appendChild(meta);
+
+				const coll = data.organes || data["organes"] || [];
+				const grid = document.createElement("div");
+				grid.className = "grid";
+
+				coll.forEach(item => {
+				const d = document.createElement("details");
+				const s = document.createElement("summary");
+				s.textContent = item.organe || "—";
+				d.appendChild(s);
+
+				const kv = document.createElement("div");
+				kv.className = "kv";
+
+				const K1 = document.createElement("div"); K1.className = "k"; K1.textContent = "Meilleurs aliments";
+				const V1 = document.createElement("div"); V1.className = "v";
+				const ul1 = document.createElement("ul"); ul1.className = "list";
+				(item.meilleurs_aliments || []).forEach(x => { const li = document.createElement("li"); li.textContent = x; ul1.appendChild(li); });
+				V1.appendChild(ul1);
+
+				const K2 = document.createElement("div"); K2.className = "k"; K2.textContent = "Pires aliments";
+				const V2 = document.createElement("div"); V2.className = "v";
+				const ul2 = document.createElement("ul"); ul2.className = "list";
+				(item.pires_aliments || []).forEach(x => { const li = document.createElement("li"); li.textContent = x; ul2.appendChild(li); });
+				V2.appendChild(ul2);
+
+				kv.appendChild(K1); kv.appendChild(V1);
+				kv.appendChild(K2); kv.appendChild(V2);
+
+				d.appendChild(kv);
+				grid.appendChild(d);
+				});
+
+				frag.appendChild(grid);
+				return frag;
+			}
+
+			async function toggleBlock() {
+				if (!container.hasAttribute("hidden")) {
+				container.setAttribute("hidden", "");
+				container.replaceChildren();
+				trigger.setAttribute("aria-expanded", "false");
+				return;
+				}
+				try {
+				const data = await ensureLoaded();
+				container.replaceChildren(renderVertical(data));
+				container.removeAttribute("hidden");
+				trigger.setAttribute("aria-expanded", "true");
+				} catch (e) {
+				container.innerHTML = `<div style="color:#b00020;">Erreur: impossible de charger les données.</div>`;
+				container.removeAttribute("hidden");
+				trigger.setAttribute("aria-expanded", "true");
+				}
+			}
+
+			if (trigger && container) {
+				trigger.addEventListener("click", toggleBlock);
+				trigger.addEventListener("keydown", (e) => {
+				if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleBlock(); }
+				});
+			}
+			})();
+		</script>
+
+		<script>
+			(function () {
+			const loaders = [...document.querySelectorAll('.js-loader')];
+			const show = () => loaders.forEach(el => el.style.display = 'block');
+			const hide = () => loaders.forEach(el => el.style.display = 'none');
+			document.addEventListener('DOMContentLoaded', hide);
+
+			const forms = [
+				document.querySelector(`form[action="{{ url_for('index') }}"]`),
+				document.querySelector(`form[action="{{ url_for('propose_moi_une_recette') }}"]`)
+			].filter(Boolean);
+
+			forms.forEach(form => {
+				form.addEventListener('submit', () => {
+				const btn = form.querySelector('button[type="submit"]');
+				if (btn) { btn.disabled = true; btn.setAttribute('aria-busy','true'); }
+				show(); // affiche l’animation
+				}, { passive: true });
+			});
+			})();
+		</script>
 	
 	</body>
 </html>

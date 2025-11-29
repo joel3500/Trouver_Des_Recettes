@@ -5,7 +5,7 @@
 
 #=== Flask ============================================================================#
 
-from flask import Flask, redirect, render_template, request, jsonify, send_from_directory, send_file
+from flask import Flask, redirect, render_template, request, jsonify, send_from_directory, send_file, url_for
 from datetime import datetime 
 import json, os
 from datetime import datetime                
@@ -567,34 +567,345 @@ def apercu_video():
     return render_template("apercu_video.html")
 
 
-@main.route("/region_cuisine_africaine_2")                                          
-def region_cuisine_africaine_2():               
-    return render_template("cuisine_africaine.html")
+@main.route("/media/<region>/<path:filename>")
+def media_file(region, filename):
+    # Ex: /media/cuisine_africaine/7.png  -> dossier_des_JSON_internes/cuisine_africaine/7.png
+    folder = DATA_DIR / region
+    return send_from_directory(folder, filename)
 
-@main.route("/region_cuisine_asiatique_2")                                          
-def region_cuisine_asiatique_2():               
-    return render_template("cuisine_asiatique.html")
+@main.route("/region_cuisine_africaine")
+def region_cuisine_africaine():
+    data_file = DATA_DIR / "cuisine_africaine" / "cuisine_africaine.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
+
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_africaine"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_africaine", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_africaine.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
 
 
-@main.route("/region_cuisine_espagnol_2")                                          
-def region_cuisine_espagnole_2():               
-    return render_template("cuisine_espagnole.html")
+@main.route("/region_cuisine_asiatique")
+def region_cuisine_asiatique():
+    data_file = DATA_DIR / "cuisine_asiatique" / "cuisine_asiatique.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
+
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_asiatique"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_asiatique", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_asiatique.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
+
+@main.route("/region_cuisine_espagnole")
+def region_cuisine_espagnole():
+    data_file = DATA_DIR / "cuisine_espagnole" / "cuisine_espagnole.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
+
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_espagnole"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_espagnole", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_espagnole.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
 
 
-@main.route("/region_cuisine_francaise_2")                                          
-def region_cuisine_francaise_2():               
-    return render_template("cuisine_francaise.html")
+@main.route("/region_cuisine_francaise")                                          
+def region_cuisine_francaise():               
+    data_file = DATA_DIR / "cuisine_francaise" / "cuisine_francaise.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
+
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_francaise"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_francaise", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_francaise.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
 
 
-@main.route("/region_cuisine_italienne_2")                                          
-def region_cuisine_italienne_2():               
-    return render_template("cuisine_italienne.html")
+@main.route("/region_cuisine_italienne")                                          
+def region_cuisine_italienne():               
+    data_file = DATA_DIR / "cuisine_italienne" / "cuisine_italienne.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
+
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_italienne"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_italienne", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_italienne.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
 
 
-@main.route("/region_cuisine_quebecoise_2")                                          
-def region_cuisine_quebecoise_2():               
-    return render_template("cuisine_quebecoise.html")
+@main.route("/region_cuisine_quebecoise")                                          
+def region_cuisine_quebecoise():               
+    data_file = DATA_DIR / "cuisine_quebecoise" / "cuisine_quebecoise.json"
+    print(f"[DEBUG] Lecture JSON: {data_file} (exists={data_file.exists()})")
 
+    data = []
+    try:
+        with data_file.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+        # Le JSON peut être une liste directe OU un objet contenant une liste
+        if isinstance(raw, list):
+            data = raw
+        elif isinstance(raw, dict):
+            # 1) clé classique
+            for key in ("recettes", "data", "items"):
+                if isinstance(raw.get(key), list):
+                    data = raw[key]
+                    break
+            # 2) sinon, on prend la première valeur qui est une liste
+            if not data:
+                for v in raw.values():
+                    if isinstance(v, list):
+                        data = v
+                        break
+        print(f"[DEBUG] Recettes chargées: {len(data)}")
+    except Exception as e:
+        print(f"[ERREUR] impossible de lire/decoder {data_file}: {e}")
+        data = []
+
+    # Construction des URLs d’images via la route /media
+    folder = DATA_DIR / "cuisine_quebecoise"
+    missing = []
+    for rec in data:
+        img_idx = rec.get("Image")
+        # tolère int ou str numérique
+        if isinstance(img_idx, int) or (isinstance(img_idx, str) and img_idx.isdigit()):
+            img_file = f"{int(img_idx)}.png"
+            if (folder / img_file).exists():
+                rec["Image"] = url_for("media_file", region="cuisine_quebecoise", filename=img_file)
+            else:
+                missing.append(img_file)
+                rec["Image"] = url_for("static", filename="img/default.jpg")
+        else:
+            # pas d'index -> image par défaut
+            rec["Image"] = url_for("static", filename="img/default.jpg")
+
+    if missing:
+        print(f"[WARN] PNG manquants dans {folder.name}: {missing}")
+
+    return render_template(
+        "cuisine_quebecoise.html",
+        results_cuisine=data,
+        carousel_images=build_carousel_items()
+    )
 
 @main.route("/api/regimes")
 def api_regimes():
@@ -700,12 +1011,12 @@ def propose_moi_une_recette():
             return render_template("proposes_moi.html",
                                     current_date = current_date,
                                     results_IA = recettes,
-                                    carousel_images=build_carousel_items()
+                                    carousel_images = build_carousel_items()
                                   )
         else:
             print("Aucune recette n'a été générée.")
 
-    return render_template("proposes_moi.html", carousel_images=build_carousel_items())
+    return render_template("proposes_moi.html", carousel_images = build_carousel_items())
 
 
 # l'index administrateur. À partir de cette route, l'administrateur a accès à TOUT.
