@@ -20,6 +20,7 @@ from pathlib import Path
 
 # routes_regimes.py
 from flask import Blueprint, current_app
+import requests
 
 #=== FIN DES LIBRAIRIES    =================================================================#
 # Initialisation de notre Controleur (Initiaalisation de Flask)
@@ -69,47 +70,97 @@ TRANSIT_IA_FILE = DATA_DIR / "transit_IA.json"
 CUISINE_LIBRE_FILE = DATA_DIR / "from_scrappy_cuisinelibre_org.json"
 
 #===========================================================================================#
-#     Quelques FONCTIONS UTILES                                                              #
+#     Quelques FONCTIONS UTILES                                                             #
 #===========================================================================================#
 
 # === Carrousel (images de régions) ============================================
 CAROUSEL_DIR = BASE_DIR / "static" / "img" / "caroussel"
 ALLOWED_IMG = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 
+#===========================================================================================#
+#     GÉOLOCALISATION                                                                       #
+#===========================================================================================#
+def _ip_from_request(req) -> str:
+    """Récupère l'IP réelle même derrière un proxy/Render/Nginx."""
+    xff = (req.headers.get("X-Forwarded-For") or "").split(",")[0].strip()
+    return xff or req.remote_addr or ""
+
+def geolocate_by_ip(ip: str) -> tuple[str | None, str | None]:
+    """
+    Retourne (ville, pays) depuis une IP (approx., pas GPS).
+    Utilise ipapi.co (sans clé) -> pense au timeout et aux quotas.
+    """
+    if not ip:
+        return None, None
+    try:
+        r = requests.get(f"https://ipapi.co/{ip}/json/", timeout=6)
+        if r.ok:
+            data = r.json()
+            city = data.get("city")
+            country = data.get("country_name")
+            return city, country
+    except Exception:
+        pass
+    return None, None
+
+def get_city_country_from_request(req) -> tuple[str | None, str | None]:
+    """
+    1) Essaie d'abord les champs postés par le formulaire
+       (name=city/country ou ville/pays).
+    2) Sinon, fallback IP.
+    """
+    form = req.form or {}
+    city = (form.get("city") or form.get("ville") or "").strip() or None
+    country = (form.get("country") or form.get("pays") or "").strip() or None
+
+    if city and country:
+        return city, country
+
+    # Fallback : IP
+    ip = _ip_from_request(req)
+    ip_city, ip_country = geolocate_by_ip(ip)
+    return (city or ip_city), (country or ip_country)
+
+#====================== FIN DE GEOLOCALISATION =============================================== #
+
 def build_carousel_items():
     return [
         {
+            "display": "Accueil",
+            "url": url_for("static", filename="img/caroussel/accueil.jpeg"),
+            "endpoint": "index"  # <— avec le préfixe
+        },
+        {
             "display": "Cuisine Africaine",
             "url": url_for("static", filename="img/caroussel/cuisine_africaine.jpeg"),
-            "endpoint": "region_cuisine_africaine"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_africaine"  # <— avec le préfixe 
         },
         {
             "display": "Cuisine Asiatique",
             "url": url_for("static", filename="img/caroussel/cuisine_asiatique.jpeg"),
-            "endpoint": "region_cuisine_asiatique"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_asiatique"  # <— avec le préfixe 
         },
         {
             "display": "Cuisine Espagnole",
             "url": url_for("static", filename="img/caroussel/cuisine_espagnole.jpeg"),
-            "endpoint": "region_cuisine_espagnole"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_espagnole"  # <— avec le préfixe 
         },
         {
             "display": "Cuisine Francaise",
             "url": url_for("static", filename="img/caroussel/cuisine_francaise.jpeg"),
-            "endpoint": "region_cuisine_francaise"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_francaise"  # <— avec le préfixe 
         },
         {
             "display": "Cuisine Italienne",
             "url": url_for("static", filename="img/caroussel/cuisine_italienne.jpeg"),
-            "endpoint": "region_cuisine_italienne"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_italienne"  # <— avec le préfixe 
         },
         {
             "display": "Cuisine Quebecoise",
             "url": url_for("static", filename="img/caroussel/cuisine_quebecoise.jpeg"),
-            "endpoint": "region_cuisine_quebecoise"  # <— avec le préfixe du blueprint
+            "endpoint": "region_cuisine_quebecoise"  # <— avec le préfixe 
         }
     ]
-
 
 def register_region_routes(main):
     """
@@ -133,7 +184,6 @@ def register_region_routes(main):
         # Évite de redéclarer si code rechargé en debug
         if endpoint_name not in main.view_functions:
             main.add_url_rule(f"/{slug}", endpoint=endpoint_name, view_func=_view)
-
 
 # Récupérer la date actuelle
 def date_de_requette():
@@ -159,15 +209,17 @@ def nettoyer_texte(t):
     t3 = t2.strip()
     return t3
 
-def sauvegarder_ingrediens_dans_JSON(la_date, liste):
-    """Append {'date': ..., 'ingrediens': [...]} dans suivis.json, en créant le dossier/fichier si besoin."""
+def sauvegarder_ingrediens_dans_JSON(la_date, liste, ville=None, pays=None):
+    """Append {'date': ..., 'ingrediens': [...], 'ville': ..., 'pays': ...} dans suivis.json."""
     # Charger l'existant (si fichier corrompu ou vide -> liste vide)
     try:
         data = json.loads(SUIVIS_FILE.read_text(encoding="utf-8")) if SUIVIS_FILE.exists() and SUIVIS_FILE.stat().st_size > 0 else []
     except json.JSONDecodeError:
         data = []
 
-    data.append({'date': la_date, 'ingrediens': liste})
+    # data.append({'date': la_date, 'ingrediens': liste})
+    data.append({'date': la_date, 'ingrediens': liste, 'ville': ville, 'pays': pays})
+    print(data)
 
     # Sauvegarder
     SUIVIS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=4), encoding="utf-8")
@@ -494,9 +546,6 @@ def charger_recettes():
 
     return recettes
 
-
-#===========================================================================================#
-
 #===========================================================================================#
 #     Les différentes ROUTES de notre controleur FLASK                                      #
 #===========================================================================================#
@@ -531,8 +580,12 @@ def index():
         # Récupérer la date actuelle
         current_date = date_de_requette()
         
+        # Récupérer ville/pays (form > fallback IP)
+        ville, pays = get_city_country_from_request(request)
+        print("Localisation détectée -> ville:", ville, "| pays:", pays)
+
         # Sauvegarder les données dans un fichier JSON
-        sauvegarder_ingrediens_dans_JSON(current_date, liste_des_ingrediens_rentres)
+        sauvegarder_ingrediens_dans_JSON(current_date, liste_des_ingrediens_rentres, ville=ville, pays=pays)
         
         #===================================================================================#
         #   Chercher des correspondances dans les fichiers avec les ingrediens rentrés      #
@@ -964,7 +1017,7 @@ def index_IA():
 
         # Récupérer la date actuelle
         current_date = date_de_requette()
-        
+
         # Sauvegarder les données dans un fichier JSON
         sauvegarder_ingrediens_dans_JSON(current_date, liste_des_ingrediens)
         
@@ -1006,12 +1059,16 @@ def propose_moi_une_recette():
         # Récupérer la date actuelle
         current_date = date_de_requette()
 
+        # Récupérer ville/pays (form > fallback IP)
+        ville, pays = get_city_country_from_request(request)
+        print("Localisation détectée -> ville:", ville, "| pays:", pays)
+
         # Je cree une liste des ingredients qui contiendra le SEUL INGREDIENT
         liste_des_ingrediens = []
         liste_des_ingrediens.append(proposition_recette_quelconque)
 
         # Sauvegarder les données dans un fichier JSON
-        sauvegarder_ingrediens_dans_JSON(current_date, liste_des_ingrediens)
+        sauvegarder_ingrediens_dans_JSON(current_date, liste_des_ingrediens, ville=ville, pays=pays)
         
         # Appel au modèle IA pour obtenir son résultat
 
