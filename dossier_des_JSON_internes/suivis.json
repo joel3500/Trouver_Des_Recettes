@@ -1328,5 +1328,60 @@
             "Viande",
             "Oignon"
         ]
+    },
+    {
+        "date": "2025-11-29 / 10:57:49",
+        "ingrediens": [
+            "Pomme de terre"
+        ]
+    },
+    {
+        "date": "2025-11-29 / 11:09:38",
+        "ingrediens": [
+            "Pomme de terre"
+        ]
+    },
+    {
+        "date": "2025-11-30 / 02:28:49",
+        "ingrediens": [
+            "Banane plantain",
+            "Tomate",
+            "Oignon",
+            "Poisson"
+        ]
+    },
+    {
+        "date": "2025-11-30 / 03:38:41",
+        "ingrediens": [
+            "Attieke"
+        ],
+        "ville": "Chicoutimi",
+        "pays": "Canada"
+    },
+    {
+        "date": "2025-11-30 / 04:03:24",
+        "ingrediens": [
+            "Pomme de terre"
+        ],
+        "ville": null,
+        "pays": null
+    },
+    {
+        "date": "2025-11-30 / 04:14:58",
+        "ingrediens": [
+            "Oignon",
+            "Tomate",
+            "Banane plantain"
+        ],
+        "ville": null,
+        "pays": null
+    },
+    {
+        "date": "2025-11-30 / 04:25:41",
+        "ingrediens": [
+            "Pomme de terre"
+        ],
+        "ville": null,
+        "pays": null
     }
 ]
